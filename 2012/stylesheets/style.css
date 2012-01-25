@@ -1,0 +1,224 @@
+body
+{
+	color: #245;
+	background: #fff url(../images/background-bottom.png) repeat-x 0 bottom;
+	font: normal 1em Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+img
+{
+	border: 0;
+}
+
+a
+{
+	color: #036;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	color: #09c;
+}
+
+h1
+{
+	color: #036;
+	border-bottom: 1px solid #f3f5f8;
+	font: bold 2em "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+h2
+{
+	color: #036;
+	border-bottom: 1px solid #f3f5f8;
+	font: bold 1.6em "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+h3
+{
+	color: #036;
+	border-bottom: 1px solid #f3f5f8;
+	font: bold 1.4em "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+ul{
+	margin: 0 0 0 17px;
+	padding: 0;
+}
+
+nav ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 0;
+	overflow: auto;
+}
+
+nav ul li
+{
+	float: left;
+	margin-right: 0.5em;
+}
+
+article
+{
+	overflow: auto;
+}
+
+article div.posted {
+	font-size: 50%;
+	text-align: right;
+}
+
+article.advisor img.avatar {
+	float: left;
+	margin: 0 10px 5px 0;
+}
+
+article.session section.biography img.avatar {
+	float: left;
+	margin: 0 10px 5px 0;
+}
+
+#container
+{
+	margin: 0 auto;
+	width: 960px;
+	/*border-left: 1px solid #f3f5f8;
+	border-right : 1px solid #f3f5f8;*/
+}
+
+#header h1
+{
+	color: #036;
+	text-shadow: none;
+	border-style: none;
+	font-family: "Helvetica Neue";
+	font-variant: normal;
+	text-indent: -9999px;
+	width: 568px;
+	height: 49px;
+	background-image: url(../images/heading.png);
+	padding: 0;
+	margin: 10px 0 0;
+}
+
+#header nav ul a
+{
+	color: #036;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#header nav ul a.register
+{
+	color: #b11;
+}
+
+#header nav ul a:hover
+{
+	color: #b11;
+}
+
+#content
+{
+	padding-top: 25px;
+	background: url(../images/shadow.png) no-repeat 0 top;
+}
+
+#main
+{
+	width: 600px;
+	padding: 0 30px 30px;
+	float: left;
+}
+
+#main .sponsor
+{
+	overflow: auto;
+}
+
+#side
+{
+	width: 300px;
+	float: right;
+	font-size: smaller;
+}
+
+#side h3
+{
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+	color: #b11;
+}
+
+#side img
+{
+	padding: 10px;
+}
+
+#side .box img {
+	padding: 0;
+}
+
+#footer
+{
+	padding-top: 25px;
+	background: url(../images/shadow.png) no-repeat 0 top;
+	text-align: center;
+	clear: both;
+	font-size: smaller;
+}
+
+div.schedule dl
+{
+	margin:0 0;
+	border-bottom:1px solid #333333;
+	padding:0.5em 0 0.6em 0;
+}
+
+div.schedule dt
+{
+	display:inline;
+	margin:0;
+	padding:0;
+	font-weight: bold;
+}
+
+div.schedule dd
+{
+	display:inline;
+	margin:0;
+	padding:0;
+}
+
+div.session {
+	clear: both;
+}
+div.session  p {
+	margin: 10px 5px 0;
+}
+div.session img.avatar {
+	float: left;
+	margin: 0 10px 5px 0;
+}
+
+
+.box
+{
+	background : #f3f5f8;
+	border: 1px solid #ddd;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;
+}
+
+.box h3 {
+	margin: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ddd;
+}

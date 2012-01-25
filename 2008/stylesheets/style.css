@@ -1,0 +1,163 @@
+body
+{
+	color: #245;
+	background: #fff;
+	font: normal 12px/1.6em Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a
+{
+	color: #036;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	color: #09c;
+}
+
+h1
+{
+	color: #b11;
+	font: normal 32px;
+	margin: 0px 0px 10px 0px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	text-shadow: #333 2px 2px 2px;
+}
+
+h2
+{
+	color: #b11;
+	font: normal 24px;
+	margin: 20px 0 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	text-shadow: #333 1px 1px 1px;
+	
+}
+
+h3
+{
+	color: #b11;
+	font: bold 14px;
+	margin: 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+ul{
+	margin: 0 0 0 17px;
+	padding: 0;
+	list-style: square url(../images/bullet.gif);
+}
+
+.box
+{
+	background : #eee;
+	border: 1px solid #ddd;
+	margin: 25px;
+	padding: 15px;
+	border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;
+}
+
+#container
+{
+	margin: 0 auto;
+	width: 776px;
+	border-left: 1px solid #eee;
+	border-right : 1px solid #eee;
+}
+
+#header #menu
+{
+	color : #eee;
+	background: #036;
+	padding: 10px 20px;
+	text-align: right;
+}
+
+#header #menu a
+{
+	color: #ddd;
+	text-decoration: none;
+}
+
+#header #menu a:hover
+{
+	color: #fff;
+}
+
+#content
+{
+	background: url(../images/bg.gif) repeat-x;
+	padding-top: 26px;
+}
+
+#main
+{
+	width: 440px;
+	padding: 0 30px 30px;
+	float: left;
+}
+
+#main .sponsor
+{
+	overflow: auto;
+}
+
+#side
+{
+	width: 270px;
+	float: right;
+}
+
+#side .logo
+{
+	text-align: center;
+}
+
+#side h3
+{
+	background: url(../images/shadow.jpg) no-repeat top;
+	text-align: center;
+	padding: 10px;
+}
+
+#side .sponsor
+{
+	text-align: center;
+}
+
+#footer
+{
+	background: #eee;
+	border-top: 1px solid #ddd;
+	padding: 10px 15px;
+	text-align: center;
+	clear: both;
+}
+
+div.schedule dl
+{
+	margin:0 0;
+	border-bottom:1px solid #333333;
+	padding:0.5em 0 0.6em 0;
+}
+
+div.schedule dt
+{
+	display:inline;
+	margin:0;
+	padding:0;
+	font-weight: bold;
+}
+
+div.schedule dd
+{
+	display:inline;
+	margin:0;
+	padding:0;
+}

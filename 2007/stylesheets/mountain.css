@@ -1,0 +1,146 @@
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,
+h6,pre,form,fieldset,input,p,blockquote,table,
+th,td { margin: 0; padding: 0; }
+fieldset,img,abbr { border: 0; }
+address,caption,cite,code,dfn,em,h1,h2,h3,
+h4,h5,h6,strong,th,var { font-style: normal; font-weight: normal; }
+caption,th { text-align: left; }
+q:before,q:after { content: ''; }
+a { text-decoration: none; }
+
+body {
+	font-size: 62.5%;
+	background: #fff url('../images/topbg.png') center top repeat-x;
+	font-family: "Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif;
+}
+/* Main Content */
+div#wrapper{
+	margin:0 auto;
+}
+
+/* Header */
+div#header{
+	background:url('../images/logo.png') no-repeat right; width:800px; height:170px;  margin:0 auto;
+}
+
+
+a {
+	text-decoration: none;
+	color: #B60F13;
+}
+a:hover {
+	color: #09c;
+}
+
+p {
+	font-size: 1.4em;
+/*	line-height: 1.6em;*/
+	margin-bottom: 1.4em;
+}
+
+p a {
+	font-weight: bold;
+}
+
+
+
+h3{
+font-size: 1.9em; margin-bottom: 0.5em;
+}
+
+h4{
+font-size: 1.7em; margin-bottom: 0.5em; border-bottom:2px solid #333333;
+}
+/* Content */
+/*a {
+	text-decoration: none;
+	color: #036;
+}
+a:hover {
+	color: #09c;
+}*/
+#content{
+	margin:0 auto; width:800px;
+}
+
+#content p{
+	font-size: 1.4em;
+	line-height: 1.6em;
+	margin-bottom: 1.4em;
+}
+
+#content #contentleft_{
+width:530px; float:left; padding:0 40px 0 0;
+}
+
+#content #contentleft_ .block{
+background:#e6e6e6; padding:1em; border:1px dotted #003399; margin: 0 0 1em 0;
+overflow: auto;
+}
+
+#content #contentleft_ .block img{
+float:left; padding:5px 10px 5px 0px;
+}
+
+#content #contentleft_ .block2 img{
+float:left; padding:5px 15px 5px 0px;
+}
+
+#content #contentleft_ h3{
+border-bottom: 1px dotted #333; color:#999999;
+}
+#content #contentleft_ h4{
+border:0px;
+}
+
+#content #contentleft_ .session{
+border-bottom: 1px dotted #333; margin:0 0 1em 0;clear: left;
+}
+
+#content #contentleft_ .session p{
+font-size: 1em;
+}
+
+
+#content #rightnav_{
+float:right; width:200px;
+}
+#content #rightnav_ ol,ul {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-bottom: 2em;
+}
+
+#content #rightnav_ ul ul * {
+	font-size: 1em;
+}
+#content #rightnav_ ol p {
+	font-size: 1em;
+}
+
+ol li,
+ul li {
+	margin-bottom: 0.4em; border-bottom:1px dotted #333333; list-style:none;
+}
+#content #rightnav_ li span{
+font-size:0.8em;
+}
+
+#footer{
+clear:both; padding:2em 0 0 0;
+}
+
+#footer p{
+text-align:center;border-bottom:1px dotted #333;
+}
+
+#footer span{
+color:#006600; clear:both;
+}
+
+h1 {clear:both;}
+h2 {clear:both;}
+h3 {clear:both;}
+h4 {clear:both;}
+hr {clear:both;}

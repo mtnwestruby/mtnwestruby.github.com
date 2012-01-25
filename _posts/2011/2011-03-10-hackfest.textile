@@ -1,0 +1,6 @@
+---
+title:  'The Hackfest Returns!'
+layout: '2011'
+category: '2011'
+---
+You love it, you want it back, and "Engine Yard":http://mtnwestrubyconf.org/2011/sponsors#engineyard is making it happen! We are happy to announce the "Hackfest":http://mtnwestrubyconf.org/2011/hackfest is back this year. Plan on spending your Thursday evening in a sea of friends and code. You might consider joining the "Facebook Event":http://www.facebook.com/event.php?eid=188295307872334 while you are at it.

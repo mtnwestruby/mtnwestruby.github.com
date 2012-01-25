@@ -1,0 +1,10 @@
+---
+layout: '2011'
+---
+{% for post in site.categories.2011 %}
+  <article id="{{ post.id | bookmark }}">
+    <h3>{{ post.title }}</h3>
+    {{ post.content }}
+    <div class="posted">Posted {{ post.date | date_to_string }}</div>
+  </article>
+{% endfor %}

@@ -1,0 +1,6 @@
+# auto: true
+permalink: /:year/blog/:title.html
+pygments: true
+exclude:
+- README
+- CNAME
