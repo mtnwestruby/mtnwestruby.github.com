@@ -36,9 +36,8 @@ at the conference and at home through videos.
 -   1 Conference pass
 -   No Attendee Handouts
 
-If you are interested in sponsoring the conference, please contact:\
- MountainWest Ruby, LLC\
- [sponsorship@mtnwestrubyconf.org][]
+If you are interested in sponsoring the conference, please contact:  
+MountainWest Ruby, LLC [sponsorship@mtnwestrubyconf.org][]
 
 We understand that some organizations have restrictions on making direct
 cash contributions to some conferences or business entities. If you are
