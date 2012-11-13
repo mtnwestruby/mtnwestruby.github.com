@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+    <meta http-equiv="content-language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+    <title>
+      mwrc
+   </title> 
+  <script type="text/javascript" src="http://use.typekit.com/nst4suu.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="/2013/stylesheets/master.css" >
+    
+    <link rel="stylesheet" type="text/css" href="/2013/stylesheets/retina.css" media="only screen and (-webkit-min-device-pixel-ratio: 2)"> 
+    <!--[if gte IE 7]>
+      <link rel="stylesheet" type="text/css" href="/css/ie.css">
+    <![endif]-->    
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" type="text/css" href="/2013/stylesheets/ie-responsive.css">
+    <![endif]-->   
+    <!--[if lte IE 7]>
+      <link rel="stylesheet" type="text/css" href="/2013/stylesheets/ie-7.css">
+    <![endif]-->
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+    
+    <div class="site_hd">
+  <div class="wp">
+    
+    <section class="logo">
+      <a href="#">
+        <img src="/2013/images/logo.png">
+        <h1>MountainWest RubyConf</h1>
+      </a>
+    </section>
+  </div>
+</div>
+<div class="hero">
+  <div class="wp">
+    <div class="info">
+      <section class="date">
+       <i>&diams;</i>  <span>March, 2013</span> <i>&diams;</i>
+      </section>
+      <section class="logotype">
+        <img src="/2013/images/logotype.png">
+      </section>
+      <section class="place">
+        <i>&diams;</i>  <span>Salt Lake City, Utah</span> <i>&diams;  </i>
+      </section>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="fade"></div>
+</div>
+
+<div class="wp pg_bd">
+
+  <div class="heading">
+    <h2>MWRC 2013 is a two days of Ruby and one day of DevOps single-track awesomeness.</h2>
+  </div>
+  <div class="box">
+    {% if page.title %}
+      <section class="box__header hd"><h4>{{ page.title }}</h4></section>
+    {% endif %}
+    <section class="box__body">
+      {{ content }}
+    </section>
+  </div>
+  
+</div>
+
+</body>
+</html>
