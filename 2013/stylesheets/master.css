@@ -319,7 +319,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00222222', e
   line-height: 60px;
   padding-left: 60px;
   font-family: "bebas-neue";
-  color: #111;
+  color: #fff;
+  background: #2972aa;
   letter-spacing: 2px;
 }
 
@@ -401,7 +402,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00222222', e
 
 .box__body {
 	padding: 60px;
-	background: #ddd;
+	background: #fff;
 }
 
 /*utilities*/
