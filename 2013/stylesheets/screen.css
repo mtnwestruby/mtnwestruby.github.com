@@ -718,7 +718,7 @@ Page Template.
 
 /* line 177, ../sass/_base/_page.scss */
 .page__body__header {
-  font-size: 2.57143em;
+  font-size: 2.14286em;
   text-rendering: optimizeLegibility;
 }
 
@@ -978,7 +978,7 @@ a:active {
 }
 
 /* line 1, ../sass/_base/_heading.scss */
-.heading, .h1, .h2, .page__branding__name .page__name, .h3, .media__speaker__title, .h4, .page__header__headline, .h5, .media__speaker__header, .modal_profile .modal__window__header .modal__window__heading, .h6, .h_large, .h_xlarge {
+.heading, .h1, .h2, .page__branding__name .page__name, .h3, .media_speaker__title, .h4, .page__header__headline, .h5, .media_speaker__header, .modal_profile .modal__window__header .modal__window__heading, .h6, .h_large, .h_xlarge {
   line-height: 1em;
 }
 
@@ -995,7 +995,7 @@ a:active {
 }
 
 /* line 10, ../sass/_base/_heading.scss */
-.h3, .media__speaker__title {
+.h3, .media_speaker__title {
   font-size: 1.71429em;
   text-rendering: optimizeLegibility;
 }
@@ -1007,7 +1007,7 @@ a:active {
 }
 
 /* line 16, ../sass/_base/_heading.scss */
-.h5, .media__speaker__header, .modal_profile .modal__window__header .modal__window__heading {
+.h5, .media_speaker__header, .modal_profile .modal__window__header .modal__window__heading {
   font-size: 1.28571em;
 }
 
@@ -1058,7 +1058,7 @@ input, textarea {
 }
 
 /* line 23, ../sass/_base/_typography.scss */
-.serif, .page__footer, .box_post .box__header, .media__speaker__bio, .media__speaker__title, .media__speaker__description, .nav__page-info {
+.serif, .page__footer, .box_post .box__header, .media_speaker__bio, .media_speaker__title, .media_speaker__description, .nav__page-info {
   font-family: "chaparral-pro", "georgia", serif;
   text-rendering: optimizeLegibility;
 }
@@ -2709,6 +2709,66 @@ Styleguide 2.2
   background-position: 0 -180px;
 }
 
+/* line 60, ../sass/_modules/_icon.scss */
+.icon_info {
+  height: 20px;
+  width: 20px;
+  color: #fff;
+  background: #999;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-size: 11px;
+  line-height: 20px;
+}
+/* line 71, ../sass/_modules/_icon.scss */
+.icon_info:hover {
+  overflow: visible;
+}
+/* line 74, ../sass/_modules/_icon.scss */
+.icon_info:before {
+  content: "";
+  display: block;
+  top: 100%;
+  border: 4px solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #000;
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  left: 50%;
+  margin-left: -4px;
+  margin-top: -4px;
+}
+/* line 89, ../sass/_modules/_icon.scss */
+.icon_info:after {
+  z-index: 100000;
+  position: absolute;
+  content: attr(name);
+  text-transform: none;
+  text-align: left;
+  letter-spacing: 0;
+  display: block;
+  height: auto;
+  padding: 8px 12px;
+  right: 0;
+  top: 100%;
+  width: 260px;
+  margin: 4px 3px 0 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-shadow: none;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.5em;
+  border-radius: 4px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
 /* line 2, ../sass/_modules/_list.scss */
 .list, .list_contacts, .list_bullet, .list_rounded, .list_inline, .list_ordered, .list_box, .list_note {
   position: relative;
@@ -3005,38 +3065,61 @@ Styleguide 2.2
   }
 }
 /* line 96, ../sass/_modules/_media.scss */
-.media__speaker {
-  border-bottom: 1px dashed #ddd;
-  padding-bottom: 24px;
-  padding-top: 24px;
+.media_speaker {
+  margin-bottom: 0;
+  border: 1px dashed #ddd;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 12px;
 }
-/* line 97, ../sass/_modules/_media.scss */
-.media__speaker .media__block {
+/* line 98, ../sass/_modules/_media.scss */
+.media_speaker .media__block {
   margin-right: 0.85714em;
 }
 
-/* line 105, ../sass/_modules/_media.scss */
-.media__speaker__header {
+/* line 107, ../sass/_modules/_media.scss */
+.media_speaker__header {
   font-weight: bold;
   margin-top: 36px;
   margin-bottom: 12px;
 }
 
 @media screen and (max-width: 900px) {
-  /* line 113, ../sass/_modules/_media.scss */
-  .media__speaker__header {
+  /* line 115, ../sass/_modules/_media.scss */
+  .media_speaker__header {
     margin-top: 12px;
   }
 }
-/* line 122, ../sass/_modules/_media.scss */
-.media__speaker__title {
+/* line 124, ../sass/_modules/_media.scss */
+.media_speaker__title {
   font-style: italic;
   margin-bottom: 12px;
 }
 
-/* line 129, ../sass/_modules/_media.scss */
-.media__speaker__description {
+/* line 131, ../sass/_modules/_media.scss */
+.media_speaker__description {
   color: #555;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+/* line 137, ../sass/_modules/_media.scss */
+.media_speaker__description p {
+  margin-top: .75em;
+}
+/* line 139, ../sass/_modules/_media.scss */
+.media_speaker__description p:first-child {
+  margin-top: 0;
+}
+/* line 143, ../sass/_modules/_media.scss */
+.media_speaker__description ul {
+  margin-top: .75em;
+  margin-left: 2em;
+}
+/* line 147, ../sass/_modules/_media.scss */
+.media_speaker__description ol {
+  margin-top: .75em;
+  margin-left: 2em;
 }
 
 /*
@@ -4996,7 +5079,7 @@ Styleguide 5.1
 }
 
 /* line 175, ../sass/utilities.scss */
-.circle, .figure__speaker .figure__image, .figure__speaker .figure__icon {
+.circle, .figure__speaker .figure__image, .figure__speaker .figure__icon, .icon_info {
   border-radius: 10000px;
 }
 
