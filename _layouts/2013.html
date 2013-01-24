@@ -10,76 +10,91 @@
     <title>
       mwrc
    </title> 
-  <script type="text/javascript" src="http://use.typekit.com/nst4suu.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript" src="//use.typekit.net/kzb3rbd.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>    
     
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="/2013/stylesheets/screen.css" >
     
-    <link rel="stylesheet" type="text/css" media="screen, projection" href="/2013/stylesheets/master.css" >
-    
-    <link rel="stylesheet" type="text/css" href="/2013/stylesheets/retina.css" media="only screen and (-webkit-min-device-pixel-ratio: 2)"> 
-    <!--[if gte IE 7]>
-      <link rel="stylesheet" type="text/css" href="/css/ie.css">
-    <![endif]-->    
-    <!--[if lte IE 8]>
-      <link rel="stylesheet" type="text/css" href="/2013/stylesheets/ie-responsive.css">
-    <![endif]-->   
-    <!--[if lte IE 7]>
-      <link rel="stylesheet" type="text/css" href="/2013/stylesheets/ie-7.css">
-    <![endif]-->
-    
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    </head>
-    <body>
-    
-    <div class="site_hd">
-  <div class="wp">
-    
-    <section class="logo">
-      <a href="/">
-        <img src="/2013/images/logo.png">
-        <h1>MountainWest RubyConf</h1>
-      </a>
+  </head>
+  <body class="page">
+
+    <span href="#" class="page__icon"><a href="#" class="page__icon__link"></a></span>
+    <header class="page__header">
+      <nav class="nav-bar">
+        <div class="page__wrapper">
+          <ul class="nav float-left">
+            <li class="nav__item">
+              <a href="/2013" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="/2013/ruby-sessions" class="nav__link">Ruby Sessions</a>
+            </li>
+          </ul>
+          <ul class="nav float-right">
+            <li class="nav__item">
+              <a href="/2013/devops-sessions" class="nav__link">DevOps Sessions</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="page__hero">
+      <div class="page__wrapper">
+        <div class="g g_full">
+          <section class="page__logotype">
+          </section>
+
+          <nav class="nav nav__page-info">
+            <ul>
+              <li class="nav__item">
+               <i>&diams;</i>  <span>April 3-5, 2013</span> <i>&diams;</i>
+              </li>
+              <li class="nav__item float-right">
+                <i>&diams;</i>  <span>Salt Lake City, Utah</span> <i>&diams;  </i>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </section>
-  </div>
-</div>
-<div class="hero">
-  <div class="wp">
-    <div class="info">
-      <section class="date">
-       <i>&diams;</i>  <span>April 3-5, 2013</span> <i>&diams;</i>
-      </section>
-      <section class="logotype">
-        <img src="/2013/images/logotype.png">
-      </section>
-      <section class="place">
-        <i>&diams;</i>  <span>Salt Lake City, Utah</span> <i>&diams;</i>
-      </section>
-      <div class="clear"></div>
+
+    <div class="page__wrapper">
+      <div class="page__body">
+
+        {{content}}
+
+        <footer class="page__body__footer">
+          <a href="https://twitter.com/mwrc" class="circle circle_social">
+            <i class="icon icon_large icon_twitter_large">
+            </i>
+          </a>
+          <a href="http://www.facebook.com/groups/34943415835/" class="circle circle_social">
+            <i class="icon icon_large icon_facebook_large">
+            </i>
+          </a>
+          <a href="http://www.linkedin.com/groups/MountainWest-RubyConf-2907752?gid=2907752" class="circle circle_social">
+            <i class="icon icon_large icon_linkedin_large">
+            </i>
+          </a>
+        </footer>
+      </div>
     </div>
-  </div>
-  <div class="fade"></div>
-</div>
 
-<div class="wp pg_bd">
+    <footer class="page__footer">
+      &copy; MountainWest Ruby, LLC <br class="display-none pp_block"> <span class="pp_hide">&middot;</span> <a href="http://twitter.com/jaydenanderson">Design By Jayden Anderson</a>
+    </footer>
 
-  <div class="heading">
-    <h2>MWRC 2013 is two days of Ruby and one day of DevOps single-track awesomeness.</h2>
-  </div>
-  <div class="box">
-    {{ content }}
-  </div>
-  
-</div>
-
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-2009884-2");
-pageTracker._trackPageview();
-</script>
-
-
-</body>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-2009884-2");
+      pageTracker._trackPageview();
+    </script>
+  </body>
 </html>

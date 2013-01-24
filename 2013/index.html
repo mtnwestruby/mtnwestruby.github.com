@@ -1,14 +1,136 @@
 ---
 layout: '2013'
 ---
-{% for post in site.categories.2013 %}
-  <article class="box" id="{{ post.id | bookmark }}">
-    <div class="box__header">
-      <h3 class="hd">{{ post.title }}</h3>
+
+<header class="page__body__header header_bar">
+  <h2 class="mam serif font-style_italic font-weight_normal header__heading">MWRC 2013 is two days of Ruby and one day of DevOps single-track awesomeness.</h2>
+</header>
+
+    <div class="page__body__sub-header">
+
+      <section>
+        <div class="circle circle_kaleidoscope circle_kaleidoscope_3"> 
+          <article class="box_stat">
+            <header class="box__header">
+              III
+            </header>
+            <section class="box__body">
+              Days Of<br>Awesomeness
+            </section>
+          </article>
+        </div>
+
+        <div class="circle circle_kaleidoscope circle_kaleidoscope_2"> 
+          <article class="box_stat">
+            <header class="box__header">
+              II
+            </header>
+            <section class="box__body">
+              Days Of Ruby
+            </section>
+          </article>
+        </div>
+
+        <div class="circle circle_kaleidoscope circle_kaleidoscope_1"> 
+          <article class="box_stat">
+            <header class="box__header">
+              I
+            </header>
+            <section class="box__body">
+              Days Of DevOps
+            </section>
+          </article>
+        </div>
+      </section>
+
+      <section>
+
+        <div class="circle circle_kaleidoscope"> 
+          <article class="box_stat">
+            <header class="box__header">
+              II
+            </header>
+            <section class="box__body">
+              Days Of Ruby
+            </section>
+          </article>
+        </div>
+
+        <div class="circle circle_kaleidoscope"> 
+          <article class="box_stat">
+            <header class="box__header">
+              I
+            </header>
+            <section class="box__body">
+              Days Of DevOps
+            </section>
+          </article>
+        </div>
+
+        <div class="circle circle_kaleidoscope"> 
+          <article class="box_stat">
+            <header class="box__header">
+              II
+            </header>
+            <section class="box__body">
+              Days Of Ruby
+            </section>
+          </article>
+        </div>
+
+        <div class="circle circle_kaleidoscope"> 
+          <article class="box_stat">
+            <header class="box__header">
+              I
+            </header>
+            <section class="box__body">
+              Days Of DevOps
+            </section>
+          </article>
+        </div>
+
+      </section>
+
     </div>
-    <div class="box__body">
-      {{ post.content }}
-      <div class="posted">Posted {{ post.date | date_to_string }}</div>
+    <div class="g g_full ptl pll prl pbn text-align_center">
+      <header class="header header_underline">
+        <h6 class="header__heading h4 text-transform_upper">Announcements</h6>
+      </header>
     </div>
-  </article>
-{% endfor %}
+    <div class="c c_nested">
+      {% for post in site.categories.2013 %}
+        <div class="g g g_d4 g_tl6 g_pl12 pan">
+          <article class="box box_post" id="{{ post.id | bookmark }}">
+            <header class="box__header">
+              {{ post.title }}
+            </header>
+            <section class="box__subheadline">
+              Posted {{ post.date | date_to_string }}
+            </section>
+            <section class="box__body">
+              {{ post.content }}
+            </section>
+          </article>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="c c_colored">
+      <article class="box box_map">
+        <div class="box__header">
+          <div class="box_iframe">
+            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?client=safari&amp;q=salt+lake+city+public+library&amp;oe=UTF-8&amp;ie=UTF8&amp;hl=en&amp;hq=salt+lake+city+public+library&amp;t=m&amp;cid=66428271525700298&amp;ll=40.761366,-111.884251&amp;spn=0.022754,0.036478&amp;z=14&amp;output=embed"></iframe>
+          </div>
+        </div>
+        <div class="box__body">
+          <article class="box box_location">
+          <header class="box__header">April 3-5, 2013</header>
+          <section class="box__body">
+            <ul>
+              <li>Salt Lake City Public Library</li>
+              <li>210 E 400 S</li>
+              <li>Salt Lake City, UT 84111</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </div>
