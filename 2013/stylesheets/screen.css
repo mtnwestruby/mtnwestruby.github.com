@@ -3113,33 +3113,39 @@ Styleguide 2.2
     margin-top: 12px;
   }
 }
-/* line 124, ../sass/_modules/_media.scss */
+@media screen and (max-width: 700px) {
+  /* line 121, ../sass/_modules/_media.scss */
+  .media_speaker {
+    padding: 12px;
+  }
+}
+/* line 130, ../sass/_modules/_media.scss */
 .media_speaker__title {
   font-style: italic;
   margin-bottom: 12px;
 }
 
-/* line 131, ../sass/_modules/_media.scss */
+/* line 137, ../sass/_modules/_media.scss */
 .media_speaker__description {
   color: #555;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
 }
-/* line 137, ../sass/_modules/_media.scss */
+/* line 143, ../sass/_modules/_media.scss */
 .media_speaker__description p {
   margin-top: .75em;
 }
-/* line 139, ../sass/_modules/_media.scss */
+/* line 145, ../sass/_modules/_media.scss */
 .media_speaker__description p:first-child {
   margin-top: 0;
 }
-/* line 143, ../sass/_modules/_media.scss */
+/* line 149, ../sass/_modules/_media.scss */
 .media_speaker__description ul {
   margin-top: .75em;
   margin-left: 2em;
 }
-/* line 147, ../sass/_modules/_media.scss */
+/* line 153, ../sass/_modules/_media.scss */
 .media_speaker__description ol {
   margin-top: .75em;
   margin-left: 2em;
