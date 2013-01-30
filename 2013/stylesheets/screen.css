@@ -2560,44 +2560,45 @@ Styleguide 2.2
   float: left;
   font-weight: bold;
   line-height: 1em;
+  text-transform: uppercase;
 }
 
-/* line 16, ../sass/_modules/_header.scss */
+/* line 17, ../sass/_modules/_header.scss */
 .header__heading_with_button {
   line-height: 26px;
 }
 
-/* line 18, ../sass/_modules/_header.scss */
+/* line 19, ../sass/_modules/_header.scss */
 .header__heading_full {
   float: none;
   display: block;
   width: auto;
 }
 
-/* line 23, ../sass/_modules/_header.scss */
+/* line 24, ../sass/_modules/_header.scss */
 .header__actions {
   text-align: right;
   float: right;
   width: 22%;
 }
-/* line 27, ../sass/_modules/_header.scss */
+/* line 28, ../sass/_modules/_header.scss */
 .header__actions .button, .header__actions .nav_tabs .nav__link, .nav_tabs .header__actions .nav__link {
   display: block;
 }
 
-/* line 29, ../sass/_modules/_header.scss */
+/* line 30, ../sass/_modules/_header.scss */
 .header__actions_bottom {
   position: absolute;
   right: 0;
   bottom: .6em;
 }
 
-/* line 34, ../sass/_modules/_header.scss */
+/* line 35, ../sass/_modules/_header.scss */
 .header__actions_pagination {
   margin: -0.5em;
   width: auto;
 }
-/* line 37, ../sass/_modules/_header.scss */
+/* line 38, ../sass/_modules/_header.scss */
 .header__actions_pagination .button, .header__actions_pagination .nav_tabs .nav__link, .nav_tabs .header__actions_pagination .nav__link {
   background: none transparent;
   margin: -1px;
@@ -2606,59 +2607,59 @@ Styleguide 2.2
   -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.1);
   -ms-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.1);
 }
-/* line 42, ../sass/_modules/_header.scss */
+/* line 43, ../sass/_modules/_header.scss */
 .header__actions_pagination .button:hover, .header__actions_pagination .nav_tabs .nav__link:hover, .nav_tabs .header__actions_pagination .nav__link:hover {
   background: none transparent;
 }
-/* line 43, ../sass/_modules/_header.scss */
+/* line 44, ../sass/_modules/_header.scss */
 .header__actions_pagination .button:active, .header__actions_pagination .nav_tabs .nav__link:active, .nav_tabs .header__actions_pagination .nav__link:active {
   box-shadow: inset 1px 5px 0 rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 1px 5px 0 rgba(0, 0, 0, 0.15);
   -ms-box-shadow: inset 1px 5px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* line 50, ../sass/_modules/_header.scss */
+/* line 51, ../sass/_modules/_header.scss */
 .header_overline {
   border-top: 1px solid #DDDDDD;
   padding-top: .85714em;
   padding-bottom: .375em;
 }
 
-/* line 57, ../sass/_modules/_header.scss */
+/* line 58, ../sass/_modules/_header.scss */
 .header_underline {
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: .375em;
 }
 
-/* line 64, ../sass/_modules/_header.scss */
+/* line 65, ../sass/_modules/_header.scss */
 .header_actions-half .header__heading {
   width: 50%;
 }
-/* line 65, ../sass/_modules/_header.scss */
+/* line 66, ../sass/_modules/_header.scss */
 .header_actions-half .header__actions {
   width: 46%;
 }
 
-/* line 69, ../sass/_modules/_header.scss */
+/* line 70, ../sass/_modules/_header.scss */
 .header_bar {
   padding: 0.5em .5em 0.5em .85714em;
   line-height: 26px;
   vertical-align: middle;
 }
-/* line 75, ../sass/_modules/_header.scss */
+/* line 76, ../sass/_modules/_header.scss */
 .header_bar .button, .header_bar .nav_tabs .nav__link, .nav_tabs .header_bar .nav__link {
   display: block;
 }
-/* line 77, ../sass/_modules/_header.scss */
+/* line 78, ../sass/_modules/_header.scss */
 .header_bar .header_bar .header__heading {
   line-height: inherit;
 }
 
-/* line 79, ../sass/_modules/_header.scss */
+/* line 80, ../sass/_modules/_header.scss */
 .header_bar_actions-left {
   padding: 0.5em .85714em 0.5em .5em;
 }
-/* line 81, ../sass/_modules/_header.scss */
+/* line 82, ../sass/_modules/_header.scss */
 .header_bar_actions-left .header__actions {
   float: left;
   margin-right: 2%;
@@ -4542,63 +4543,72 @@ Styleguide 5.1
   background-color: #5c95ba;
   color: #fff;
 }
+/* line 23, ../sass/themes.scss */
+.bg_1.button:hover, .button:hover, .nav_tabs .nav__link:hover, .nav_tabs .header_bar.nav__link:hover, .nav_tabs .bg_1.nav__link:hover, .nav_tabs .nav__link.button:hover, .nav_tabs .nav-bar_main-tabs .nav__link.nav__item_main:hover, .nav-bar_main-tabs .nav_tabs .nav__link.nav__item_main:hover, .nav_tabs .nav__link.toggle-switch__handle:hover, .nav-bar_main-tabs .button.nav__item_main:hover {
+  background-color: #6aa5cb;
+  color: #fff;
+}
+/* line 24, ../sass/themes.scss */
+.bg_1.button:active, .button:active, .nav_tabs .nav__link:active, .nav_tabs .header_bar.nav__link:active, .nav_tabs .bg_1.nav__link:active, .nav_tabs .nav__link.button:active, .nav_tabs .nav-bar_main-tabs .nav__link.nav__item_main:active, .nav-bar_main-tabs .nav_tabs .nav__link.nav__item_main:active, .nav_tabs .nav__link.toggle-switch__handle:active, .nav-bar_main-tabs .button.nav__item_main:active {
+  background-color: #446f8b;
+}
 
-/* line 26, ../sass/themes.scss */
+/* line 28, ../sass/themes.scss */
 .bg_2, .button_secondary, .nav_tabs .nav__link {
   color: #fff;
   background-color: #7d7975;
 }
-/* line 29, ../sass/themes.scss */
+/* line 31, ../sass/themes.scss */
 .bg_2.button:hover, .button.button_secondary:hover, .nav_tabs .nav__link:hover, .nav_tabs .bg_2.nav__link:hover, .nav_tabs .nav__link.button_secondary:hover {
   background-color: #8f8b86;
   color: #fff;
 }
-/* line 30, ../sass/themes.scss */
+/* line 32, ../sass/themes.scss */
 .bg_2.button:active, .button.button_secondary:active, .nav_tabs .nav__link:active, .nav_tabs .bg_2.nav__link:active, .nav_tabs .nav__link.button_secondary:active {
   background-color: #595552;
 }
 
-/* line 34, ../sass/themes.scss */
+/* line 36, ../sass/themes.scss */
 .bg_3, .alert_notice, .button_tertiary, .button_close, .button_edit-contact, .nav_pills .nav__link.selected, .nav_tabs.nav_vert .nav__link.selected {
   background-color: rgba(49, 47, 44, 0.2);
   color: #fff;
 }
-/* line 37, ../sass/themes.scss */
+/* line 39, ../sass/themes.scss */
 .bg_3.button:hover, .button.alert_notice:hover, .nav_tabs .alert_notice.nav__link:hover, .button.button_tertiary:hover, .nav_tabs .button_tertiary.nav__link:hover, .button.button_close:hover, .nav_tabs .button_close.nav__link:hover, .button.button_edit-contact:hover, .nav_tabs .button_edit-contact.nav__link:hover, .nav_pills .button.nav__link.selected:hover, .nav_pills .nav_tabs .nav__link.selected:hover, .nav_tabs .nav_pills .nav__link.selected:hover, .nav_tabs .bg_3.nav__link:hover, .nav_tabs.nav_vert .nav__link.selected:hover, .nav_tabs.nav_vert .button.nav__link.selected:hover {
   color: #fff;
   background-color: rgba(49, 47, 44, 0.1);
 }
-/* line 38, ../sass/themes.scss */
+/* line 40, ../sass/themes.scss */
 .bg_3.button:active, .button.alert_notice:active, .nav_tabs .alert_notice.nav__link:active, .button.button_tertiary:active, .nav_tabs .button_tertiary.nav__link:active, .button.button_close:active, .nav_tabs .button_close.nav__link:active, .button.button_edit-contact:active, .nav_tabs .button_edit-contact.nav__link:active, .nav_pills .button.nav__link.selected:active, .nav_pills .nav_tabs .nav__link.selected:active, .nav_tabs .nav_pills .nav__link.selected:active, .nav_tabs .bg_3.nav__link:active, .nav_tabs.nav_vert .nav__link.selected:active, .nav_tabs.nav_vert .button.nav__link.selected:active {
   background-color: rgba(49, 47, 44, 0.3);
 }
 
-/* line 42, ../sass/themes.scss */
+/* line 44, ../sass/themes.scss */
 .bg_4, .alert_success, .alert_positive {
   color: #345112;
   background-color: #d6f987;
 }
-/* line 45, ../sass/themes.scss */
+/* line 47, ../sass/themes.scss */
 .bg_4.button:hover, .button.alert_success:hover, .nav_tabs .alert_success.nav__link:hover, .button.alert_positive:hover, .nav_tabs .alert_positive.nav__link:hover, .nav_tabs .bg_4.nav__link:hover {
   color: #345112;
   background-color: #e3ffa5;
 }
-/* line 46, ../sass/themes.scss */
+/* line 48, ../sass/themes.scss */
 .bg_4.button:active, .button.alert_success:active, .nav_tabs .alert_success.nav__link:active, .button.alert_positive:active, .nav_tabs .alert_positive.nav__link:active, .nav_tabs .bg_4.nav__link:active {
   background-color: #c1e471;
 }
 
-/* line 50, ../sass/themes.scss */
+/* line 52, ../sass/themes.scss */
 .bg_5 {
   color: #ffffff;
   background: #45464C;
 }
-/* line 53, ../sass/themes.scss */
+/* line 55, ../sass/themes.scss */
 .bg_5.button:hover, .nav_tabs .bg_5.nav__link:hover {
   color: #fff;
   background-color: #4e4f57;
 }
-/* line 54, ../sass/themes.scss */
+/* line 56, ../sass/themes.scss */
 .bg_5.button:active, .nav_tabs .bg_5.nav__link:active {
   background-color: #45464C;
 }

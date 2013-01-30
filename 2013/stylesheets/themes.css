@@ -76,63 +76,72 @@
   background-color: #5c95ba;
   color: #fff;
 }
+/* line 23, ../sass/themes.scss */
+.bg_1.button:hover {
+  background-color: #6aa5cb;
+  color: #fff;
+}
+/* line 24, ../sass/themes.scss */
+.bg_1.button:active {
+  background-color: #446f8b;
+}
 
-/* line 26, ../sass/themes.scss */
+/* line 28, ../sass/themes.scss */
 .bg_2 {
   color: #fff;
   background-color: #7d7975;
 }
-/* line 29, ../sass/themes.scss */
+/* line 31, ../sass/themes.scss */
 .bg_2.button:hover {
   background-color: #8f8b86;
   color: #fff;
 }
-/* line 30, ../sass/themes.scss */
+/* line 32, ../sass/themes.scss */
 .bg_2.button:active {
   background-color: #595552;
 }
 
-/* line 34, ../sass/themes.scss */
+/* line 36, ../sass/themes.scss */
 .bg_3 {
   background-color: rgba(49, 47, 44, 0.2);
   color: #fff;
 }
-/* line 37, ../sass/themes.scss */
+/* line 39, ../sass/themes.scss */
 .bg_3.button:hover {
   color: #fff;
   background-color: rgba(49, 47, 44, 0.1);
 }
-/* line 38, ../sass/themes.scss */
+/* line 40, ../sass/themes.scss */
 .bg_3.button:active {
   background-color: rgba(49, 47, 44, 0.3);
 }
 
-/* line 42, ../sass/themes.scss */
+/* line 44, ../sass/themes.scss */
 .bg_4 {
   color: #345112;
   background-color: #d6f987;
 }
-/* line 45, ../sass/themes.scss */
+/* line 47, ../sass/themes.scss */
 .bg_4.button:hover {
   color: #345112;
   background-color: #e3ffa5;
 }
-/* line 46, ../sass/themes.scss */
+/* line 48, ../sass/themes.scss */
 .bg_4.button:active {
   background-color: #c1e471;
 }
 
-/* line 50, ../sass/themes.scss */
+/* line 52, ../sass/themes.scss */
 .bg_5 {
   color: #ffffff;
   background: #45464C;
 }
-/* line 53, ../sass/themes.scss */
+/* line 55, ../sass/themes.scss */
 .bg_5.button:hover {
   color: #fff;
   background-color: #4e4f57;
 }
-/* line 54, ../sass/themes.scss */
+/* line 56, ../sass/themes.scss */
 .bg_5.button:active {
   background-color: #45464C;
 }
