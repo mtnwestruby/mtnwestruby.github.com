@@ -737,25 +737,26 @@ Page Template.
 .page__body__header .header__heading {
   font-weight: normal;
   opacity: .9;
+  text-transform: none;
   width: auto;
   float: none;
 }
 
 @media screen and (max-width: 600px) {
-  /* line 192, ../sass/_base/_page.scss */
+  /* line 193, ../sass/_base/_page.scss */
   .page__body__header {
     font-size: 1.28571em;
     padding: 0 !important;
   }
 }
-/* line 198, ../sass/_base/_page.scss */
+/* line 199, ../sass/_base/_page.scss */
 .page__body__footer {
   background: #5a6266;
   text-align: center;
   padding: 12px 0;
 }
 
-/* line 204, ../sass/_base/_page.scss */
+/* line 205, ../sass/_base/_page.scss */
 .page__body__sub-header {
   background: #cdebf0;
   text-align: center;
@@ -763,7 +764,7 @@ Page Template.
   margin: 2px 0;
 }
 
-/* line 211, ../sass/_base/_page.scss */
+/* line 212, ../sass/_base/_page.scss */
 .page__sidebar {
   display: block;
   float: right;
@@ -774,7 +775,7 @@ Page Template.
 }
 
 @media screen and (max-width: 900px) {
-  /* line 221, ../sass/_base/_page.scss */
+  /* line 222, ../sass/_base/_page.scss */
   .page__sidebar {
     display: block;
     float: right;
@@ -784,21 +785,21 @@ Page Template.
     padding: 6px;
   }
 }
-/* line 231, ../sass/_base/_page.scss */
+/* line 232, ../sass/_base/_page.scss */
 .page__main {
   display: table-cell;
   position: relative;
   padding: 0;
 }
 
-/* line 237, ../sass/_base/_page.scss */
+/* line 238, ../sass/_base/_page.scss */
 .page__main_full {
   display: block;
   width: 100%;
   padding: 0 .85714em;
 }
 
-/* line 245, ../sass/_base/_page.scss */
+/* line 246, ../sass/_base/_page.scss */
 .page__footer {
   text-transform: uppercase;
   text-align: center;
@@ -809,17 +810,17 @@ Page Template.
   letter-spacing: 6px;
   font-weight: bold;
 }
-/* line 255, ../sass/_base/_page.scss */
+/* line 256, ../sass/_base/_page.scss */
 .page__footer a {
   color: #5a6266;
 }
-/* line 255, ../sass/_base/_page.scss */
+/* line 256, ../sass/_base/_page.scss */
 .page__footer a:hover {
   color: #adb8bd;
 }
 
 @media screen and (max-width: 900px) {
-  /* line 259, ../sass/_base/_page.scss */
+  /* line 260, ../sass/_base/_page.scss */
   .page__footer {
     height: auto;
     line-height: 24px;
