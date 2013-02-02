@@ -594,8 +594,8 @@ Page Template.
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   /* line 60, ../sass/_base/_page.scss */
   .page__icon {
-    background-size: 202px 162px;
     background: url(/2013/images/logo-big@2x.png) no-repeat;
+    background-size: 202px 162px;
   }
 }
 @media screen and (max-width: 1008px) {
@@ -612,8 +612,8 @@ Page Template.
 @media screen and (max-width: 1008px) and (-webkit-min-device-pixel-ratio: 2) {
   /* line 78, ../sass/_base/_page.scss */
   .page__icon {
-    background-size: 65px 68px;
     background: url(/2013/images/logo-small@2x.png) no-repeat;
+    background-size: 65px 68px;
   }
 }
 @media screen and (max-width: 890px) {
@@ -658,8 +658,8 @@ Page Template.
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   /* line 122, ../sass/_base/_page.scss */
   .page__logotype {
-    background-size: 335px 84px;
     background: url(/2013/images/logotype@2x.png) no-repeat;
+    background-size: 335px 84px;
   }
 }
 @media screen and (max-width: 760px) {
