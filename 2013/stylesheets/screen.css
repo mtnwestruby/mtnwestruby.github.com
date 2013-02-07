@@ -1394,7 +1394,7 @@ Styleguide 17.0
   border: none;
 }
 
-@media screen and (max-width: 900px) and (min-width: 700px) {
+@media screen and (min-width: 700px) {
   /* line 61, ../sass/_modules/_box.scss */
   .box_post {
     height: 250px;
