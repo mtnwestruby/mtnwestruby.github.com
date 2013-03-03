@@ -893,7 +893,7 @@ textarea::input-placeholder {
 /* line 30, ../sass/_base/_content.scss */
 a {
   text-decoration: none;
-  color: #f86c28;
+  color: #5cba93;
   cursor: pointer;
   transition: color 0.25s ease-out border-color 0.25s ease-out opacity 0.25s linear background 0.25s ease-out;
   -webkit-transition: color 0.25s ease-out border-color 0.25s ease-out opacity 0.25s linear background 0.25s ease-out;
@@ -904,7 +904,7 @@ a {
 }
 /* line 36, ../sass/_base/_content.scss */
 a:hover {
-  color: #fb7e41;
+  color: #6fd1a9;
   transition: none;
   -webkit-transition: none;
   -moz-transition: none;
@@ -1362,51 +1362,63 @@ Styleguide 17.0
 
 /* line 30, ../sass/_modules/_box.scss */
 .box_post {
-  padding: 24px;
-  margin: 0;
+  padding: 24px 24px 25px 24px;
+  margin: 0 0 -1px 0;
+  border-right: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+  background: transparent;
 }
-/* line 33, ../sass/_modules/_box.scss */
+/* line 36, ../sass/_modules/_box.scss */
 .box_post .box__header {
   padding: 0 0 4px 0;
   font-weight: bold;
   font-size: 1.28571em;
 }
-/* line 39, ../sass/_modules/_box.scss */
+/* line 42, ../sass/_modules/_box.scss */
 .box_post .box__subheadline {
   padding: 0 0 6px 0;
   opacity: .3;
   font-size: .7em;
   text-transform: uppercase;
 }
-/* line 45, ../sass/_modules/_box.scss */
+/* line 48, ../sass/_modules/_box.scss */
 .box_post .box__body {
   padding: 0;
-  font-size: .8666em;
   line-height: 1.5em;
 }
-/* line 49, ../sass/_modules/_box.scss */
+/* line 51, ../sass/_modules/_box.scss */
 .box_post .box__body p {
   padding-bottom: .5em;
 }
-/* line 51, ../sass/_modules/_box.scss */
+/* line 53, ../sass/_modules/_box.scss */
 .box_post .box__footer {
   padding: 0;
   border: none;
 }
 
+/* line 59, ../sass/_modules/_box.scss */
+.box_posts {
+  border-bottom: 1px dashed #ddd;
+}
+
+/* line 64, ../sass/_modules/_box.scss */
+.box_posts .g:nth-child(3n+3) .box_post, .box_posts .nav_tabs_full .nav__item:nth-child(3n+3) .box_post, .nav_tabs_full .box_posts .nav__item:nth-child(3n+3) .box_post {
+  border-right: 0;
+}
+
 @media screen and (min-width: 700px) {
-  /* line 60, ../sass/_modules/_box.scss */
+  /* line 71, ../sass/_modules/_box.scss */
   .box_post {
-    height: 250px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 67, ../sass/_modules/_box.scss */
+  /* line 78, ../sass/_modules/_box.scss */
   .box_post .box__header {
     font-size: 1.28571em;
   }
 }
-/* line 79, ../sass/_modules/_box.scss */
+/* line 90, ../sass/_modules/_box.scss */
 .box_stat {
   position: relative;
   z-index: 5;
@@ -1419,14 +1431,14 @@ Styleguide 17.0
   padding: 0;
   margin: 8px;
 }
-/* line 90, ../sass/_modules/_box.scss */
+/* line 101, ../sass/_modules/_box.scss */
 .box_stat .box__header {
   font-weight: bold;
   font-size: 3.42857em;
   line-height: 48px;
   padding: 32px 0 8px 0;
 }
-/* line 96, ../sass/_modules/_box.scss */
+/* line 107, ../sass/_modules/_box.scss */
 .box_stat .box__body {
   padding: 0;
   font-size: .666em;
@@ -1435,7 +1447,7 @@ Styleguide 17.0
   font-weight: bold;
 }
 
-/* line 105, ../sass/_modules/_box.scss */
+/* line 116, ../sass/_modules/_box.scss */
 .box_iframe {
   position: relative;
   padding-bottom: 65.25%;
@@ -1444,7 +1456,7 @@ Styleguide 17.0
   overflow: hidden;
 }
 
-/* line 112, ../sass/_modules/_box.scss */
+/* line 123, ../sass/_modules/_box.scss */
 .box_iframe iframe {
   position: absolute;
   top: 0;
@@ -1453,7 +1465,7 @@ Styleguide 17.0
   height: 100%;
 }
 
-/* line 120, ../sass/_modules/_box.scss */
+/* line 131, ../sass/_modules/_box.scss */
 .box_location {
   position: absolute;
   top: 50%;
@@ -1468,18 +1480,18 @@ Styleguide 17.0
   background-color: transparent;
   color: #fff;
 }
-/* line 133, ../sass/_modules/_box.scss */
+/* line 144, ../sass/_modules/_box.scss */
 .box_location .box__header {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 137, ../sass/_modules/_box.scss */
+/* line 148, ../sass/_modules/_box.scss */
 .box_location .box__body {
   opacity: .5;
 }
 
 @media screen and (max-width: 700px) {
-  /* line 143, ../sass/_modules/_box.scss */
+  /* line 154, ../sass/_modules/_box.scss */
   .box_location {
     top: auto;
     left: auto;
@@ -1487,20 +1499,20 @@ Styleguide 17.0
     position: relative;
   }
 }
-/* line 151, ../sass/_modules/_box.scss */
+/* line 162, ../sass/_modules/_box.scss */
 .box_map {
   position: relative;
   background: #5cba93;
   padding: 0;
   margin: 24px;
 }
-/* line 156, ../sass/_modules/_box.scss */
+/* line 167, ../sass/_modules/_box.scss */
 .box_map > .box__header {
   width: 50%;
   float: left;
   padding: 0;
 }
-/* line 161, ../sass/_modules/_box.scss */
+/* line 172, ../sass/_modules/_box.scss */
 .box_map > .box__body {
   width: 50%;
   position: absolute;
@@ -1509,57 +1521,57 @@ Styleguide 17.0
 }
 
 @media screen and (max-width: 700px) {
-  /* line 171, ../sass/_modules/_box.scss */
+  /* line 182, ../sass/_modules/_box.scss */
   .box_map > .box__header {
     width: 100%;
     float: none;
     padding: 0;
   }
-  /* line 176, ../sass/_modules/_box.scss */
+  /* line 187, ../sass/_modules/_box.scss */
   .box_map > .box__body {
     width: 100%;
     position: relative;
     height: auto;
   }
 }
-/* line 184, ../sass/_modules/_box.scss */
+/* line 195, ../sass/_modules/_box.scss */
 .box_sponsor {
   padding: 24px;
   border-bottom: 1px dashed #ddd;
 }
-/* line 187, ../sass/_modules/_box.scss */
+/* line 198, ../sass/_modules/_box.scss */
 .box_sponsor:last-child {
   border-bottom: none;
 }
-/* line 190, ../sass/_modules/_box.scss */
+/* line 201, ../sass/_modules/_box.scss */
 .box_sponsor .box__hero {
   text-align: center;
   margin-bottom: 24px;
 }
-/* line 192, ../sass/_modules/_box.scss */
+/* line 203, ../sass/_modules/_box.scss */
 .box_sponsor .box__hero .figure, .box_sponsor .box__hero .figure_avatar, .box_sponsor .box__hero .figure_profile, .box_sponsor .box__hero .figure_frame, .box_sponsor .box__hero .figure_frame_stack, .box_sponsor .box__hero .figure_frame_thin {
   max-width: 200px;
 }
-/* line 197, ../sass/_modules/_box.scss */
+/* line 208, ../sass/_modules/_box.scss */
 .box_sponsor .box__header {
   font-weight: bold;
   padding: 0;
   margin-bottom: 24px;
 }
-/* line 202, ../sass/_modules/_box.scss */
+/* line 213, ../sass/_modules/_box.scss */
 .box_sponsor .box__body {
   padding: 0;
   line-height: 1.5em;
 }
-/* line 206, ../sass/_modules/_box.scss */
+/* line 217, ../sass/_modules/_box.scss */
 .box_sponsor .box__body p {
   margin-bottom: .5em;
 }
-/* line 208, ../sass/_modules/_box.scss */
+/* line 219, ../sass/_modules/_box.scss */
 .box_sponsor .box__body p:last-child {
   margin-bottom: 0;
 }
-/* line 213, ../sass/_modules/_box.scss */
+/* line 224, ../sass/_modules/_box.scss */
 .box_sponsor .box__footer {
   padding: 0;
 }
@@ -4746,18 +4758,18 @@ Styleguide 5.1
 }
 
 /* line 25, ../sass/utilities.scss */
-.clearfix:before, .c:before, .page__wrapper:before, .page__body:before, .alert:before, .alert_success:before, .alert_positive:before, .alert_error:before, .alert_negative:before, .alert_notice:before, .alert_info:before, .alert_tip:before, .box:before, .box__body:before, .box__footer:before, .button-bar:before, .button-row:before, .field:before, .ui-input-search:before, .field_stacked:before, .field_stacked .field__label:before, .header:before, .header_overline:before, .header_underline:before, .header_underline-dashed:before, .header_bar:before, .list:before, .list_contacts:before, .list_bullet:before, .list_rounded:before, .list_inline:before, .list_ordered:before, .list_box:before, .list_note:before, .media:before, .media_bubble:before, .media__footer:before, .nav:before, .nav_tabs:before, .nav-bar_tool:before, .gallery:before, .clearfix:after, .c:after, .page__wrapper:after, .page__body:after, .alert:after, .alert_success:after, .alert_positive:after, .alert_error:after, .alert_negative:after, .alert_notice:after, .alert_info:after, .alert_tip:after, .box:after, .box__body:after, .box__footer:after, .button-bar:after, .button-row:after, .field:after, .ui-input-search:after, .field_stacked:after, .field_stacked .field__label:after, .header:after, .header_overline:after, .header_underline:after, .header_underline-dashed:after, .header_bar:after, .list:after, .list_contacts:after, .list_bullet:after, .list_rounded:after, .list_inline:after, .list_ordered:after, .list_box:after, .list_note:after, .media:after, .media_bubble:after, .media__footer:after, .nav:after, .nav_tabs:after, .nav-bar_tool:after, .gallery:after {
+.clearfix:before, .c:before, .page__wrapper:before, .page__body:before, .alert:before, .alert_success:before, .alert_positive:before, .alert_error:before, .alert_negative:before, .alert_notice:before, .alert_info:before, .alert_tip:before, .box:before, .box__body:before, .box__footer:before, .box_posts:before, .button-bar:before, .button-row:before, .field:before, .ui-input-search:before, .field_stacked:before, .field_stacked .field__label:before, .header:before, .header_overline:before, .header_underline:before, .header_underline-dashed:before, .header_bar:before, .list:before, .list_contacts:before, .list_bullet:before, .list_rounded:before, .list_inline:before, .list_ordered:before, .list_box:before, .list_note:before, .media:before, .media_bubble:before, .media__footer:before, .nav:before, .nav_tabs:before, .nav-bar_tool:before, .gallery:before, .clearfix:after, .c:after, .page__wrapper:after, .page__body:after, .alert:after, .alert_success:after, .alert_positive:after, .alert_error:after, .alert_negative:after, .alert_notice:after, .alert_info:after, .alert_tip:after, .box:after, .box__body:after, .box__footer:after, .box_posts:after, .button-bar:after, .button-row:after, .field:after, .ui-input-search:after, .field_stacked:after, .field_stacked .field__label:after, .header:after, .header_overline:after, .header_underline:after, .header_underline-dashed:after, .header_bar:after, .list:after, .list_contacts:after, .list_bullet:after, .list_rounded:after, .list_inline:after, .list_ordered:after, .list_box:after, .list_note:after, .media:after, .media_bubble:after, .media__footer:after, .nav:after, .nav_tabs:after, .nav-bar_tool:after, .gallery:after {
   content: "";
   display: table;
 }
 
 /* line 26, ../sass/utilities.scss */
-.clearfix:after, .c:after, .page__wrapper:after, .page__body:after, .alert:after, .alert_success:after, .alert_positive:after, .alert_error:after, .alert_negative:after, .alert_notice:after, .alert_info:after, .alert_tip:after, .box:after, .box__body:after, .box__footer:after, .button-bar:after, .button-row:after, .field:after, .ui-input-search:after, .field_stacked:after, .field_stacked .field__label:after, .header:after, .header_overline:after, .header_underline:after, .header_underline-dashed:after, .header_bar:after, .list:after, .list_contacts:after, .list_bullet:after, .list_rounded:after, .list_inline:after, .list_ordered:after, .list_box:after, .list_note:after, .media:after, .media_bubble:after, .media__footer:after, .nav:after, .nav_tabs:after, .nav-bar_tool:after, .gallery:after {
+.clearfix:after, .c:after, .page__wrapper:after, .page__body:after, .alert:after, .alert_success:after, .alert_positive:after, .alert_error:after, .alert_negative:after, .alert_notice:after, .alert_info:after, .alert_tip:after, .box:after, .box__body:after, .box__footer:after, .box_posts:after, .button-bar:after, .button-row:after, .field:after, .ui-input-search:after, .field_stacked:after, .field_stacked .field__label:after, .header:after, .header_overline:after, .header_underline:after, .header_underline-dashed:after, .header_bar:after, .list:after, .list_contacts:after, .list_bullet:after, .list_rounded:after, .list_inline:after, .list_ordered:after, .list_box:after, .list_note:after, .media:after, .media_bubble:after, .media__footer:after, .nav:after, .nav_tabs:after, .nav-bar_tool:after, .gallery:after {
   clear: both;
 }
 
 /* line 27, ../sass/utilities.scss */
-.clearfix, .c, .page__wrapper, .page__body, .alert, .alert_success, .alert_positive, .alert_error, .alert_negative, .alert_notice, .alert_info, .alert_tip, .box, .box__body, .box__footer, .button-bar, .button-row, .field, .ui-input-search, .field_stacked, .field_stacked .field__label, .header, .header_overline, .header_underline, .header_underline-dashed, .header_bar, .list, .list_contacts, .list_bullet, .list_rounded, .list_inline, .list_ordered, .list_box, .list_note, .media, .media_bubble, .media__footer, .nav, .nav_tabs, .nav-bar_tool, .gallery {
+.clearfix, .c, .page__wrapper, .page__body, .alert, .alert_success, .alert_positive, .alert_error, .alert_negative, .alert_notice, .alert_info, .alert_tip, .box, .box__body, .box__footer, .box_posts, .button-bar, .button-row, .field, .ui-input-search, .field_stacked, .field_stacked .field__label, .header, .header_overline, .header_underline, .header_underline-dashed, .header_bar, .list, .list_contacts, .list_bullet, .list_rounded, .list_inline, .list_ordered, .list_box, .list_note, .media, .media_bubble, .media__footer, .nav, .nav_tabs, .nav-bar_tool, .gallery {
   zoom: 1;
 }
 

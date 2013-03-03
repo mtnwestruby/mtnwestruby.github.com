@@ -29,12 +29,12 @@ textarea::input-placeholder {
 // links
 a {
   text-decoration: none;
-  color: #f86c28;
+  color: #5cba93;
   cursor: pointer;
   @include transition(color .25s ease-out, border-color .25s ease-out, opacity .25s linear, background .25s ease-out);
   -webkit-backface-visibility: hidden;
   &:hover {
-    color: #fb7e41;
+    color: #6fd1a9;
     @include transition(none);
     outline:none
   }
