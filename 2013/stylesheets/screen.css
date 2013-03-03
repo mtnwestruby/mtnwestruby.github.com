@@ -988,7 +988,7 @@ a:active {
 }
 
 /* line 5, ../sass/_base/_spacing.scss */
-.block, .alert, .alert_success, .alert_positive, .alert_error, .alert_negative, .alert_notice, .alert_info, .alert_tip, .box, .media, .media_bubble {
+.block, .alert, .alert_success, .alert_positive, .alert_error, .alert_negative, .alert_notice, .alert_info, .alert_tip, .media, .media_bubble {
   margin-bottom: 1.5em;
 }
 
@@ -1084,7 +1084,7 @@ input, textarea {
 }
 
 /* line 23, ../sass/_base/_typography.scss */
-.serif, .page__body__header .header__heading, .page__footer, .box_post .box__header, .media_speaker__bio, .media_speaker__title, .media_speaker__description, .nav__page-info {
+.serif, .page__body__header .header__heading, .page__footer, .box_post .box__header, .box_sponsor .box__body, .media_speaker__bio, .media_speaker__title, .media_speaker__description, .nav__page-info {
   font-family: "chaparral-pro", "georgia", serif;
   text-rendering: optimizeLegibility;
 }
@@ -1326,87 +1326,87 @@ Styleguide 17.0
   background: #fff;
 }
 
-/* line 13, ../sass/_modules/_box.scss */
+/* line 12, ../sass/_modules/_box.scss */
 .box__header {
   padding: .85714em .85714em 0;
 }
 
-/* line 14, ../sass/_modules/_box.scss */
+/* line 13, ../sass/_modules/_box.scss */
 .box__subheadline {
   padding: .85714em .85714em 0;
 }
 
-/* line 15, ../sass/_modules/_box.scss */
+/* line 14, ../sass/_modules/_box.scss */
 .box__body {
   padding: .85714em;
 }
 
-/* line 16, ../sass/_modules/_box.scss */
+/* line 15, ../sass/_modules/_box.scss */
 .box__footer {
   padding: .85714em;
   border-top: 1px solid #ddd;
 }
 
-/* line 23, ../sass/_modules/_box.scss */
+/* line 22, ../sass/_modules/_box.scss */
 .box_rounded {
   border-radius: 2px;
 }
-/* line 25, ../sass/_modules/_box.scss */
+/* line 24, ../sass/_modules/_box.scss */
 .box_rounded .box__header {
   border-radius: 4px 4px 0 0;
 }
-/* line 26, ../sass/_modules/_box.scss */
+/* line 25, ../sass/_modules/_box.scss */
 .box_rounded .box__footer {
   border-radius: 0 0 4px 4px;
 }
 
-/* line 31, ../sass/_modules/_box.scss */
+/* line 30, ../sass/_modules/_box.scss */
 .box_post {
   padding: 24px;
   margin: 0;
 }
-/* line 34, ../sass/_modules/_box.scss */
+/* line 33, ../sass/_modules/_box.scss */
 .box_post .box__header {
   padding: 0 0 4px 0;
   font-weight: bold;
   font-size: 1.28571em;
 }
-/* line 40, ../sass/_modules/_box.scss */
+/* line 39, ../sass/_modules/_box.scss */
 .box_post .box__subheadline {
   padding: 0 0 6px 0;
   opacity: .3;
   font-size: .7em;
   text-transform: uppercase;
 }
-/* line 46, ../sass/_modules/_box.scss */
+/* line 45, ../sass/_modules/_box.scss */
 .box_post .box__body {
   padding: 0;
   font-size: .8666em;
   line-height: 1.5em;
 }
-/* line 50, ../sass/_modules/_box.scss */
+/* line 49, ../sass/_modules/_box.scss */
 .box_post .box__body p {
   padding-bottom: .5em;
 }
-/* line 52, ../sass/_modules/_box.scss */
+/* line 51, ../sass/_modules/_box.scss */
 .box_post .box__footer {
   padding: 0;
   border: none;
 }
 
 @media screen and (min-width: 700px) {
-  /* line 61, ../sass/_modules/_box.scss */
+  /* line 60, ../sass/_modules/_box.scss */
   .box_post {
     height: 250px;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 68, ../sass/_modules/_box.scss */
+  /* line 67, ../sass/_modules/_box.scss */
   .box_post .box__header {
     font-size: 1.28571em;
   }
 }
-/* line 80, ../sass/_modules/_box.scss */
+/* line 79, ../sass/_modules/_box.scss */
 .box_stat {
   position: relative;
   z-index: 5;
@@ -1419,14 +1419,14 @@ Styleguide 17.0
   padding: 0;
   margin: 8px;
 }
-/* line 91, ../sass/_modules/_box.scss */
+/* line 90, ../sass/_modules/_box.scss */
 .box_stat .box__header {
   font-weight: bold;
   font-size: 3.42857em;
   line-height: 48px;
   padding: 32px 0 8px 0;
 }
-/* line 97, ../sass/_modules/_box.scss */
+/* line 96, ../sass/_modules/_box.scss */
 .box_stat .box__body {
   padding: 0;
   font-size: .666em;
@@ -1435,7 +1435,7 @@ Styleguide 17.0
   font-weight: bold;
 }
 
-/* line 106, ../sass/_modules/_box.scss */
+/* line 105, ../sass/_modules/_box.scss */
 .box_iframe {
   position: relative;
   padding-bottom: 65.25%;
@@ -1444,7 +1444,7 @@ Styleguide 17.0
   overflow: hidden;
 }
 
-/* line 113, ../sass/_modules/_box.scss */
+/* line 112, ../sass/_modules/_box.scss */
 .box_iframe iframe {
   position: absolute;
   top: 0;
@@ -1453,7 +1453,7 @@ Styleguide 17.0
   height: 100%;
 }
 
-/* line 121, ../sass/_modules/_box.scss */
+/* line 120, ../sass/_modules/_box.scss */
 .box_location {
   position: absolute;
   top: 50%;
@@ -1468,18 +1468,18 @@ Styleguide 17.0
   background-color: transparent;
   color: #fff;
 }
-/* line 134, ../sass/_modules/_box.scss */
+/* line 133, ../sass/_modules/_box.scss */
 .box_location .box__header {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 138, ../sass/_modules/_box.scss */
+/* line 137, ../sass/_modules/_box.scss */
 .box_location .box__body {
   opacity: .5;
 }
 
 @media screen and (max-width: 700px) {
-  /* line 144, ../sass/_modules/_box.scss */
+  /* line 143, ../sass/_modules/_box.scss */
   .box_location {
     top: auto;
     left: auto;
@@ -1487,20 +1487,20 @@ Styleguide 17.0
     position: relative;
   }
 }
-/* line 152, ../sass/_modules/_box.scss */
+/* line 151, ../sass/_modules/_box.scss */
 .box_map {
   position: relative;
   background: #5cba93;
   padding: 0;
   margin: 24px;
 }
-/* line 157, ../sass/_modules/_box.scss */
+/* line 156, ../sass/_modules/_box.scss */
 .box_map > .box__header {
   width: 50%;
   float: left;
   padding: 0;
 }
-/* line 162, ../sass/_modules/_box.scss */
+/* line 161, ../sass/_modules/_box.scss */
 .box_map > .box__body {
   width: 50%;
   position: absolute;
@@ -1509,19 +1509,61 @@ Styleguide 17.0
 }
 
 @media screen and (max-width: 700px) {
-  /* line 172, ../sass/_modules/_box.scss */
+  /* line 171, ../sass/_modules/_box.scss */
   .box_map > .box__header {
     width: 100%;
     float: none;
     padding: 0;
   }
-  /* line 177, ../sass/_modules/_box.scss */
+  /* line 176, ../sass/_modules/_box.scss */
   .box_map > .box__body {
     width: 100%;
     position: relative;
     height: auto;
   }
 }
+/* line 184, ../sass/_modules/_box.scss */
+.box_sponsor {
+  padding: 24px;
+  border-bottom: 1px dashed #ddd;
+}
+/* line 187, ../sass/_modules/_box.scss */
+.box_sponsor:last-child {
+  border-bottom: none;
+}
+/* line 190, ../sass/_modules/_box.scss */
+.box_sponsor .box__hero {
+  text-align: center;
+  margin-bottom: 24px;
+}
+/* line 192, ../sass/_modules/_box.scss */
+.box_sponsor .box__hero .figure, .box_sponsor .box__hero .figure_avatar, .box_sponsor .box__hero .figure_profile, .box_sponsor .box__hero .figure_frame, .box_sponsor .box__hero .figure_frame_stack, .box_sponsor .box__hero .figure_frame_thin {
+  max-width: 200px;
+}
+/* line 197, ../sass/_modules/_box.scss */
+.box_sponsor .box__header {
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 24px;
+}
+/* line 202, ../sass/_modules/_box.scss */
+.box_sponsor .box__body {
+  padding: 0;
+  line-height: 1.5em;
+}
+/* line 206, ../sass/_modules/_box.scss */
+.box_sponsor .box__body p {
+  margin-bottom: .5em;
+}
+/* line 208, ../sass/_modules/_box.scss */
+.box_sponsor .box__body p:last-child {
+  margin-bottom: 0;
+}
+/* line 213, ../sass/_modules/_box.scss */
+.box_sponsor .box__footer {
+  padding: 0;
+}
+
 /*
 A button. Good for link tags or button elements.
 

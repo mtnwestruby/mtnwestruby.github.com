@@ -1,0 +1,156 @@
+.hero {
+  overflow: hidden;
+  position: relative;
+  background: #242121;
+  color: #fff;
+  text-align: center;
+  padding: .9em;
+  height: 88px;
+  line-height: 20px;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__header {
+  font-weight: bold;
+  @extend .futura;
+}
+
+.hero__footer {
+  margin-top: 1em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: .714em;
+}
+
+.hero__indicator {
+  position: absolute;
+  display: block;
+  background: rgba(248,108,40,1);
+  opacity: .1;
+  left: 50%;
+  height: 160px;
+  width: 160px;
+  bottom: -150px;
+  margin-left: -80px;
+  border-radius: 10000px;
+  -webkit-animation: bounce-up 1.3s 1;
+}
+
+.status_health_0 {
+  .hero__indicator {
+    @include grayscale(100%);
+  }
+}
+
+.status_health_1 {
+  .hero__indicator {
+    @include grayscale(90%);
+    height: 170px;
+    width: 170px;
+    bottom: -145px;
+    margin-left: -85px;
+  }
+}
+
+.status_health_2 {
+  .hero__indicator {
+    @include grayscale(80%);
+    height: 180px;
+    width: 180px;
+    bottom: -140px;
+    margin-left: -90px;
+  }
+}
+
+.status_health_3 {
+  .hero__indicator {
+    @include grayscale(70%);
+    height: 190px;
+    width: 190px;
+    bottom: -135px;
+    margin-left: -95px;
+  }
+}
+
+.status_health_4 {
+  .hero__indicator {
+    @include grayscale(60%);
+    height: 200px;
+    width: 200px;
+    bottom: -130px;
+    margin-left: -100px;
+  }
+}
+
+.status_health_5 {
+  .hero__indicator {
+    @include grayscale(50%);
+    height: 210px;
+    width: 210px;
+    bottom: -125px;
+    margin-left: -105px;
+  }
+}
+
+.status_health_6 {
+  .hero__indicator {
+    opacity: .2;
+    @include grayscale(40%);
+    height: 220px;
+    width: 220px;
+    bottom: -120px;
+    margin-left: -110px;
+  }
+}
+
+.status_health_7 {
+  .hero__indicator {
+    opacity: .3;
+    @include grayscale(30%);
+    height: 230px;
+    width: 230px;
+    bottom: -115px;
+    margin-left: -115px;
+  }
+}
+
+.status_health_8 {
+  .hero__indicator {
+    opacity: .4;
+    @include grayscale(20%);
+    height: 240px;
+    width: 240px;
+    bottom: -110px;
+    margin-left: -120px;
+  }
+}
+
+.status_health_9 {
+    .hero__indicator {
+    opacity: .5;
+    @include grayscale(10%);
+    height: 250px;
+    width: 250px;
+    bottom: -105px;
+    margin-left: -125px;
+  }
+}
+
+.status_health_10 {
+  .hero__indicator {
+    opacity: .6;
+    height: 280px;
+    width: 280px;
+    bottom: -90px;
+    margin-left: -140px;
+    -webkit-animation: bounce-up 1.3s 1, radiate 5s 1.3s infinite;
+    background-image: url("#{$image-directory}/smiley.png");
+    background-position: center 45%;
+    background-size: 187px 72px;
+    background-repeat: no-repeat;
+  }
+}

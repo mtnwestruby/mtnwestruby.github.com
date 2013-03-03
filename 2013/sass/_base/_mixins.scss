@@ -1,0 +1,28 @@
+// Custom Functions
+@import "_mixins/compact";
+
+//include needed mixins
+@import "_mixins/_prefixer.scss";
+@import "_mixins/_animation.scss";
+@import "_mixins/_appearance.scss";
+@import "_mixins/_box-shadow.scss";
+@import "_mixins/_box-sizing.scss";
+@import "_mixins/_linear-gradient.scss";
+@import "_mixins/_media-queries.scss";
+@import "_mixins/_opacity.scss";
+@import "_mixins/_radial-gradient.scss";
+@import "_mixins/_transform.scss";
+@import "_mixins/_transition.scss";
+@import "_mixins/_grayscale.scss";
+@import "_mixins/_blur.scss";
+
+
+@mixin fontstack{
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+@mixin fontstack-serif{
+  font-family: "chaparral-pro", "georgia", serif;
+  text-rendering: optimizeLegibility;
+}

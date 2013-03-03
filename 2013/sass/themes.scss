@@ -1,0 +1,57 @@
+
+// text colors
+.text_color_1 {color: #222; &:hover{color:#555;}}
+.text_color_2 {color: #555; &:hover{color:#888;}}
+.text_color_3 {color: #777; &:hover{color:#aaa;}}
+.text_color_4 {color: #aaa; &:hover{color:#ccc;}}
+.text_color_5 {color: #ccc; &:hover{color:#eee;}}
+.text_color_6 {color: #eee; &:hover{color:#fff;}}
+.text_color_7 {color: #fff; &:hover{color:#eee;}}
+
+.text_error {color: #C42424;}
+.text_success {color: #556F30;}
+
+// Background Colors
+// Some explantion for some of the psuedo classes in here, if the background is dark,
+// we want to change inputs, and buttons border color to not look fuzzy.
+// That's why you see those declarations like at the end of .bg_2
+
+// Light grey for buttons
+.bg_1 {
+  background-color: #5c95ba;
+  color: #fff;
+  &.button:hover { background-color: #6aa5cb; color: #fff; }
+  &.button:active { background-color: #446f8b; }
+} 
+
+// grey
+.bg_2 {
+  color:#fff;
+  background-color: #7d7975;
+  &.button:hover { background-color: #8f8b86; color: #fff; }
+  &.button:active { background-color: #595552; }
+}
+
+// Bright blue 
+.bg_3 {
+  background-color: rgba(49,47,44,.2);
+  color: #fff;
+  &.button:hover {color: #fff; background-color: rgba(49,47,44,.1);}
+  &.button:active { background-color: rgba(49,47,44,.3); }
+}
+
+// color_green
+.bg_4 {
+  color: #345112;
+  background-color: #d6f987;
+  &.button:hover {color: #345112; background-color: #e3ffa5;}
+  &.button:active { background-color: #c1e471; }
+}
+
+// color_dk-grey
+.bg_5 {
+  color: #ffffff;
+  background: #45464C;
+  &.button:hover { color: #fff; background-color: #4e4f57;}
+  &.button:active { background-color: #45464C; }
+}

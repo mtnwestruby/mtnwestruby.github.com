@@ -1,0 +1,4 @@
+@mixin grayscale ($desaturate) {
+//  content-box | border-box | inherit
+  @include prefixer(filter, grayscale($desaturate));
+}

@@ -1,0 +1,15 @@
+.slideshow_welcome {
+  position: fixed;
+  top: 44px;
+  bottom: 54px;
+  left: 0;
+  right: 0;
+  border-radius: 2px;
+  background: #373433;
+  color: #fff;
+  overflow: hidden;
+  margin: .85714em;
+  text-align: center;
+  .slideshow__content {padding: .85714em;}
+  .slideshow__background-image {display: block; width: 100%;}
+}
