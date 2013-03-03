@@ -1407,7 +1407,7 @@ Styleguide 17.0
     border-right: 0;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (max-width: 900px) {
   /* line 71, ../sass/_modules/_box.scss */
   .box_posts .g:nth-child(2n+2) .box_post, .box_posts .nav_tabs_full .nav__item:nth-child(2n+2) .box_post, .nav_tabs_full .box_posts .nav__item:nth-child(2n+2) .box_post {
     border-right: 0;
