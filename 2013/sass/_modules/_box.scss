@@ -67,7 +67,7 @@ Styleguide 17.0
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (max-width: 900px) {
   .box_posts .g:nth-child(2n+2) .box_post {
     border-right: 0;
   }
