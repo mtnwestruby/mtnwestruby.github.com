@@ -3,18 +3,19 @@
   position: relative;
   z-index: 1000;
   color: #fff;
-  background: #000;
-  background: rgba(26,39,33,.5);
+  background: #fff;
+  background: rgba(26,30,33,.4);
   @extend .futura;
   text-transform: uppercase;
+  @include transition(all .4s linear);
   .nav .nav__item {
     font-weight: bold;
     width: 198px;
     border-left: 1px dashed #000;
-    border-color: rgba(26,39,33,.2);
+    border-color: rgba(26,30,33,0);
     &:last-child {
       border-right: 1px dashed #000;
-      border-color: rgba(26,39,33,.2);
+      border-color: rgba(26,30,33,0);
     }
   }
   .nav__link {
@@ -22,8 +23,7 @@
     line-height: 88px;
     height: 88px;
     &:hover {
-      background-color: #000;
-      background-color: rgba(26,39,33,.2);
+      background-color: #5c95ba;
     }
   }
   .nav__link_two-lines {
@@ -33,10 +33,15 @@
   .nav:last-child .nav__item {
     &:first-child {
       border-left: 1px dashed #000;
-      border-color: rgba(26,39,33,.2);
+      border-color: rgba(26,30,33,0);
     }
   }
+
+  &.is-scrolled {
+    background: rgba(26,30,33,.9);
+  }
 }
+
 
 @media screen and (max-width: 890px) {
   .nav-bar {
@@ -52,7 +57,7 @@
     .nav:last-child .nav__item {
       border-right: none;
       border-left: 1px dashed #000;
-      border-color: rgba(0,0,0,.2);
+      border-color: rgba(26,30,33,0);
       &:first-child {border-left: none;}
     }
   }
@@ -60,10 +65,11 @@
 
 @media screen and (max-width: 760px) {
   .nav-bar {
+    background: rgba(26,30,33,.5);
+    height: auto;
     .nav {
       border-bottom: 1px dashed #000;
-      border-color: rgba(0,0,0,.2);
-      width: 100%;
+      border-color: rgba(26,30,33,0);
     }
     .nav__link {
       line-height: 43px;
@@ -80,7 +86,7 @@
     .nav:last-child .nav__item {
       border-right: none;
       border-left: 1px dashed #000;
-      border-color: rgba(0,0,0,.2);
+      border-color: rgba(26,30,33,0);
     }
   }
 }

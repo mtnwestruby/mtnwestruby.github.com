@@ -27,12 +27,6 @@ Page Template.
   z-index: 10;
 }
 
-@media screen and (max-width: 760px) {
-  .page__header {
-    position: absolute;
-  }
-}
-
 .page__hero {
   height: 440px;
   padding-top: 88px;
@@ -95,9 +89,10 @@ Page Template.
   }
 }
 
+
 @media screen and (max-width: 650px) {
   .page__icon_small {
-    top: 120px;
+    top: 94px;
   }
 }
 
