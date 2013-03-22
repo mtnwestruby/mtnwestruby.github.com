@@ -14,7 +14,7 @@ layout: '2013'
     </header>
   </div>
   <div class="g g_d6 g_pl12 g_separate pan">
-    <article class="media media_speaker">
+    <article id="matz" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/6738588a11b852833edf6aec90ef6fa3" class="figure__image">
         <a class="figure__icon" href="https://github.com/matz"><i class="icon icon_github"></i></a>
@@ -36,7 +36,7 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="sarahmei" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/92497f51734ed56687928d5fd68d870a" class="figure__image">
         <a class="figure__icon" href="https://github.com/sarahmei"><i class="icon icon_github"></i></a>
@@ -58,7 +58,7 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="byllc" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/67895f9ac57891b8f5d5f488ba27e603" class="figure__image">
         <a class="figure__icon" href="https://github.com/byllc"><i class="icon icon_github"></i></a>
@@ -80,7 +80,7 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="jpignata" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/03e04db3b6880c3a2f8114649312f733" class="figure__image">
         <a class="figure__icon" href="https://github.com/jpignata"><i class="icon icon_github"></i></a>
@@ -103,7 +103,7 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="michaelfairley" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/b3ed9bd44a7d22be2dd659be02e44754" class="figure__image">
         <a class="figure__icon" href="https://github.com/michaelfairley"><i class="icon icon_github"></i></a>
@@ -127,7 +127,7 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="craigkerstiens" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/d0d2af78fa2e24ec0a7a9af90a66c6a2" class="figure__image">
         <a class="figure__icon" href="https://github.com/craigkerstiens"><i class="icon icon_github"></i></a>
@@ -159,7 +159,7 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="cwoodcox" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/113240551234de8328aab7056eb6ce4b" class="figure__image">
         <a class="figure__icon" href="https://github.com/cwoodcox"><i class="icon icon icon_github"></i></a>
@@ -188,7 +188,7 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="greggyb" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/fc2118a17a41bd8379e9b2bd969d95f8" class="figure__image">
         <a class="figure__icon" href="https://github.com/gregbaugues"><i class="icon icon_github"></i></a>
@@ -213,27 +213,22 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="mkocher" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
-        <img src="http://www.gravatar.com/avatar/ce8b03e5750097942c58e12b46724312" class="figure__image">
-        <a class="figure__icon" href="https://github.com/gilesbowkett"><i class="icon icon_github"></i></a>
-        <a class="figure__icon" href="https://twitter.com/gilesgoatboy"><i class="icon icon_twitter"></i></a>
+        <img src="http://www.gravatar.com/avatar/8e4dfbcdf0134bf975019536d4429fc2" class="figure__image">
+        <a class="figure__icon" href="https://github.com/mkocher"><i class="icon icon_github"></i></a>
+        <a class="figure__icon" href="https://twitter.com/mkocher"><i class="icon icon_twitter"></i></a>
       </figure>
       <section class="media__content">
         <h3 class="media_speaker__header">
-          Giles Bowkett
-          <i class="media_speaker__bio icon icon_info" name="Giles Bowkett's been working with Ruby since 2006. He's used Ruby to build a MIDI breakbeat improviser; sentiment and grammar analysis for social media; a DSL for Mongo->SQL conversion and an automatic analyzer which implements the DSL for you; code similarity and repetition detectors for both Ruby and JavaScript; and countless Rails apps. He's worked with a member of the Rails core team and spoken at many Ruby conferences. He volunteers with his local RailsBridge chapter and helped start his local Ruby user group. He wrote a widely-praised book about Rails. 
-">i</i>
+          Matthew Kocher
+          <i class="media_speaker__bio icon icon_info" name="Matthew Kocher is a lead developer at Pivotal Labs working full time on Cloud Foundry. He enjoys deleting code, writing tests and watching logs fly by at 400 requests/second. In his spare time, he works on other open source projects like Pivotal Workstation and Lobot.">i</i>
         </h3>
         <h2 class="media_speaker__title">
-          Rails And Its Lovable, Demented Quirks
+          Ruby off the Rails: Building a distributed system in Ruby
         </h2>
         <section class="media_speaker__description">
-          <p>Have you ever noticed that pure Ruby codebases can be much more elegant to work with than Rails apps, over the long term? Rails provides an amazing, beautiful user experience for developers, especially at the beginning phases of a project, but that dream can turn into a nightmare when it comes time to refactor, or if you take a peek at the wrong chunk of internal logic.</p>
-
-          <p>Classic ideas from the object-oriented design tradition can make sense of Rails internals and ease the refactoring process, but sometimes, when Rails breaks classic rules of object-oriented programming, you have to wonder how valid those rules are. Some of those rules come from Smalltalk, a language very similar to Ruby; others come from less flexible and powerful languages like Java and C++. Ruby gives you many, many opportunities to re-interpret classic OO dogma. How many of those opportunities should you take?</p>
-
-          <p>This talk uncovers and mediates an implicit dialogue between the Rails code base and the OOP tradition. Sometimes, when the two disagree, the talk will highlight a clear winner. When no clear winner can be found, the talk will clarify the crux of the dissent. The topic is the power of Ruby.</p>
+          <p>Devops Borat said "is turtle all way down but at bottom is perl script, but in the case of Cloud Foundry there's Ruby at the bottom.  Rails is the right choice for building a web site, but the elegance of ruby can be applied to many other things including a Platform as a Service.  A full deploy of Cloud Foundry requires many different kinds of nodes, with multiple Sinatra apps, event machine based daemons, shared ruby gems, and small amounts of code in other languages like Lua, Go and C where it makes sense.  I'd like to take you on a tour of an open source codebase and project that really shows where you can go with Ruby.</p>
         </section>
       </section>
     </article>
@@ -242,7 +237,7 @@ layout: '2013'
 
   <div class="g g_d6 g_pl12 pan">
 
-    <article class="media media_speaker">
+    <article id="WardCunningham" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/5c819321db181e77b9010369807df2f9" class="figure__image">
         <a class="figure__icon" href="https://github.com/WardCunningham"><i class="icon icon_github"></i></a>
@@ -270,14 +265,14 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="zenspider" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="/2013/images/zenspider.jpg" class="figure__image">
         <a class="figure__icon" href="https://github.com/zenspider"><i class="icon icon_github"></i></a>
         <a class="figure__icon" href="https://twitter.com/the_zenspider"><i class="icon icon_twitter"></i></a>
       </figure>
       <section class="media__content">
-        <h3 id="zenspider" class="media_speaker__header">
+        <h3 class="media_speaker__header">
           Ryan Davis
           <i class="media_speaker__bio icon icon_info" name="
             Ryan Davis has been using Ruby since 2000 and is a founding member of the Seattle Ruby Brigade, the first and foremost ruby brigade in the world.
@@ -296,7 +291,7 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="jasonrclark" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/112e64ec009c408998b687c331be2091" class="figure__image">
         <a class="figure__icon" href="https://github.com/jasonrclark"><i class="icon icon_github"></i></a>
@@ -320,7 +315,7 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="thagomizer" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/ff9072f60e25730674ad0d18a140ff65" class="figure__image">
         <a class="figure__icon" href="https://github.com/thagomizer"><i class="icon icon_github"></i></a>
@@ -340,7 +335,7 @@ layout: '2013'
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="shaiguitar" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/4c3acdc3d93f54cc7a7281780ec8a4ee" class="figure__image">
         <a class="figure__icon" href="https://github.com/shaiguitar"><i class="icon icon_github"></i></a>
@@ -369,7 +364,7 @@ Shai enjoys solving problems, facing new challenges and playing jazz music when 
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="darkhelmet" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/48409ce1953c290351fcb875b20eccbb" class="figure__image">
         <a class="figure__icon" href="https://github.com/darkhelmet"><i class="icon icon_github"></i></a>
@@ -394,9 +389,7 @@ I work for Yardstick.">i</i>
       </section>
     </article>
 
-
-
-    <article class="media media_speaker">
+    <article id="bkeepers" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/20bfe76b3d6105641f879fe45cfc9272" class="figure__image">
         <a class="figure__icon" href="https://github.com/bkeepers"><i class="icon icon_github"></i></a>
@@ -420,7 +413,7 @@ I work for Yardstick.">i</i>
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="feyeleanor" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/fa2521c6539342333de9f42502657e5a" class="figure__image">
         <a class="figure__icon" href="https://github.com/feyeleanor"><i class="icon icon_github"></i></a>
@@ -447,7 +440,7 @@ I work for Yardstick.">i</i>
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="shageman" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/affa5b7b3a311fcf5f868859d586b410" class="figure__image">
         <a class="figure__icon" href="https://github.com/shageman"><i class="icon icon_github"></i></a>
@@ -469,7 +462,7 @@ I work for Yardstick.">i</i>
       </section>
     </article>
 
-    <article class="media media_speaker">
+    <article id="AntiTyping" class="media media_speaker">
       <figure class="media__block figure figure__speaker">
         <img src="http://www.gravatar.com/avatar/5fcb8d7cd6cbc8f9ae091e48c1340630" class="figure__image">
         <a class="figure__icon" href="https://github.com/dracco"><i class="icon icon_github"></i></a>
@@ -485,26 +478,6 @@ I work for Yardstick.">i</i>
         </h2>
         <section class="media_speaker__description">
           <p>Reading of the CRuby source code can provide unparalleled insight into the Ruby language. During this talk we will add new native Graph data type to CRuby. The new Graph data structure will be simple but on par with other native types such as Array or Hash. This talk will demonstrate that it is easy to experiment with CRuby and extend it. We will also demonstrate the speed advantage of using C to boost Ruby performance. We will implement a few of the greatest hits of graph algorithms: Breath First Search, Dijkstra, and Minimum Spanning Tree.</p>
-        </section>
-      </section>
-    </article>
-
-    <article class="media media_speaker">
-      <figure class="media__block figure figure__speaker">
-        <img src="http://www.gravatar.com/avatar/8e4dfbcdf0134bf975019536d4429fc2" class="figure__image">
-        <a class="figure__icon" href="https://github.com/mkocher"><i class="icon icon_github"></i></a>
-        <a class="figure__icon" href="https://twitter.com/mkocher"><i class="icon icon_twitter"></i></a>
-      </figure>
-      <section class="media__content">
-        <h3 class="media_speaker__header">
-          Matthew Kocher
-          <i class="media_speaker__bio icon icon_info" name="Matthew Kocher is a lead developer at Pivotal Labs working full time on Cloud Foundry. He enjoys deleting code, writing tests and watching logs fly by at 400 requests/second. In his spare time, he works on other open source projects like Pivotal Workstation and Lobot.">i</i>
-        </h3>
-        <h2 class="media_speaker__title">
-          Ruby off the Rails: Building a distributed system in Ruby
-        </h2>
-        <section class="media_speaker__description">
-          <p>Devops Borat said "is turtle all way down but at bottom is perl script, but in the case of Cloud Foundry there's Ruby at the bottom.  Rails is the right choice for building a web site, but the elegance of ruby can be applied to many other things including a Platform as a Service.  A full deploy of Cloud Foundry requires many different kinds of nodes, with multiple Sinatra apps, event machine based daemons, shared ruby gems, and small amounts of code in other languages like Lua, Go and C where it makes sense.  I'd like to take you on a tour of an open source codebase and project that really shows where you can go with Ruby.</p>
         </section>
       </section>
     </article>
