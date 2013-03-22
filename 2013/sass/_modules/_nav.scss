@@ -112,8 +112,14 @@ Styleguide 12.0
 .nav_tabs {
 	position: relative;
 	@extend .clearfix;
-	padding:6px;
-	background: rgba(125,121,117,.1);
+  @extend .h_small;
+  color: #777;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+  border-bottom: 2px solid #ddd;
+  height: 45px;
+  line-height: 43px;
 	.nav__item{
 		margin-bottom: -1px;
 		padding:0;
@@ -124,23 +130,26 @@ Styleguide 12.0
 	.nav__item:first-child .nav__button {margin-left:.375em;}
 	.nav__item:last-child .nav__button{margin-right:.375em;}
 	.nav__link{
-		@extend .button;
-		@extend .button_secondary;
 		border-radius: 0;
-	 	&.selected, &.state_selected{
-	 		@extend .button_active;
-	 		background-color:rgba(255,255,255,1) !important;
-  	}
-		&:hover {
+		border-bottom: 2px solid transparent;
+	}
+	.ui-state-active {
+		.nav__link {
 			color: #333;
-			background-color: #ffffff;
-			cursor: default;	
+			border-color: #333;
+			outline-color: transparent;
 		}
 	}
 }
 
 .nav_tabs_two {
 	.nav__item{width:50%;}
+}
+
+
+
+.nav_tabs_three {
+	.nav__item{width:33.33333333%;}
 }
 
 .nav_tabs_full {

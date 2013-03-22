@@ -999,7 +999,7 @@ a:active {
 
 /* line 1, ../sass/_base/_heading.scss */
 .heading, .h1, .h2, .page__branding__name .page__name, .h3, .media_speaker__title, .h4, .page__header__headline, .h5, .media_speaker__header, .modal_profile .modal__window__header .modal__window__heading, .h6, .h_large, .h_xlarge {
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 /* line 4, ../sass/_base/_heading.scss */
@@ -1049,7 +1049,7 @@ a:active {
 }
 
 /* line 30, ../sass/_base/_heading.scss */
-.h_small {
+.h_small, .list_schedule .list__item__header, .nav_tabs {
   letter-spacing: 4px;
   font-size: .8em;
 }
@@ -1244,7 +1244,7 @@ input, textarea {
   width: 20%;
 }
 /* line 100, ../sass/_modules/_alert.scss */
-.alert_action .alert__actions .button, .alert_action .alert__actions .nav_tabs .nav__link, .nav_tabs .alert_action .alert__actions .nav__link {
+.alert_action .alert__actions .button {
   display: block;
 }
 
@@ -1599,7 +1599,7 @@ A button. Good for link tags or button elements.
 Styleguide 1.0
 */
 /* line 11, ../sass/_modules/_button.scss */
-.button, .nav_tabs .nav__link {
+.button {
   height: 30px;
   padding: 0 9px;
   position: relative;
@@ -1684,7 +1684,7 @@ Styleguide 1.0
 }
 
 /* line 89, ../sass/_modules/_button.scss */
-.button.button_square-large, .nav_tabs .button_square-large.nav__link {
+.button.button_square-large {
   display: block;
   height: 40px;
   width: 40px;
@@ -1697,7 +1697,7 @@ Styleguide 1.0
   padding: 0;
 }
 /* line 97, ../sass/_modules/_button.scss */
-.button.button_square-large .icon, .nav_tabs .button_square-large.nav__link .icon, .button.button_square-large .ui-input-search:after, .nav_tabs .button_square-large.nav__link .ui-input-search:after {
+.button.button_square-large .icon, .button.button_square-large .ui-input-search:after {
   display: block;
   margin: 8px 8px 0 7px;
 }
@@ -1711,7 +1711,7 @@ Styleguide 1.0
 }
 
 /* line 120, ../sass/_modules/_button.scss */
-.button_active, .button_round-toggle.state_active, .nav_tabs .nav__link.selected, .nav_tabs .nav__link.state_selected {
+.button_active, .button_round-toggle.state_active {
   background-color: transparent !important;
   color: rgba(248, 108, 40, 0.9) !important;
   box-shadow: inset 0 0 0 2px rgba(248, 108, 40, 0.9);
@@ -1869,7 +1869,7 @@ Styleguide 1.0
   border-radius: 2px;
 }
 /* line 260, ../sass/_modules/_button.scss */
-.button-bar .button, .button-bar .nav_tabs .nav__link, .nav_tabs .button-bar .nav__link {
+.button-bar .button {
   box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);
   -ms-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);
@@ -1880,7 +1880,7 @@ Styleguide 1.0
   border-left-width: 0;
 }
 /* line 268, ../sass/_modules/_button.scss */
-.button-bar .button:first-child, .button-bar .nav_tabs .nav__link:first-child, .nav_tabs .button-bar .nav__link:first-child {
+.button-bar .button:first-child {
   box-shadow: none;
   -webkit-box-shadow: none;
   -ms-box-shadow: none;
@@ -1889,17 +1889,17 @@ Styleguide 1.0
   border-left-width: 1px;
 }
 /* line 269, ../sass/_modules/_button.scss */
-.button-bar .button:last-child, .button-bar .nav_tabs .nav__link:last-child, .nav_tabs .button-bar .nav__link:last-child {
+.button-bar .button:last-child {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 /* line 270, ../sass/_modules/_button.scss */
-.button-bar .button:active, .button-bar .nav_tabs .nav__link:active, .nav_tabs .button-bar .nav__link:active {
+.button-bar .button:active {
   position: relative;
   z-index: 1;
 }
 /* line 274, ../sass/_modules/_button.scss */
-.button-bar .button.active, .button-bar .nav_tabs .active.nav__link, .nav_tabs .button-bar .active.nav__link, .button-bar .button.current, .button-bar .nav_tabs .current.nav__link, .nav_tabs .button-bar .current.nav__link {
+.button-bar .button.active, .button-bar .button.current {
   position: relative;
   z-index: 1;
   background-color: #5682d3;
@@ -1911,30 +1911,30 @@ Styleguide 1.0
   background-image: none;
 }
 /* line 284, ../sass/_modules/_button.scss */
-.button-bar .button.active:hover, .button-bar .nav_tabs .active.nav__link:hover, .nav_tabs .button-bar .active.nav__link:hover, .button-bar .button.current:hover, .button-bar .nav_tabs .current.nav__link:hover, .nav_tabs .button-bar .current.nav__link:hover {
+.button-bar .button.active:hover, .button-bar .button.current:hover {
   cursor: default;
 }
 
 /* line 288, ../sass/_modules/_button.scss */
-.button-bar_3 .button, .button-bar_3 .nav_tabs .nav__link, .nav_tabs .button-bar_3 .nav__link {
+.button-bar_3 .button {
   padding: 0;
   width: 33.333%;
 }
 
 /* line 289, ../sass/_modules/_button.scss */
-.button-bar_4 .button, .button-bar_4 .nav_tabs .nav__link, .nav_tabs .button-bar_4 .nav__link {
+.button-bar_4 .button {
   padding: 0;
   width: 25%;
 }
 
 /* line 290, ../sass/_modules/_button.scss */
-.button-bar_5 .button, .button-bar_5 .nav_tabs .nav__link, .nav_tabs .button-bar_5 .nav__link {
+.button-bar_5 .button {
   padding: 0;
   width: 20%;
 }
 
 /* line 291, ../sass/_modules/_button.scss */
-.button-bar_6 .button, .button-bar_6 .nav_tabs .nav__link, .nav_tabs .button-bar_6 .nav__link {
+.button-bar_6 .button {
   padding: 0;
   width: 16.66%;
 }
@@ -1959,7 +1959,7 @@ Styleguide 1.0
   padding-right: 0;
 }
 /* line 305, ../sass/_modules/_button.scss */
-.button-row .button, .button-row .nav_tabs .nav__link, .nav_tabs .button-row .nav__link {
+.button-row .button {
   display: block;
   padding: 0;
 }
@@ -2214,7 +2214,7 @@ Styleguide 13.0
 }
 
 /* line 98, ../sass/_modules/_field.scss */
-.field_single .button, .field_single .nav_tabs .nav__link, .nav_tabs .field_single .nav__link {
+.field_single .button {
   width: 5.2em;
   position: absolute;
   right: 0;
@@ -2662,7 +2662,7 @@ Styleguide 2.2
   width: 22%;
 }
 /* line 28, ../sass/_modules/_header.scss */
-.header__actions .button, .header__actions .nav_tabs .nav__link, .nav_tabs .header__actions .nav__link {
+.header__actions .button {
   display: block;
 }
 
@@ -2679,7 +2679,7 @@ Styleguide 2.2
   width: auto;
 }
 /* line 38, ../sass/_modules/_header.scss */
-.header__actions_pagination .button, .header__actions_pagination .nav_tabs .nav__link, .nav_tabs .header__actions_pagination .nav__link {
+.header__actions_pagination .button {
   background: none transparent;
   margin: -1px;
   border-radius: 0;
@@ -2688,11 +2688,11 @@ Styleguide 2.2
   -ms-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.1);
 }
 /* line 43, ../sass/_modules/_header.scss */
-.header__actions_pagination .button:hover, .header__actions_pagination .nav_tabs .nav__link:hover, .nav_tabs .header__actions_pagination .nav__link:hover {
+.header__actions_pagination .button:hover {
   background: none transparent;
 }
 /* line 44, ../sass/_modules/_header.scss */
-.header__actions_pagination .button:active, .header__actions_pagination .nav_tabs .nav__link:active, .nav_tabs .header__actions_pagination .nav__link:active {
+.header__actions_pagination .button:active {
   box-shadow: inset 1px 5px 0 rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 1px 5px 0 rgba(0, 0, 0, 0.15);
   -ms-box-shadow: inset 1px 5px 0 rgba(0, 0, 0, 0.15);
@@ -2733,7 +2733,7 @@ Styleguide 2.2
   vertical-align: middle;
 }
 /* line 83, ../sass/_modules/_header.scss */
-.header_bar .button, .header_bar .nav_tabs .nav__link, .nav_tabs .header_bar .nav__link {
+.header_bar .button {
   display: block;
 }
 /* line 85, ../sass/_modules/_header.scss */
@@ -3029,6 +3029,62 @@ Styleguide 2.2
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* line 140, ../sass/_modules/_list.scss */
+.list_schedule {
+  position: relative;
+  text-align: center;
+}
+/* line 143, ../sass/_modules/_list.scss */
+.list_schedule .list__body:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 24px;
+  width: 2px;
+  bottom: 24px;
+  margin-left: -1px;
+  background: #ddd;
+}
+/* line 154, ../sass/_modules/_list.scss */
+.list_schedule .list__item {
+  position: relative;
+  z-index: 1;
+  margin: 24px  auto;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(161, 169, 181, 0.5);
+  max-width: 50%;
+  min-width: 272px;
+  padding: 24px;
+  border-radius: 4px;
+}
+/* line 165, ../sass/_modules/_list.scss */
+.list_schedule .list__item:before {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  content: "";
+  top: -8px;
+  margin: 0 auto;
+  margin-left: -6px;
+  left: 50%;
+  height: 12px;
+  width: 12px;
+  background: #5c95ba;
+  -webkit-transform: rotate3d(0, 0, 0, 45deg);
+}
+/* line 180, ../sass/_modules/_list.scss */
+.list_schedule a {
+  display: block;
+}
+/* line 181, ../sass/_modules/_list.scss */
+.list_schedule .list__item__header {
+  color: #5c95ba;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* line 2, ../sass/_modules/_media.scss */
@@ -3542,109 +3598,116 @@ Styleguide 12.0
 /* line 112, ../sass/_modules/_nav.scss */
 .nav_tabs {
   position: relative;
-  padding: 6px;
-  background: rgba(125, 121, 117, 0.1);
+  color: #777;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+  border-bottom: 2px solid #ddd;
+  height: 45px;
+  line-height: 43px;
 }
-/* line 117, ../sass/_modules/_nav.scss */
+/* line 123, ../sass/_modules/_nav.scss */
 .nav_tabs .nav__item {
   margin-bottom: -1px;
   padding: 0;
   text-align: center;
   width: 50%;
 }
-/* line 123, ../sass/_modules/_nav.scss */
+/* line 129, ../sass/_modules/_nav.scss */
 .nav_tabs .nav__item:first-child .nav__link {
   padding: 0 .85714em;
   border-right: none;
 }
-/* line 124, ../sass/_modules/_nav.scss */
+/* line 130, ../sass/_modules/_nav.scss */
 .nav_tabs .nav__item:first-child .nav__button {
   margin-left: .375em;
 }
-/* line 125, ../sass/_modules/_nav.scss */
+/* line 131, ../sass/_modules/_nav.scss */
 .nav_tabs .nav__item:last-child .nav__button {
   margin-right: .375em;
 }
-/* line 126, ../sass/_modules/_nav.scss */
+/* line 132, ../sass/_modules/_nav.scss */
 .nav_tabs .nav__link {
   border-radius: 0;
+  border-bottom: 2px solid transparent;
 }
-/* line 130, ../sass/_modules/_nav.scss */
-.nav_tabs .nav__link.selected, .nav_tabs .nav__link.state_selected {
-  background-color: white !important;
-}
-/* line 134, ../sass/_modules/_nav.scss */
-.nav_tabs .nav__link:hover {
+/* line 137, ../sass/_modules/_nav.scss */
+.nav_tabs .ui-state-active .nav__link {
   color: #333;
-  background-color: #ffffff;
-  cursor: default;
+  border-color: #333;
+  outline-color: transparent;
 }
 
-/* line 143, ../sass/_modules/_nav.scss */
+/* line 146, ../sass/_modules/_nav.scss */
 .nav_tabs_two .nav__item {
   width: 50%;
 }
 
-/* line 147, ../sass/_modules/_nav.scss */
+/* line 152, ../sass/_modules/_nav.scss */
+.nav_tabs_three .nav__item {
+  width: 33.33333333%;
+}
+
+/* line 156, ../sass/_modules/_nav.scss */
 .nav_tabs_full .nav__item {
   width: 50%;
   margin: 0;
   padding: 0 .85714em;
 }
-/* line 153, ../sass/_modules/_nav.scss */
+/* line 162, ../sass/_modules/_nav.scss */
 .nav_tabs_full .nav__link {
   display: block;
   padding: 0 4px;
 }
 
-/* line 160, ../sass/_modules/_nav.scss */
+/* line 169, ../sass/_modules/_nav.scss */
 .nav_tabs_full_3 .nav__item {
   width: 33.3333%;
 }
 
-/* line 163, ../sass/_modules/_nav.scss */
+/* line 172, ../sass/_modules/_nav.scss */
 .nav_tabs_full_4 .nav__item {
   width: 25%;
 }
 
-/* line 166, ../sass/_modules/_nav.scss */
+/* line 175, ../sass/_modules/_nav.scss */
 .nav_tabs_full_5 .nav__item {
   width: 20%%;
 }
 
-/* line 172, ../sass/_modules/_nav.scss */
+/* line 181, ../sass/_modules/_nav.scss */
 .nav_tabs-line {
   border-bottom: 1px solid #ccc;
 }
-/* line 174, ../sass/_modules/_nav.scss */
+/* line 183, ../sass/_modules/_nav.scss */
 .nav_tabs-line .nav__link.selected {
   border-bottom-color: #ccc;
 }
 
-/* line 179, ../sass/_modules/_nav.scss */
+/* line 188, ../sass/_modules/_nav.scss */
 .nav_tabs.nav_vert {
   border: 1px solid #ccc;
   border-radius: 2px;
 }
-/* line 182, ../sass/_modules/_nav.scss */
+/* line 191, ../sass/_modules/_nav.scss */
 .nav_tabs.nav_vert .nav__item {
   margin-bottom: 0;
   padding: 0;
   margin-right: 0;
 }
-/* line 186, ../sass/_modules/_nav.scss */
+/* line 195, ../sass/_modules/_nav.scss */
 .nav_tabs.nav_vert .nav__item:first-child .nav__link {
   border-radius: 3px 3px 0 0;
 }
-/* line 187, ../sass/_modules/_nav.scss */
+/* line 196, ../sass/_modules/_nav.scss */
 .nav_tabs.nav_vert .nav__item:last-child .nav__link {
   border-radius: 0 0 3px 3px;
 }
-/* line 189, ../sass/_modules/_nav.scss */
+/* line 198, ../sass/_modules/_nav.scss */
 .nav_tabs.nav_vert .nav__item:first-child .nav__link, .nav_tabs.nav_vert .nav__item:last-child .nav__link {
   padding: 0 0.85714em;
 }
-/* line 190, ../sass/_modules/_nav.scss */
+/* line 199, ../sass/_modules/_nav.scss */
 .nav_tabs.nav_vert .nav__link {
   height: 38px;
   line-height: 38px;
@@ -3653,7 +3716,7 @@ Styleguide 12.0
   border: none;
   border-radius: 0;
 }
-/* line 197, ../sass/_modules/_nav.scss */
+/* line 206, ../sass/_modules/_nav.scss */
 .nav_tabs.nav_vert .nav__link.selected {
   position: relative;
   z-index: 1;
@@ -3662,43 +3725,43 @@ Styleguide 12.0
   margin-left: -1px;
   margin-right: -1px;
 }
-/* line 206, ../sass/_modules/_nav.scss */
+/* line 215, ../sass/_modules/_nav.scss */
 .nav_tabs.nav_vert .nav__link:hover {
   background-color: #eeeeee;
 }
 
-/* line 216, ../sass/_modules/_nav.scss */
+/* line 225, ../sass/_modules/_nav.scss */
 .nav_toolbar .nav__item {
   margin-left: 4px;
   margin-right: 4px;
 }
-/* line 217, ../sass/_modules/_nav.scss */
+/* line 226, ../sass/_modules/_nav.scss */
 .nav_toolbar .nav__item:last-child {
   margin-right: 0;
 }
-/* line 218, ../sass/_modules/_nav.scss */
+/* line 227, ../sass/_modules/_nav.scss */
 .nav_toolbar .nav__item:first-child {
   margin-left: 0;
 }
-/* line 219, ../sass/_modules/_nav.scss */
+/* line 228, ../sass/_modules/_nav.scss */
 .nav_toolbar .nav__button {
   margin: 0;
   padding: 0;
 }
-/* line 220, ../sass/_modules/_nav.scss */
+/* line 229, ../sass/_modules/_nav.scss */
 .nav_toolbar .nav__button-bar {
   margin: 0;
   padding: 0;
 }
 
-/* line 225, ../sass/_modules/_nav.scss */
+/* line 234, ../sass/_modules/_nav.scss */
 .nav__item_preview__image {
   width: 30px;
   vertical-align: middle;
   margin-right: 4px;
 }
 
-/* line 230, ../sass/_modules/_nav.scss */
+/* line 239, ../sass/_modules/_nav.scss */
 .nav__page-info {
   position: absolute;
   top: 50%;
@@ -3710,7 +3773,7 @@ Styleguide 12.0
   font-weight: bold;
   text-shadow: 0 0 20px black;
 }
-/* line 241, ../sass/_modules/_nav.scss */
+/* line 250, ../sass/_modules/_nav.scss */
 .nav__page-info .nav__item {
   border-top: 3px double #fff;
   border-bottom: 3px solid #fff;
@@ -3722,38 +3785,38 @@ Styleguide 12.0
 }
 
 @media screen and (max-width: 960px) {
-  /* line 254, ../sass/_modules/_nav.scss */
+  /* line 263, ../sass/_modules/_nav.scss */
   .nav__page-info {
     top: auto;
     bottom: 22px;
   }
-  /* line 257, ../sass/_modules/_nav.scss */
+  /* line 266, ../sass/_modules/_nav.scss */
   .nav__page-info .nav__item {
     width: 45%;
     margin: 0 2.5%;
   }
 }
 @media screen and (max-width: 760px) {
-  /* line 266, ../sass/_modules/_nav.scss */
+  /* line 275, ../sass/_modules/_nav.scss */
   .nav__page-info {
     top: 180px;
     bottom: auto;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 273, ../sass/_modules/_nav.scss */
+  /* line 282, ../sass/_modules/_nav.scss */
   .nav__page-info {
     top: 140px;
     bottom: auto;
   }
-  /* line 276, ../sass/_modules/_nav.scss */
+  /* line 285, ../sass/_modules/_nav.scss */
   .nav__page-info .nav__item {
     float: none !important;
     width: auto;
     margin: 0 2.5%;
     border-bottom: 1px dashed #fff;
   }
-  /* line 281, ../sass/_modules/_nav.scss */
+  /* line 290, ../sass/_modules/_nav.scss */
   .nav__page-info .nav__item:last-child {
     border-top: none;
     border-bottom: 3px double #fff;
@@ -4625,32 +4688,32 @@ Styleguide 5.1
 }
 
 /* line 20, ../sass/themes.scss */
-.bg_1, .button, .nav_tabs .nav__link, .header_bar, .nav-bar_main-tabs .nav__item_main, .toggle-switch__handle {
+.bg_1, .button, .header_bar, .nav-bar_main-tabs .nav__item_main, .toggle-switch__handle {
   background-color: #5c95ba;
   color: #fff;
 }
 /* line 23, ../sass/themes.scss */
-.bg_1.button:hover, .button:hover, .nav_tabs .nav__link:hover, .nav_tabs .header_bar.nav__link:hover, .nav_tabs .bg_1.nav__link:hover, .nav_tabs .nav__link.button:hover, .nav_tabs .nav-bar_main-tabs .nav__link.nav__item_main:hover, .nav-bar_main-tabs .nav_tabs .nav__link.nav__item_main:hover, .nav_tabs .nav__link.toggle-switch__handle:hover, .nav-bar_main-tabs .button.nav__item_main:hover {
+.bg_1.button:hover, .button:hover {
   background-color: #6aa5cb;
   color: #fff;
 }
 /* line 24, ../sass/themes.scss */
-.bg_1.button:active, .button:active, .nav_tabs .nav__link:active, .nav_tabs .header_bar.nav__link:active, .nav_tabs .bg_1.nav__link:active, .nav_tabs .nav__link.button:active, .nav_tabs .nav-bar_main-tabs .nav__link.nav__item_main:active, .nav-bar_main-tabs .nav_tabs .nav__link.nav__item_main:active, .nav_tabs .nav__link.toggle-switch__handle:active, .nav-bar_main-tabs .button.nav__item_main:active {
+.bg_1.button:active, .button:active {
   background-color: #446f8b;
 }
 
 /* line 28, ../sass/themes.scss */
-.bg_2, .button_secondary, .nav_tabs .nav__link {
+.bg_2, .button_secondary {
   color: #fff;
   background-color: #7d7975;
 }
 /* line 31, ../sass/themes.scss */
-.bg_2.button:hover, .button.button_secondary:hover, .nav_tabs .nav__link:hover, .nav_tabs .bg_2.nav__link:hover, .nav_tabs .nav__link.button_secondary:hover {
+.bg_2.button:hover, .button.button_secondary:hover {
   background-color: #8f8b86;
   color: #fff;
 }
 /* line 32, ../sass/themes.scss */
-.bg_2.button:active, .button.button_secondary:active, .nav_tabs .nav__link:active, .nav_tabs .bg_2.nav__link:active, .nav_tabs .nav__link.button_secondary:active {
+.bg_2.button:active, .button.button_secondary:active {
   background-color: #595552;
 }
 
@@ -4660,12 +4723,12 @@ Styleguide 5.1
   color: #fff;
 }
 /* line 39, ../sass/themes.scss */
-.bg_3.button:hover, .button.alert_notice:hover, .nav_tabs .alert_notice.nav__link:hover, .button.button_tertiary:hover, .nav_tabs .button_tertiary.nav__link:hover, .button.button_close:hover, .nav_tabs .button_close.nav__link:hover, .button.button_edit-contact:hover, .nav_tabs .button_edit-contact.nav__link:hover, .nav_pills .button.nav__link.selected:hover, .nav_pills .nav_tabs .nav__link.selected:hover, .nav_tabs .nav_pills .nav__link.selected:hover, .nav_tabs .bg_3.nav__link:hover, .nav_tabs.nav_vert .nav__link.selected:hover, .nav_tabs.nav_vert .button.nav__link.selected:hover {
+.bg_3.button:hover, .button.alert_notice:hover, .button.button_tertiary:hover, .button.button_close:hover, .button.button_edit-contact:hover, .nav_pills .button.nav__link.selected:hover, .nav_tabs.nav_vert .button.nav__link.selected:hover {
   color: #fff;
   background-color: rgba(49, 47, 44, 0.1);
 }
 /* line 40, ../sass/themes.scss */
-.bg_3.button:active, .button.alert_notice:active, .nav_tabs .alert_notice.nav__link:active, .button.button_tertiary:active, .nav_tabs .button_tertiary.nav__link:active, .button.button_close:active, .nav_tabs .button_close.nav__link:active, .button.button_edit-contact:active, .nav_tabs .button_edit-contact.nav__link:active, .nav_pills .button.nav__link.selected:active, .nav_pills .nav_tabs .nav__link.selected:active, .nav_tabs .nav_pills .nav__link.selected:active, .nav_tabs .bg_3.nav__link:active, .nav_tabs.nav_vert .nav__link.selected:active, .nav_tabs.nav_vert .button.nav__link.selected:active {
+.bg_3.button:active, .button.alert_notice:active, .button.button_tertiary:active, .button.button_close:active, .button.button_edit-contact:active, .nav_pills .button.nav__link.selected:active, .nav_tabs.nav_vert .button.nav__link.selected:active {
   background-color: rgba(49, 47, 44, 0.3);
 }
 
@@ -4675,12 +4738,12 @@ Styleguide 5.1
   background-color: #d6f987;
 }
 /* line 47, ../sass/themes.scss */
-.bg_4.button:hover, .button.alert_success:hover, .nav_tabs .alert_success.nav__link:hover, .button.alert_positive:hover, .nav_tabs .alert_positive.nav__link:hover, .nav_tabs .bg_4.nav__link:hover {
+.bg_4.button:hover, .button.alert_success:hover, .button.alert_positive:hover {
   color: #345112;
   background-color: #e3ffa5;
 }
 /* line 48, ../sass/themes.scss */
-.bg_4.button:active, .button.alert_success:active, .nav_tabs .alert_success.nav__link:active, .button.alert_positive:active, .nav_tabs .alert_positive.nav__link:active, .nav_tabs .bg_4.nav__link:active {
+.bg_4.button:active, .button.alert_success:active, .button.alert_positive:active {
   background-color: #c1e471;
 }
 
@@ -4690,12 +4753,12 @@ Styleguide 5.1
   background: #45464C;
 }
 /* line 55, ../sass/themes.scss */
-.bg_5.button:hover, .nav_tabs .bg_5.nav__link:hover {
+.bg_5.button:hover {
   color: #fff;
   background-color: #4e4f57;
 }
 /* line 56, ../sass/themes.scss */
-.bg_5.button:active, .nav_tabs .bg_5.nav__link:active {
+.bg_5.button:active {
   background-color: #45464C;
 }
 
