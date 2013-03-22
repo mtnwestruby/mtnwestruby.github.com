@@ -177,50 +177,19 @@
 .circle {border-radius: 10000px;}
 
 
-.circle_kaleidoscope {
+.circle_large {
   overflow: hidden;
-  background: #72acd2;
+  background: #5cba93;
   width: 156px;
   height: 156px;
   display: inline-block;
   margin: 12px;
   position: relative;
   vertical-align: top;
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    display: block;
-    border: 200px solid transparent;
-    border-left-color: #fff;
-    height: 0;
-    width: 0;
-    opacity: .3;
-  }
-  &:after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: "";
-    display: block;
-    border: 200px solid transparent;
-    border-right-color: #5cba93;
-    height: 0;
-    width: 0;
-    opacity: .5;
-  }
-}
-
-.circle_kaleidoscope_2 {
-  &:after {
-    display: none;
-  }
-}
-
-.circle_kaleidoscope_1 {
-  &:before {
-    display: none;
+  color: #fff;
+  &:hover {
+    background: #6fd1a9;
+    color: #fff;
   }
 }
 

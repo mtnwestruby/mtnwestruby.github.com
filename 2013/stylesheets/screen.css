@@ -758,10 +758,10 @@ Page Template.
 
 /* line 205, ../sass/_base/_page.scss */
 .page__body__sub-header {
-  background: #cdebf0;
+  background: #d2ebe1;
   text-align: center;
   padding: 60px;
-  margin: 2px 0;
+  margin: 0;
 }
 
 /* line 212, ../sass/_base/_page.scss */
@@ -5278,54 +5278,24 @@ Styleguide 5.1
 }
 
 /* line 180, ../sass/utilities.scss */
-.circle_kaleidoscope {
+.circle_large {
   overflow: hidden;
-  background: #72acd2;
+  background: #5cba93;
   width: 156px;
   height: 156px;
   display: inline-block;
   margin: 12px;
   position: relative;
   vertical-align: top;
+  color: #fff;
 }
-/* line 189, ../sass/utilities.scss */
-.circle_kaleidoscope:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  display: block;
-  border: 200px solid transparent;
-  border-left-color: #fff;
-  height: 0;
-  width: 0;
-  opacity: .3;
-}
-/* line 201, ../sass/utilities.scss */
-.circle_kaleidoscope:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "";
-  display: block;
-  border: 200px solid transparent;
-  border-right-color: #5cba93;
-  height: 0;
-  width: 0;
-  opacity: .5;
+/* line 190, ../sass/utilities.scss */
+.circle_large:hover {
+  background: #6fd1a9;
+  color: #fff;
 }
 
-/* line 216, ../sass/utilities.scss */
-.circle_kaleidoscope_2:after {
-  display: none;
-}
-
-/* line 222, ../sass/utilities.scss */
-.circle_kaleidoscope_1:before {
-  display: none;
-}
-
-/* line 227, ../sass/utilities.scss */
+/* line 196, ../sass/utilities.scss */
 .circle_social {
   overflow: hidden;
   background: transparent;
@@ -5339,19 +5309,19 @@ Styleguide 5.1
   text-align: center;
   border: 4px solid #fff;
 }
-/* line 239, ../sass/utilities.scss */
+/* line 208, ../sass/utilities.scss */
 .circle_social:hover {
   background: #999;
   background: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 600px) {
-  /* line 246, ../sass/utilities.scss */
+  /* line 215, ../sass/utilities.scss */
   .circle_social {
     margin: 6px;
   }
 }
-/* line 251, ../sass/utilities.scss */
+/* line 220, ../sass/utilities.scss */
 .greyscale, .figure__speaker .figure__image {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
