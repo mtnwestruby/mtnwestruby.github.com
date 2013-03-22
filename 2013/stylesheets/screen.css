@@ -3842,115 +3842,74 @@ Styleguide 12.0
 .nav-bar .nav .nav__item {
   font-weight: bold;
   width: 198px;
-  border-left: 1px dashed #000;
-  border-color: rgba(26, 30, 33, 0);
 }
-/* line 16, ../sass/_modules/_nav-bar.scss */
-.nav-bar .nav .nav__item:last-child {
-  border-right: 1px dashed #000;
-  border-color: rgba(26, 30, 33, 0);
-}
-/* line 21, ../sass/_modules/_nav-bar.scss */
+/* line 15, ../sass/_modules/_nav-bar.scss */
 .nav-bar .nav__link {
   color: #fff;
   line-height: 88px;
   height: 88px;
 }
-/* line 25, ../sass/_modules/_nav-bar.scss */
+/* line 19, ../sass/_modules/_nav-bar.scss */
 .nav-bar .nav__link:hover {
   background-color: #5c95ba;
 }
-/* line 29, ../sass/_modules/_nav-bar.scss */
+/* line 23, ../sass/_modules/_nav-bar.scss */
 .nav-bar .nav__link_two-lines {
   line-height: 1em;
   padding-top: 28px;
 }
-/* line 34, ../sass/_modules/_nav-bar.scss */
-.nav-bar .nav:last-child .nav__item:first-child {
-  border-left: 1px dashed #000;
-  border-color: rgba(26, 30, 33, 0);
-}
-/* line 40, ../sass/_modules/_nav-bar.scss */
+/* line 28, ../sass/_modules/_nav-bar.scss */
 .nav-bar.is-scrolled {
   background: rgba(26, 30, 33, 0.9);
 }
 
 @media screen and (max-width: 890px) {
-  /* line 48, ../sass/_modules/_nav-bar.scss */
+  /* line 36, ../sass/_modules/_nav-bar.scss */
   .nav-bar .nav {
     width: 50%;
   }
-  /* line 50, ../sass/_modules/_nav-bar.scss */
+  /* line 38, ../sass/_modules/_nav-bar.scss */
   .nav-bar .nav .nav__item {
     width: 50%;
   }
-  /* line 54, ../sass/_modules/_nav-bar.scss */
-  .nav-bar .nav:first-child .nav__item:first-child {
-    border-left: none;
-  }
-  /* line 57, ../sass/_modules/_nav-bar.scss */
-  .nav-bar .nav:last-child .nav__item {
-    border-right: none;
-    border-left: 1px dashed #000;
-    border-color: rgba(26, 30, 33, 0);
-  }
-  /* line 61, ../sass/_modules/_nav-bar.scss */
-  .nav-bar .nav:last-child .nav__item:first-child {
-    border-left: none;
-  }
 }
 @media screen and (max-width: 760px) {
-  /* line 67, ../sass/_modules/_nav-bar.scss */
+  /* line 46, ../sass/_modules/_nav-bar.scss */
   .nav-bar {
     background: rgba(26, 30, 33, 0.5);
     height: auto;
   }
-  /* line 70, ../sass/_modules/_nav-bar.scss */
-  .nav-bar .nav {
-    border-bottom: 1px dashed #000;
-    border-color: rgba(26, 30, 33, 0);
-  }
-  /* line 74, ../sass/_modules/_nav-bar.scss */
+  /* line 49, ../sass/_modules/_nav-bar.scss */
   .nav-bar .nav__link {
     line-height: 43px;
     height: 43px;
   }
-  /* line 78, ../sass/_modules/_nav-bar.scss */
+  /* line 53, ../sass/_modules/_nav-bar.scss */
   .nav-bar .nav__link_two-lines {
     line-height: 1em;
     height: 43px;
     padding-top: 8px;
   }
-  /* line 83, ../sass/_modules/_nav-bar.scss */
-  .nav-bar .nav:first-child .nav__item:first-child {
-    border-left: none;
-  }
-  /* line 86, ../sass/_modules/_nav-bar.scss */
-  .nav-bar .nav:last-child .nav__item {
-    border-right: none;
-    border-left: 1px dashed #000;
-    border-color: rgba(26, 30, 33, 0);
-  }
 }
 @media screen and (max-width: 760px) {
-  /* line 95, ../sass/_modules/_nav-bar.scss */
+  /* line 62, ../sass/_modules/_nav-bar.scss */
   .nav-bar {
     font-size: 12px;
   }
 }
-/* line 100, ../sass/_modules/_nav-bar.scss */
+/* line 67, ../sass/_modules/_nav-bar.scss */
 .nav-bar__nav {
   position: relative;
   z-index: 1;
   float: left;
 }
 
-/* line 101, ../sass/_modules/_nav-bar.scss */
+/* line 68, ../sass/_modules/_nav-bar.scss */
 .nav-bar__nav_right {
   float: right;
 }
 
-/* line 103, ../sass/_modules/_nav-bar.scss */
+/* line 70, ../sass/_modules/_nav-bar.scss */
 .nav-bar__title {
   position: absolute;
   left: 0;
@@ -3964,22 +3923,22 @@ Styleguide 12.0
   font-weight: bold;
 }
 
-/* line 117, ../sass/_modules/_nav-bar.scss */
+/* line 84, ../sass/_modules/_nav-bar.scss */
 .nav-bar__title_full {
   padding: 0;
 }
 
-/* line 121, ../sass/_modules/_nav-bar.scss */
+/* line 88, ../sass/_modules/_nav-bar.scss */
 .nav-bar__title_logo {
   letter-spacing: 3px;
 }
 
-/* line 125, ../sass/_modules/_nav-bar.scss */
+/* line 92, ../sass/_modules/_nav-bar.scss */
 .nav__item:first-child .dropdown__menu {
   left: 0;
 }
 
-/* line 129, ../sass/_modules/_nav-bar.scss */
+/* line 96, ../sass/_modules/_nav-bar.scss */
 .nav__item .dropdown__menu.dropdown__menu_right {
   left: auto;
   right: 0;
@@ -3990,22 +3949,22 @@ Toolbar is for wysiwyg editors and crocodoc viewer and such
 
 Styleguide 5.1
 */
-/* line 140, ../sass/_modules/_nav-bar.scss */
+/* line 107, ../sass/_modules/_nav-bar.scss */
 .nav-bar_tool {
   height: auto;
   border-radius: 4px 4px 0 0;
 }
-/* line 145, ../sass/_modules/_nav-bar.scss */
+/* line 112, ../sass/_modules/_nav-bar.scss */
 .nav-bar_tool .icon, .nav-bar_tool .ui-input-search:after {
   margin-top: -3px;
 }
 
-/* line 148, ../sass/_modules/_nav-bar.scss */
+/* line 115, ../sass/_modules/_nav-bar.scss */
 .nav_toolbar {
   margin: 3px 4px;
 }
 
-/* line 149, ../sass/_modules/_nav-bar.scss */
+/* line 116, ../sass/_modules/_nav-bar.scss */
 .nav-bar_tool .nav-bar__page-count {
   line-height: 32px;
   height: 32px;
@@ -4013,7 +3972,7 @@ Styleguide 5.1
   cursor: pointer;
 }
 
-/* line 150, ../sass/_modules/_nav-bar.scss */
+/* line 117, ../sass/_modules/_nav-bar.scss */
 .nav-bar_tool .nav-bar__current-page {
   border: 1px solid #CCCCCC;
   background-color: #e7e7e7;
@@ -4025,7 +3984,7 @@ Styleguide 5.1
   line-height: 32px;
 }
 
-/* line 160, ../sass/_modules/_nav-bar.scss */
+/* line 127, ../sass/_modules/_nav-bar.scss */
 .nav-bar_tool .nav-bar__page-count .input_text {
   width: 43px;
   display: none;
@@ -4033,7 +3992,7 @@ Styleguide 5.1
   padding: 0;
 }
 
-/* line 166, ../sass/_modules/_nav-bar.scss */
+/* line 133, ../sass/_modules/_nav-bar.scss */
 .nav-bar_site-search {
   border-radius: 2px;
   position: absolute;
@@ -4042,12 +4001,12 @@ Styleguide 5.1
   width: 64.2%;
   margin-top: -26px;
 }
-/* line 174, ../sass/_modules/_nav-bar.scss */
+/* line 141, ../sass/_modules/_nav-bar.scss */
 .nav-bar_site-search .nav__item {
   width: 100%;
 }
 
-/* line 181, ../sass/_modules/_nav-bar.scss */
+/* line 148, ../sass/_modules/_nav-bar.scss */
 .nav-bar_main-tabs {
   position: fixed;
   bottom: 0;
@@ -4057,11 +4016,11 @@ Styleguide 5.1
   background: #282424;
   border-top: 1px solid #000000;
 }
-/* line 189, ../sass/_modules/_nav-bar.scss */
+/* line 156, ../sass/_modules/_nav-bar.scss */
 .nav-bar_main-tabs .nav {
   float: none;
 }
-/* line 192, ../sass/_modules/_nav-bar.scss */
+/* line 159, ../sass/_modules/_nav-bar.scss */
 .nav-bar_main-tabs .nav__item {
   border-right: 1px solid #000000;
   display: block;
@@ -4070,11 +4029,11 @@ Styleguide 5.1
   text-align: center;
   line-height: 42px;
 }
-/* line 199, ../sass/_modules/_nav-bar.scss */
+/* line 166, ../sass/_modules/_nav-bar.scss */
 .nav-bar_main-tabs .nav__item.state_active {
   background-color: #151313;
 }
-/* line 203, ../sass/_modules/_nav-bar.scss */
+/* line 170, ../sass/_modules/_nav-bar.scss */
 .nav-bar_main-tabs .nav__item_main {
   border-radius: 2px 2px 0 0;
   border-right: none;
@@ -4083,11 +4042,11 @@ Styleguide 5.1
   margin-right: -1px;
   height: 47px;
 }
-/* line 211, ../sass/_modules/_nav-bar.scss */
+/* line 178, ../sass/_modules/_nav-bar.scss */
 .nav-bar_main-tabs .nav__item_main .icon, .nav-bar_main-tabs .nav__item_main .ui-input-search:after {
   margin-top: 3px;
 }
-/* line 213, ../sass/_modules/_nav-bar.scss */
+/* line 180, ../sass/_modules/_nav-bar.scss */
 .nav-bar_main-tabs .nav__item:last-child {
   border-right: none;
 }

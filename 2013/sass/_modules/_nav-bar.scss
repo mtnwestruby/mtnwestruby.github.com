@@ -11,12 +11,6 @@
   .nav .nav__item {
     font-weight: bold;
     width: 198px;
-    border-left: 1px dashed #000;
-    border-color: rgba(26,30,33,0);
-    &:last-child {
-      border-right: 1px dashed #000;
-      border-color: rgba(26,30,33,0);
-    }
   }
   .nav__link {
     color: #fff;
@@ -29,12 +23,6 @@
   .nav__link_two-lines {
     line-height: 1em;
     padding-top: 28px;
-  }
-  .nav:last-child .nav__item {
-    &:first-child {
-      border-left: 1px dashed #000;
-      border-color: rgba(26,30,33,0);
-    }
   }
 
   &.is-scrolled {
@@ -51,15 +39,6 @@
         width: 50%;
       }
     }
-    .nav:first-child .nav__item:first-child {
-      border-left: none;
-    }
-    .nav:last-child .nav__item {
-      border-right: none;
-      border-left: 1px dashed #000;
-      border-color: rgba(26,30,33,0);
-      &:first-child {border-left: none;}
-    }
   }
 }
 
@@ -67,10 +46,6 @@
   .nav-bar {
     background: rgba(26,30,33,.5);
     height: auto;
-    .nav {
-      border-bottom: 1px dashed #000;
-      border-color: rgba(26,30,33,0);
-    }
     .nav__link {
       line-height: 43px;
       height: 43px;
@@ -79,14 +54,6 @@
       line-height: 1em;
       height: 43px;
       padding-top: 8px;
-    }
-    .nav:first-child .nav__item:first-child {
-      border-left: none;
-    }
-    .nav:last-child .nav__item {
-      border-right: none;
-      border-left: 1px dashed #000;
-      border-color: rgba(26,30,33,0);
     }
   }
 }
