@@ -45,9 +45,9 @@ Page Template.
   }
 }
 
-.page__icon {
-  z-index: 11;
-  position: fixed;
+.page__icon_large {
+  z-index: 12;
+  position: absolute;
   left: 50%;
   margin-left: -101px;
   display: block;
@@ -57,32 +57,38 @@ Page Template.
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .page__icon {
+  .page__icon_large {
     background: url(/2013/images/logo-big@2x.png) no-repeat;
     background-size: 202px 162px;
   }
 }
 
 @media screen and (max-width: 1008px) {
-  .page__icon {
-    position: fixed;
-    top: 10px;
-    width: 65px;
-    height: 68px;
-    margin-left: -32px;
-    background: url(/2013/images/logo-small.png) no-repeat;
+  .page__icon_large {
+    display: none;
   }
 }
 
-@media screen and (max-width: 1008px) and (-webkit-min-device-pixel-ratio: 2) {
-  .page__icon {
+.page__icon_small {
+  z-index: 11;
+  position: fixed;
+  left: 50%;
+  top: 10px;
+  width: 65px;
+  height: 68px;
+  margin-left: -32px;
+  background: url(/2013/images/logo-small.png) no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .page__icon_small {
     background: url(/2013/images/logo-small@2x.png) no-repeat;
     background-size: 65px 68px;
   }
 }
 
 @media screen and (max-width: 890px) {
-  .page__icon {
+  .page__icon_small {
     position: absolute;
     top: 140px;
     z-index: 9;
@@ -90,7 +96,7 @@ Page Template.
 }
 
 @media screen and (max-width: 650px) {
-  .page__icon {
+  .page__icon_small {
     top: 120px;
   }
 }

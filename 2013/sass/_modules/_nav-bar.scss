@@ -4,17 +4,17 @@
   z-index: 1000;
   color: #fff;
   background: #000;
-  background: rgba(0,0,0,.4);
+  background: rgba(26,39,33,.5);
   @extend .futura;
   text-transform: uppercase;
   .nav .nav__item {
     font-weight: bold;
     width: 198px;
-    border-left: 1px solid #000;
-    border-color: rgba(0,0,0,.2);
+    border-left: 1px dashed #000;
+    border-color: rgba(26,39,33,.2);
     &:last-child {
-      border-right: 1px solid #000;
-      border-color: rgba(0,0,0,.2);
+      border-right: 1px dashed #000;
+      border-color: rgba(26,39,33,.2);
     }
   }
   .nav__link {
@@ -23,7 +23,7 @@
     height: 88px;
     &:hover {
       background-color: #000;
-      background-color: rgba(0,0,0,.2);
+      background-color: rgba(26,39,33,.2);
     }
   }
   .nav__link_two-lines {
@@ -32,8 +32,8 @@
   }
   .nav:last-child .nav__item {
     &:first-child {
-      border-left: 1px solid #000;
-      border-color: rgba(0,0,0,.2);
+      border-left: 1px dashed #000;
+      border-color: rgba(26,39,33,.2);
     }
   }
 }
@@ -51,7 +51,7 @@
     }
     .nav:last-child .nav__item {
       border-right: none;
-      border-left: 1px solid #000;
+      border-left: 1px dashed #000;
       border-color: rgba(0,0,0,.2);
       &:first-child {border-left: none;}
     }
@@ -61,7 +61,7 @@
 @media screen and (max-width: 760px) {
   .nav-bar {
     .nav {
-      border-bottom: 1px solid #000;
+      border-bottom: 1px dashed #000;
       border-color: rgba(0,0,0,.2);
       width: 100%;
     }
@@ -79,7 +79,7 @@
     }
     .nav:last-child .nav__item {
       border-right: none;
-      border-left: 1px solid #000;
+      border-left: 1px dashed #000;
       border-color: rgba(0,0,0,.2);
     }
   }
