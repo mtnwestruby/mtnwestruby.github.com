@@ -1,5 +1,5 @@
 // baseline grid
-$font-size: 14; //in pixels
+$font-size: 16; //in pixels
 $base: $font-size * 1.5  ; // vertical space unit 16*1.5=24
 $em: $font-size / 14em;
 
@@ -15,7 +15,7 @@ $line_triple: ($base * 3) * 1px;
 // layout grid
 $grid-columns: 12;
 $grid-column-width: (100% / $grid-columns);
-$grid-gutter: 1.71428em; //24px
+$grid-gutter: 1.5em; //24px
 
 
 // icon sprite positions

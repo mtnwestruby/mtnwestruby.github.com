@@ -169,7 +169,7 @@ html {
 /* line 10, ../sass/_base/_grid.scss */
 .g, .nav_tabs_full .nav__item {
   position: relative;
-  padding: 0 0.85714em;
+  padding: 0 0.75;
   float: left;
 }
 
@@ -486,9 +486,9 @@ html {
 /* line 99, ../sass/_base/_grid.scss */
 .g_columns {
   -moz-column-count: 2;
-  -moz-column-gap: 1.71428em;
+  -moz-column-gap: 1.5;
   -webkit-column-count: 2;
-  -webkit-column-gap: 1.71428em;
+  -webkit-column-gap: 1.5;
   -webkit-column-rule: 2px solid #ddd;
 }
 
@@ -730,7 +730,7 @@ Page Template.
 
 /* line 178, ../sass/_base/_page.scss */
 .page__body__header {
-  font-size: 2.14286em;
+  font-size: 1.875em;
   text-rendering: optimizeLegibility;
   text-align: center;
 }
@@ -746,7 +746,7 @@ Page Template.
 @media screen and (max-width: 600px) {
   /* line 194, ../sass/_base/_page.scss */
   .page__body__header {
-    font-size: 1.28571em;
+    font-size: 1.125em;
     padding: 0 !important;
   }
 }
@@ -1005,47 +1005,47 @@ a:active {
 
 /* line 4, ../sass/_base/_heading.scss */
 .h1 {
-  font-size: 2.57143em;
+  font-size: 2.25em;
   text-rendering: optimizeLegibility;
 }
 
 /* line 7, ../sass/_base/_heading.scss */
 .h2, .page__branding__name .page__name {
-  font-size: 2.14286em;
+  font-size: 1.875em;
   text-rendering: optimizeLegibility;
 }
 
 /* line 10, ../sass/_base/_heading.scss */
 .h3, .media_speaker__title {
-  font-size: 1.71429em;
+  font-size: 1.5em;
   text-rendering: optimizeLegibility;
 }
 
 /* line 13, ../sass/_base/_heading.scss */
 .h4, .page__header__headline {
-  font-size: 1.5em;
+  font-size: 1.3125em;
   text-rendering: optimizeLegibility;
 }
 
 /* line 16, ../sass/_base/_heading.scss */
 .h5, .media_speaker__header, .modal_profile .modal__window__header .modal__window__heading {
-  font-size: 1.28571em;
+  font-size: 1.125em;
 }
 
 /* line 19, ../sass/_base/_heading.scss */
 .h6 {
-  font-size: 1em;
+  font-size: 0.875em;
 }
 
 /* line 25, ../sass/_base/_heading.scss */
 .h_large {
-  font-size: 3.42857em;
+  font-size: 3em;
   text-rendering: optimizeLegibility;
 }
 
 /* line 28, ../sass/_base/_heading.scss */
 .h_xlarge {
-  font-size: 3.92857em;
+  font-size: 3.4375em;
   text-rendering: optimizeLegibility;
 }
 
@@ -1373,7 +1373,7 @@ Styleguide 17.0
 .box_post .box__header {
   padding: 0 0 4px 0;
   font-weight: bold;
-  font-size: 1.28571em;
+  font-size: 1.125em;
 }
 /* line 42, ../sass/_modules/_box.scss */
 .box_post .box__subheadline {
@@ -1429,7 +1429,7 @@ Styleguide 17.0
 @media screen and (max-width: 600px) {
   /* line 90, ../sass/_modules/_box.scss */
   .box_post .box__header {
-    font-size: 1.28571em;
+    font-size: 1.125em;
   }
 }
 /* line 102, ../sass/_modules/_box.scss */
@@ -1448,7 +1448,7 @@ Styleguide 17.0
 /* line 113, ../sass/_modules/_box.scss */
 .box_stat .box__header {
   font-weight: bold;
-  font-size: 3.42857em;
+  font-size: 3em;
   line-height: 48px;
   padding: 32px 0 8px 0;
 }
@@ -3237,7 +3237,7 @@ Styleguide 2.2
 }
 /* line 98, ../sass/_modules/_media.scss */
 .media_speaker .media__block {
-  margin-right: 0.85714em;
+  margin-right: 0.75;
 }
 /* line 104, ../sass/_modules/_media.scss */
 .media_speaker:last-child {
