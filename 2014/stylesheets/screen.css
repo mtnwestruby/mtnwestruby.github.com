@@ -894,7 +894,7 @@ textarea::input-placeholder {
 /* line 30, ../sass/_base/_content.scss */
 a {
   text-decoration: none;
-  color: #5cba93;
+  color: #42474b;
   cursor: pointer;
   transition: color 0.25s ease-out border-color 0.25s ease-out opacity 0.25s linear background 0.25s ease-out;
   -webkit-transition: color 0.25s ease-out border-color 0.25s ease-out opacity 0.25s linear background 0.25s ease-out;
@@ -1516,7 +1516,7 @@ Styleguide 17.0
 /* line 174, ../sass/_modules/_box.scss */
 .box_map {
   position: relative;
-  background: #5cba93;
+  background: #42474b;
   padding: 0;
   margin: 24px;
 }
@@ -3851,7 +3851,7 @@ Styleguide 12.0
 }
 /* line 19, ../sass/_modules/_nav-bar.scss */
 .nav-bar .nav__link:hover {
-  background-color: #5cba93;
+  background-color: #42474b;
 }
 /* line 23, ../sass/_modules/_nav-bar.scss */
 .nav-bar .nav__link_two-lines {
@@ -5252,7 +5252,7 @@ Styleguide 5.1
 /* line 180, ../sass/utilities.scss */
 .circle_large {
   overflow: hidden;
-  background: #5cba93;
+  background: #42474b;
   width: 156px;
   height: 156px;
   display: inline-block;

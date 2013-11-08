@@ -29,7 +29,7 @@ textarea::input-placeholder {
 // links
 a {
   text-decoration: none;
-  color: #5cba93;
+  color: #42474b;
   cursor: pointer;
   @include transition(color .25s ease-out, border-color .25s ease-out, opacity .25s linear, background .25s ease-out);
   -webkit-backface-visibility: hidden;
