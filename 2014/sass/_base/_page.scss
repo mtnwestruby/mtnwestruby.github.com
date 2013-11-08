@@ -114,15 +114,15 @@ Page Template.
 .page__logotype {
   margin: 140px auto 110px auto;
   display: block;
-  width: 335px;
-  height: 84px;
+  width: 334px;
+  height: 76px;
   background: url(/2014/images/logotype.png) no-repeat;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .page__logotype {
     background: url(/2014/images/logotype@2x.png) no-repeat;
-    background-size: 335px 84px;
+    background-size: 334px 76px;
   }
 }
 
