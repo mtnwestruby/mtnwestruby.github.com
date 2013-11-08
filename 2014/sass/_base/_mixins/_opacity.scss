@@ -1,0 +1,6 @@
+@mixin opacity($alpha) {
+  zoom: 1; // trigger ie haslayout
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=$alpha*100)";
+  filter: alpha(opacity=$alpha*100);
+  opacity: $alpha;
+}

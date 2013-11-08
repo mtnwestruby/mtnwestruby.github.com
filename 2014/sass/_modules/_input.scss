@@ -1,0 +1,34 @@
+.input_text, .input_textarea {
+  @extend .futura;
+  width: 100%;
+  padding: 0 0 0 6px;
+  margin: 0;
+  border: 1px solid #ddd;
+  color: #333;
+  background-color: #f3f3f3;
+  -webkit-appearance: none;
+  resize: none;
+  outline: 0;
+  border-radius: 2px;
+}
+.input_textarea {padding: 6px 12px 6px;}
+.input_text:hover,.input_textarea:hover {border-color: #999;}
+.input_text:focus,.input_textarea:focus {
+  color: #222; 
+  -webkit-appearance: none;
+  resize: none;
+  outline: 0;
+  background-color: #fff;
+  border-color: #ff8e50;
+}
+
+
+
+.input_textarea_full{
+  //background-color: #fff;
+  border: none;
+  border-radius: 0;
+  height:300px;
+  &:focus {}
+}
+

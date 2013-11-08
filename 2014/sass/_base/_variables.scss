@@ -1,0 +1,32 @@
+// baseline grid
+$font-size: 16; //in pixels
+$base: $font-size * 1.5  ; // vertical space unit 16*1.5=24
+$em: $font-size / 14em;
+
+
+// vertical rhythm in pixels (returns pixels)
+$line: $base*1px;
+$line_half: ($base * .5) * 1px;
+$line_one_and_a_half: ($base * 1.5) * 1px;
+$line_double: ($base * 2) * 1px;
+$line_triple: ($base * 3) * 1px;
+
+
+// layout grid
+$grid-columns: 12;
+$grid-column-width: (100% / $grid-columns);
+$grid-gutter: 1.5em; //24px
+
+
+// icon sprite positions
+$image-directory: '/assets/';
+$icon: -4px;
+$icon_white: -25px;
+$icon_black:-46px;
+$icon_white: -67px; 
+$icon_transparent: -88px;
+$icon_transparent:-109px;
+$icon_special:-130px;
+$icon_special2:-151px;
+$icon_special3:-172px;
+

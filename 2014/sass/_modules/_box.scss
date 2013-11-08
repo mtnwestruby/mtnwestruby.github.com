@@ -1,0 +1,239 @@
+/*
+Box (.box) Good for modules that have a header and body and possibly footer
+
+Styleguide 17.0
+*/
+
+
+.box {
+  @extend .clearfix;
+	background: #fff;
+}
+	.box__header{padding:.85714em .85714em 0;}
+  .box__subheadline{padding:.85714em .85714em 0;}
+	.box__body{padding:.85714em;@extend .clearfix;}
+	.box__footer{
+	  padding:.85714em;
+    border-top: 1px solid #ddd;
+    @extend .bg_7;
+    @extend .clearfix;
+  }
+  
+  .box_rounded {
+    border-radius: 2px;
+    .box__header{border-radius: 4px 4px 0 0;}
+    .box__footer{border-radius: 0 0 4px 4px;}
+  }
+
+
+
+.box_post {
+  padding: 24px 24px 25px 24px;
+  margin: 0 0 -1px 0;
+  border-right: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+  background: transparent;
+  .box__header{
+    padding: 0 0 4px 0;
+    font-weight: bold;
+    font-size: #{18 / $font-size}em;
+    @extend .serif;
+  }
+  .box__subheadline {
+    padding:0 0 6px 0;
+    opacity: .3;
+    font-size: .7em;
+    text-transform: uppercase;
+  }
+  .box__body {
+    padding:0;
+    line-height: 1.5em;
+    p {padding-bottom: .5em;}
+  }
+  .box__footer{
+    padding: 0;
+    border: none;
+  }
+}
+
+.box_posts {
+  border-bottom: 1px dashed #ddd;
+  @extend .clearfix;
+}
+
+@media screen and (min-width: 900px) {
+  .box_posts .g:nth-child(3n+3) .box_post {
+    border-right: 0;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .box_posts .g:nth-child(2n+2) .box_post {
+    border-right: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .box_posts .box_post {
+    border-right: 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .box_post {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box_post {
+  .box__header{
+    font-size: #{18 / $font-size}em;
+  }
+  .box__subheadline {
+  }
+  .box__body {
+  }
+  .box__footer{
+  }
+}
+}
+
+.box_stat {
+  position: relative;
+  z-index: 5;
+  text-align:center;
+  border-radius: 10000px;
+  border: 4px solid #fff;
+  height: 140px;
+  width: 140px;
+  color: #fff;
+  padding: 0;
+  margin: 8px;
+  .box__header {
+    font-weight: bold;
+    font-size: #{48 / $font-size}em;
+    line-height: 48px;
+    padding: 32px 0 8px 0;
+  }
+  .box__body {
+    padding: 0;
+    font-size: .666em;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.box_iframe  {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+.box_iframe iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.box_location {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -90px;
+  margin-left: -112px;
+  width: 224px;
+  padding: 24px 0;
+  text-align: center;
+  border-top: 3px double #fff;
+  border-bottom: 3px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  .box__header {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .box__body {
+    opacity: .5;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .box_location {
+    top: auto;
+    left: auto;
+    margin: 24px auto;
+    position: relative;
+  }
+}
+
+.box_map {
+  position: relative;
+  background: #5cba93;
+  padding: 0;
+  margin: 24px;
+  &> .box__header {
+    width: 50%;
+    float: left;
+    padding: 0;
+  }
+  &> .box__body {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .box_map {
+    &> .box__header {
+      width: 100%;
+      float: none;
+      padding: 0;
+    }
+    &> .box__body {
+      width: 100%;
+      position: relative;
+      height: auto;
+    }
+  }
+}
+
+.box_sponsor {
+  padding: 24px;
+  border-bottom: 1px dashed #ddd;
+  &:last-child {
+    border-bottom: none;
+  }
+  .box__hero {
+    text-align: center;
+    .figure {
+      max-width: 200px;
+    }
+    margin-bottom: 24px;
+  }
+  .box__header {
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  .box__body {
+    padding: 0;
+    line-height: 1.5em;
+    @extend .serif;
+    p {
+      margin-bottom: .5em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .box__footer {
+    padding: 0;
+  }
+}

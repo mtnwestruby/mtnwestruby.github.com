@@ -1,0 +1,183 @@
+.nav-bar{
+  height: 88px;
+  position: relative;
+  z-index: 1000;
+  color: #fff;
+  background: #fff;
+  background: rgba(26,30,33,.4);
+  @extend .futura;
+  text-transform: uppercase;
+  @include transition(all .4s linear);
+  .nav .nav__item {
+    font-weight: bold;
+    width: 198px;
+  }
+  .nav__link {
+    color: #fff;
+    line-height: 88px;
+    height: 88px;
+    &:hover {
+      background-color: #5cba93;
+    }
+  }
+  .nav__link_two-lines {
+    line-height: 1em;
+    padding-top: 28px;
+  }
+
+  &.is-scrolled {
+    background: rgba(26,30,33,.9);
+  }
+}
+
+
+@media screen and (max-width: 890px) {
+  .nav-bar {
+    .nav {
+      width: 50%;
+      .nav__item {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .nav-bar {
+    background: rgba(26,30,33,.5);
+    height: auto;
+    .nav__link {
+      line-height: 43px;
+      height: 43px;
+    }
+    .nav__link_two-lines {
+      line-height: 1em;
+      height: 43px;
+      padding-top: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .nav-bar {
+    font-size: 12px;
+  }
+}
+
+.nav-bar__nav{position: relative; z-index: 1; float:left;}
+.nav-bar__nav_right{float:right;}
+
+.nav-bar__title {
+  @extend .ellipsis;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-bar__title_full {
+  padding: 0;
+}
+
+.nav-bar__title_logo {
+  letter-spacing: 3px;
+}
+    
+.nav__item:first-child .dropdown__menu {
+  left: 0;
+}
+  
+.nav__item .dropdown__menu.dropdown__menu_right {
+  left: auto;
+  right: 0;
+}
+
+/*
+Toolbar is for wysiwyg editors and crocodoc viewer and such
+
+Styleguide 5.1
+*/
+
+.nav-bar_tool {
+  height: auto;
+  border-radius: 4px 4px 0 0;
+  @extend .bg_7;
+  @extend .clearfix;
+  .icon {margin-top: -3px;}
+}
+
+.nav_toolbar {margin:3px 4px;}
+.nav-bar_tool .nav-bar__page-count { line-height:32px; height: 32px; display:block; cursor:pointer;}
+.nav-bar_tool .nav-bar__current-page {
+  border: 1px solid #CCCCCC;
+  background-color:#e7e7e7;  
+  border-radius: 2px;
+  padding:0 4px;
+  font-weight: bold;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+}
+.nav-bar_tool .nav-bar__page-count .input_text { width:43px; display:none;text-align: center; padding: 0;}
+
+    
+
+
+// nav_site-header
+.nav-bar_site-search {
+  @extend .bg_7;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  right: .85714em;
+  width: 64.2%;
+  margin-top: -26px;
+  .nav__item {
+    width: 100%;
+  }
+}
+
+
+
+.nav-bar_main-tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background: #282424;
+  border-top:1px solid #000000;
+  .nav {
+    float: none;
+  }
+  .nav__item {
+    border-right: 1px solid #000000;
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: center;
+    line-height: 42px;
+    &.state_active {
+      background-color: #151313;
+    }
+  }
+  .nav__item_main{
+    @extend .bg_1;
+    border-radius:2px 2px 0 0;
+    border-right:none;
+    margin-top:-3px;
+    margin-left:-1px;
+    margin-right:-1px;
+    height: 47px;
+    .icon{margin-top:3px;}
+  }
+  .nav__item:last-child {
+    border-right: none;
+  }
+}

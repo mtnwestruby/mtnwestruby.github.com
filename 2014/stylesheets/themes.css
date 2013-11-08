@@ -1,0 +1,147 @@
+/* line 3, ../sass/themes.scss */
+.text_color_1 {
+  color: #222;
+}
+/* line 3, ../sass/themes.scss */
+.text_color_1:hover {
+  color: #555;
+}
+
+/* line 4, ../sass/themes.scss */
+.text_color_2 {
+  color: #555;
+}
+/* line 4, ../sass/themes.scss */
+.text_color_2:hover {
+  color: #888;
+}
+
+/* line 5, ../sass/themes.scss */
+.text_color_3 {
+  color: #777;
+}
+/* line 5, ../sass/themes.scss */
+.text_color_3:hover {
+  color: #aaa;
+}
+
+/* line 6, ../sass/themes.scss */
+.text_color_4 {
+  color: #aaa;
+}
+/* line 6, ../sass/themes.scss */
+.text_color_4:hover {
+  color: #ccc;
+}
+
+/* line 7, ../sass/themes.scss */
+.text_color_5 {
+  color: #ccc;
+}
+/* line 7, ../sass/themes.scss */
+.text_color_5:hover {
+  color: #eee;
+}
+
+/* line 8, ../sass/themes.scss */
+.text_color_6 {
+  color: #eee;
+}
+/* line 8, ../sass/themes.scss */
+.text_color_6:hover {
+  color: #fff;
+}
+
+/* line 9, ../sass/themes.scss */
+.text_color_7 {
+  color: #fff;
+}
+/* line 9, ../sass/themes.scss */
+.text_color_7:hover {
+  color: #eee;
+}
+
+/* line 11, ../sass/themes.scss */
+.text_error {
+  color: #C42424;
+}
+
+/* line 12, ../sass/themes.scss */
+.text_success {
+  color: #556F30;
+}
+
+/* line 20, ../sass/themes.scss */
+.bg_1 {
+  background-color: #5c95ba;
+  color: #fff;
+}
+/* line 23, ../sass/themes.scss */
+.bg_1.button:hover {
+  background-color: #6aa5cb;
+  color: #fff;
+}
+/* line 24, ../sass/themes.scss */
+.bg_1.button:active {
+  background-color: #446f8b;
+}
+
+/* line 28, ../sass/themes.scss */
+.bg_2 {
+  color: #fff;
+  background-color: #7d7975;
+}
+/* line 31, ../sass/themes.scss */
+.bg_2.button:hover {
+  background-color: #8f8b86;
+  color: #fff;
+}
+/* line 32, ../sass/themes.scss */
+.bg_2.button:active {
+  background-color: #595552;
+}
+
+/* line 36, ../sass/themes.scss */
+.bg_3 {
+  background-color: rgba(49, 47, 44, 0.2);
+  color: #fff;
+}
+/* line 39, ../sass/themes.scss */
+.bg_3.button:hover {
+  color: #fff;
+  background-color: rgba(49, 47, 44, 0.1);
+}
+/* line 40, ../sass/themes.scss */
+.bg_3.button:active {
+  background-color: rgba(49, 47, 44, 0.3);
+}
+
+/* line 44, ../sass/themes.scss */
+.bg_4 {
+  color: #345112;
+  background-color: #d6f987;
+}
+/* line 47, ../sass/themes.scss */
+.bg_4.button:hover {
+  color: #345112;
+  background-color: #e3ffa5;
+}
+/* line 48, ../sass/themes.scss */
+.bg_4.button:active {
+  background-color: #c1e471;
+}
+
+/* line 52, ../sass/themes.scss */
+.bg_5 {
+  color: #ffffff;
+  background: #45464C;
+}
+/* line 55, ../sass/themes.scss */
+.bg_5.button:hover {
+  color: #fff;
+  background-color: #4e4f57;
+}
+/* line 56, ../sass/themes.scss */
+.bg_5.button:active {
+  background-color: #45464C;
+}

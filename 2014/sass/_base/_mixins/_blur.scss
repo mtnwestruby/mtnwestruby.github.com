@@ -1,0 +1,3 @@
+@mixin blur ($blur) {
+  @include prefixer(filter, blur($blur));
+}

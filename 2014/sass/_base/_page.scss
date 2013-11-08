@@ -1,0 +1,267 @@
+/*
+Page Template.
+
+*/
+
+.page {
+  background: url(/2014/images/bg.jpg) #1c1e1f no-repeat;
+  background-size: 100% auto;
+  min-height: 800px;
+}
+
+.page__wrapper {
+  max-width: 1008px; // fixed width layout
+  margin: 0 auto; // fixed width layout
+  @extend .clearfix;
+}
+
+.page__wrapper_fluid{
+  margin: 0 5.55556%; // fluid layout
+}
+
+.page__header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.page__hero {
+  height: 440px;
+  padding-top: 88px;
+  color: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  .page__hero {
+    height: 320px;
+  }
+}
+
+.page__icon_large {
+  z-index: 12;
+  position: absolute;
+  left: 50%;
+  margin-left: -101px;
+  display: block;
+  width: 202px;
+  height: 162px;
+  background: url(/2014/images/logo-big.png) no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .page__icon_large {
+    background: url(/2014/images/logo-big@2x.png) no-repeat;
+    background-size: 202px 162px;
+  }
+}
+
+@media screen and (max-width: 1008px) {
+  .page__icon_large {
+    display: none;
+  }
+}
+
+.page__icon_small {
+  z-index: 11;
+  position: fixed;
+  left: 50%;
+  top: 10px;
+  width: 65px;
+  height: 68px;
+  margin-left: -32px;
+  background: url(/2014/images/logo-small.png) no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .page__icon_small {
+    background: url(/2014/images/logo-small@2x.png) no-repeat;
+    background-size: 65px 68px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .page__icon_small {
+    position: absolute;
+    top: 140px;
+    z-index: 9;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .page__icon_small {
+    top: 94px;
+  }
+}
+
+.page__icon__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 88px;
+}
+
+@media screen and (max-width: 1080px) {
+  .page__icon__link {
+    height: auto;
+    bottom: 0;
+  }
+}
+
+.page__logotype {
+  margin: 140px auto 110px auto;
+  display: block;
+  width: 335px;
+  height: 84px;
+  background: url(/2014/images/logotype.png) no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .page__logotype {
+    background: url(/2014/images/logotype@2x.png) no-repeat;
+    background-size: 335px 84px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .page__logotype {
+    display: none;
+  }
+}
+
+.page__header__main {
+  position: relative;
+  margin: 36px 0 0 0;
+  z-index: 1;
+}
+
+.page__header__headline {
+  margin-top: .5em;
+  @extend .opacity_5;
+  @extend .h4;
+}
+
+.page__branding {
+  position:relative;
+  float:left;
+  width: 30%;
+}
+.page__branding__name {
+  float: left;
+  position: relative;
+  .page__name {
+    display: inline;
+    @extend .h2;
+    @extend .condensed;
+    letter-spacing: -2px;
+  }
+  a{display: block; color:#222;}
+  a:hover{color:#222;}
+}
+.page__branding__logo {
+  a {border: none;}
+  img {display: block; max-width: 100%;}
+}
+
+.page__search {
+  padding: .5em;
+}
+
+.page__body{
+  @extend .clearfix;
+  background: #fff;
+}
+
+.page__body__header {
+  font-size: #{30 / $font-size}em;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+  .header__heading {
+    font-weight: normal;
+    opacity: .9;
+    @extend .mam;
+    @extend .serif;
+    text-transform: none;
+    width: auto;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page__body__header {
+    font-size: #{18 / $font-size}em;
+    padding: 0 !important;
+  }
+}
+
+.page__body__footer {
+  background: #5a6266;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.page__body__sub-header {
+  background: #d2ebe1;
+  text-align: center;
+  padding: 60px;
+  margin: 0;
+}
+
+.page__sidebar{
+  display: block;
+  float: right;
+  width: 336px;
+  position:relative;
+  background: #e5edf2;
+  padding: 6px;
+}
+
+@media screen and (max-width: 900px) {
+  .page__sidebar{
+    display: block;
+    float: right;
+    width: 168px;
+    position:relative;
+    background: #e5edf2;
+    padding: 6px;
+  }
+}
+
+.page__main{
+  display: table-cell;
+  position: relative;
+  padding: 0;
+}
+
+.page__main_full {
+  display: block;
+  width: 100%;
+  padding: 0 .85714em;
+}
+
+
+
+.page__footer {
+  text-transform: uppercase;
+  text-align: center;
+  color: #5a6266;
+  height: 44px;
+  line-height: 44px;
+  font-size: .7em;
+  letter-spacing: 6px;
+  font-weight: bold;
+  @extend .serif;
+  a {color: #5a6266;&:hover{color: #adb8bd;}}
+}
+
+@media screen and (max-width: 900px) {
+  .page__footer {
+    height: auto;
+    line-height: 24px;
+    padding: 12px 0;
+    letter-spacing: 3px;
+  }
+}
