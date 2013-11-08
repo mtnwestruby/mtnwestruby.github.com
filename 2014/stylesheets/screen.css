@@ -3074,7 +3074,7 @@ Styleguide 2.2
   left: 50%;
   height: 12px;
   width: 12px;
-  background: #5c95ba;
+  background: #db3434;
   -webkit-transform: rotate3d(0, 0, 0, 45deg);
 }
 /* line 180, ../sass/_modules/_list.scss */
@@ -3083,7 +3083,7 @@ Styleguide 2.2
 }
 /* line 181, ../sass/_modules/_list.scss */
 .list_schedule .list__item__header {
-  color: #5c95ba;
+  color: #db3434;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -4661,7 +4661,7 @@ Styleguide 5.1
 
 /* line 20, ../sass/themes.scss */
 .bg_1, .button, .header_bar, .nav-bar_main-tabs .nav__item_main, .toggle-switch__handle {
-  background-color: #5c95ba;
+  background-color: #db3434;
   color: #fff;
 }
 /* line 23, ../sass/themes.scss */

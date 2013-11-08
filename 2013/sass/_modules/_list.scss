@@ -173,14 +173,14 @@
       left: 50%;
       height: 12px;
       width: 12px;
-      background: #5c95ba;
+      background: #db3434;
       -webkit-transform: rotate3d(0,0,0,45deg);
     }
   }
   a {display: block;}
   .list__item__header {
     @extend .h_small;
-    color: #5c95ba;
+    color: #db3434;
     font-weight: bold;
     text-transform: uppercase;
   }
