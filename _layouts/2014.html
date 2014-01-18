@@ -70,6 +70,20 @@
     <div class="page__wrapper">
       <div class="page__body">
 
+        {% if page.heading %}
+        <header class="page__body__header header_bar">
+          <h2 class="header__heading">{{ page.heading }}</h2>
+        </header>
+        {% endif %}
+
+        <div id="tabs" class="c ui-tabs ui-widget ui-widget-content ui-corner-all">
+          <ul class="nav nav_tabs nav_tabs_three">
+            <li class="nav__item"><a class="nav__link" href="/2014/sessions">Speakers</a></li>
+            <li class="nav__item"><a class="nav__link" href="/2014/sponsors">Sponsors</a></li>
+            <li class="nav__item"><a class="nav__link" href="/2014/register">Register</a></li>
+          </ul>
+        </div>
+
         {{content}}
 
         <footer class="page__body__footer">
@@ -83,6 +97,10 @@
           </a>
           <a href="http://www.linkedin.com/groups/MountainWest-RubyConf-2907752?gid=2907752" class="circle circle_social">
             <i class="icon icon_large icon_linkedin_large">
+            </i>
+          </a>
+          <a href="http://ruby-white-ribbon.org/" class="circle circle_social">
+            <i class="icon icon_large icon_ribbon_large">
             </i>
           </a>
         </footer>

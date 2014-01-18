@@ -1,0 +1,21 @@
+<article id="{{ speaker.twitter }}" class="media media_speaker">
+  <figure class="media__block figure figure__speaker">
+    <img src="http://www.gravatar.com/avatar/{{ speaker.gravatar }}" class="figure__image">
+    {% if speaker.github %}
+      <a class="figure__icon" href="https://github.com/{{ speaker.github }}"><i class="icon icon_github"></i></a>
+    {% endif %}
+    <a class="figure__icon" href="https://twitter.com/{{ speaker.twitter }}"><i class="icon icon_twitter"></i></a>
+  </figure>
+  <section class="media__content">
+    <h3 class="media_speaker__header">
+      {{ speaker.name }}
+      <i class="media_speaker__bio icon icon_info" name="{{speaker.biography}}">i</i>
+    </h3>
+    <h2 class="media_speaker__title">
+      {{ speaker.title }}
+    </h2>
+    <section class="media_speaker__description">
+      {{ speaker.description | markdownify }}
+    </section>
+  </section>
+</article>

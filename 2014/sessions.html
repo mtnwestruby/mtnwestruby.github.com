@@ -1,0 +1,406 @@
+---
+title:   Speakers and Sessions
+layout:  '2014'
+heading: Speakers and Sessions
+speakers:
+- name: Kerri Miller
+  twitter: kerrizor
+  github: kerrizor
+  gravatar: f4d5752d6f4f839083cf810ad2c3a911
+  title: Concurrency for !Dummies (Who Don't Get It (...Yet))
+  description: You can't go to a Ruby conference lately without someone banging on
+    about concurrency and thread safety. You're a smart Rubyist, but... you don't
+    get it. You understand the basic idea, you nod along, but once they get into the
+    jargon, what does it all mean? How does it apply to you, and what is it, exactly?
+    This talk will answer those questions, by engaging in a basic primer on concurrency
+    in Ruby, a discussion of actual examples of how it works, and provide you with
+    answers that will leave you nodding in agreement, rather than nodding off.
+  biography: Kerri Miller is a Sr Software Developer and Team Lead based in the Pacific
+    Northwest. She has worked at enterprise companies, international ad agencies,
+    boutique consultancies, start-ups, and every place in between. She mentors and
+    teaches students as an instructor at Ada Developers Academy, and consults with
+    a wide range of companies internationally through NIRD. Having an insatiable curiosity,
+    she has worked as a lighting designer, marionette puppeteer, sous chef, and professional
+    poker player, and enjoys hiking, collecting Vespas, and working with glass.
+- name: Ernie Miller
+  twitter: erniemiller
+  github: ernie
+  gravatar: 2274a7476f6d2ac7aedcdec0651d0542
+  title: Don't.
+  description: |-
+    We all know that intelligent species learn from mistakes, right?
+
+    There's just one problem: Life is too short to make every possible mistake!
+    Also, some mistakes are more costly than others. What's the ambitious learner
+    to do? I'm glad you asked! I'm an expert at making mistakes, and I'm happy to
+    share as many of them as I can possibly fit into a 45-minute time slot with
+    you, my dear conference attendee!
+
+    We'll discuss a variety of exciting mistakes, ranging from the misapplication
+    of metaprogramming techniques to letting emotions become barriers to new
+    technologies to why it's a horrible idea to stretch a gel keyboard wrist rest
+    across a room, even if it seems like an awesome plan at the time.
+  biography:
+- name: Julian Simioni
+  twitter: juliansimioni
+  github: orangejulius
+  gravatar: fdc04b043fce2107a9db9ef1c36f6426
+  title: Software Development Lessons from the Apollo Program
+  description: |-
+    In August 1961, the MIT Instrument Laboratory was awarded the contract for a guidance system to fly
+    men to the moon, the first contract for the entire Apollo Program. The word software was not mentioned
+    anywhere. Six years later, 400 engineers were employed on the project writing software.
+
+    The resulting Apollo Guidance Computer is to this day a marvel of engineering. It included a
+    realtime operating system and even a software interpreter. Despite weighing 70 pounds, it ran on
+    only 50W of power. Only one guidance computer was present in each Apollo spacecraft, with no
+    backups: it never failed in thousands of hours of space flight. Before the first work on UNIX or
+    the C programming language had begun, the Apollo Guidance Computer had already taken men to the
+    moon.
+
+    NASA and MIT kept meticulous records, giving us the opportunity to look back today on some of the
+    pioneers of our industry, relive there experiences, and maybe learn a few things ourselves.
+  biography: |-
+    Julian Simioni is a software developer at 42floors in San Francisco, CA. When not working tirelessly
+    to bring technology to the world of commercial real estate, he can be found riding his bicycle,
+    flying planes, and eating spaghetti.
+- name: Randy Coulman
+  twitter: '@randycoulman'
+  github: randycoulman
+  gravatar: 27204e228cc521c6cafed3c92b95184c
+  title: Affordances in Programming Languages
+  description: |-
+    A good design communicates the intended use of an object. In the physical world, this communication is accomplished by "affordances", as discussed by Donald Norman in "The Psychology of Everyday Things".
+
+    Programming languages also have affordances, and they influence the kinds of solutions we develop. The more languages we know, the more we "expand our design space" so that we can come up with better solutions to the problems we face every day.
+
+    This talk will:
+
+    * Show example problems and their solutions in different languages
+
+    * Illustrate how the affordances provided by the languages influence the design.
+
+    * Discuss how to use this knowledge to make us better programmers
+  biography: Randy Coulman is a Principal Software Engineer at [Key Technology](http://www.key.net/).
+    He's been developing software for more than 20 years, mainly in Smalltalk, Ruby,
+    C++, and Javascript. He writes about Courageous Software at http://randycoulman.com/blog/.
+- name: Aja Hammerly
+  twitter: '@thagomizer_rb'
+  github: thagomizer
+  gravatar: ff9072f60e25730674ad0d18a140ff65
+  title: A World Without Assignment
+  description: "In OO, assignment is one of our main tools. Most developers learn
+    how\nto store values in variables shortly after learning \"Hello World\". By\ncontrast,
+    functional programming makes much less use of assignment and\nmutation. Instead
+    techniques like function composition, recursion, and\nanonymous functions are
+    used to produce the same results that OO\nprogrammers produce with side effects.
+    \n\nDespite being object oriented, Ruby easily accommodates pure\nfunctional approaches.
+    This talk will demonstrate how common\nprogramming tasks can be accomplished without
+    assignment or\nmutation. Ruby and Scheme (a Lisp dialect) will be used for\nexamples.
+    I'll also discuss some of the great resources available for\nthose interested
+    in digging deeper into functional programming. "
+  biography: |-
+    Aja lives in Seattle where she is a developer at Substantial and a
+    member of the Seattle Ruby Brigade. Her favorite languages are Ruby
+    and Prolog. She also loves working with large piles of data. In her
+    free time she enjoys skiing, cooking, knitting, and long coding
+    sessions on the beach.
+- name: Sam Rawlins
+  twitter: srawlins
+  github: srawlins
+  gravatar: a250061e969e82becbed01f2e7a605d0
+  title: 'New Ruby 2.1 Awesomeness: Pro Object Allocation Tracing'
+  description: |-
+    Ruby 2.1 is coming out soon with an amazing new feature under ObjectSpace: #trace_object_allocations. We are now able to trace the file and line number (as well as method) where any Ruby object is allocated from. This is a very welcome feature, as object-level tracing has been very difficult in Ruby, especially since the memprof gem could not support Ruby past 1.8.x.
+
+    This new Ruby 2.1 feature is really just exposing some raw (and vast) data, so it can be difficult to tease out meaningful information. Two gems are introduced in this talk to solve just that problem. The objspace-stats gem allows us to view and summarize new object allocations in meaningful ways. We'll look at how to filter, group, and sort new object allocations. The second gem is rack-objspace-stats. We'll see how this tool can intercept requests to a Rack stack, and measure new object allocations taking place during the request. (For those familiar, this works very similar to the rack-perftools_profiler gem.)
+
+    We'll look at various examples of how this new Ruby 2.1 feature, and these tools can help an organization reduce unnecessary memory allocations, and speed up their code, especially mature Rack applications.
+  biography: I've been programming Ruby for over 6 years now, first at IBM and University
+    of Arizona, writing command-line and support tools for IT development and operations
+    teams, and now finally at Google for the Wildfire group, working on mature Rails
+    applications. Last year I was awarded a grant by the Ruby Association to work
+    on Mathematics gems that help the Ruby language progress into the realms of scientific
+    research and high-performance computing. I'm very excited to see the Ruby community
+    grow to the point where our applications are so powerful that performance and
+    garbage-collection are among our primary concerns.
+- name: Benjamin Curtis
+  twitter: '@stympy'
+  github: stympy
+  gravatar: f96f2c4ade79c90649af1dffb26dc0bf
+  title: Five machine learning techniques that you can use in your Ruby apps today
+  description: "Machine learning is everywhere these days. Features like search, voice
+    recognition, recommendations - they've become so common that people have started
+    to expect them. They're starting to expect the apps we build to be smarter. \n\nTen
+    years ago, machine learning and data mining techniques were only available to
+    the people dedicated enough to dig through the math. Now that's not the case.
+    \n\nThe most common machine learning techniques are well known. Standard approaches
+    have been developed. And, fortunately for us, many of these are available as ruby
+    gems. Some are even easy to implement yourself. \n\nIn this presentation we'll
+    cover five important machine learning techniques that can be used in a wide range
+    of applications. It will be a wide and shallow introduction, for Rubyists, not
+    mathematicians - we'll have plenty of simple code examples. \n\nBy the end of
+    the presentation, you won't be an expert, but you'll know about a class of tools
+    you may not have realized were available. "
+  biography: |-
+    Ben has been developing web apps and building startups since '99, and fell in love with Ruby and Rails in 2005. Before co-founding Honeybadger, he launched a couple of his own startups: Catch the Best, to help companies manage the hiring process, and RailsKits, to help Rails developers get a jump start on their projects.
+
+    When he's not working, Ben likes to hang out with his wife and kids, ride his road bike, and of course hack on open source projects. :)
+- name: Nick Howard
+  twitter: baroquebobcat
+  github: baroquebobcat
+  gravatar: 5e60ac32af93ff0f426c980e43f221e7
+  title: Generate Parsers! Prevent Exploits!
+  description: |-
+    Exploits happen when attackers discover that your application is actually an interpreter for a weird programming language with operators like 'make admin', or 'consume all available memory'. Don't give them access to that kind of computational power! Stop them at the very boundaries of your application's input handling--the parser. By generating parsers tailored to the specific input formats of your app, you can prevent it from becoming a weird interpreter and make it harder to exploit.
+
+    When you use a parser specific to your input format, it's not only more secure, it's better specified and definite. When you have a grammar for your inputs, you can give your API consumers better error messages and better documentation based on that grammar.
+
+    Using Ruby's metaprogramming superpowers, doing this doesn't have to be a painful process. I've been working on a library called Muskox that aims to make generating parsers almost as simple as using Rails 4's Strong Parameters. Writing code to secure your app's inputs should be easy, fun and fast.
+  biography: Nick Howard is a compiler enthusiast and language geek. When he's not
+    hacking on open source projects, he's working on hard and interesting problems
+    at Gnip in Boulder, CO.
+- name: Noel Rappin
+  twitter: noelrap
+  github: noelrappin
+  gravatar: 6b767d8a4c9910e007c122d81eb4de73
+  title: But Really, You Should Learn Smalltalk
+  description: "Smalltalk has mystique. We talk about it more than we use it. \n\nIt
+    seems like it should be so similar to Ruby. It has similar Object-Oriented structures,
+    it even has blocks.\n\nBut everything is so slightly different, from the programming
+    environment, to the 1-based arrays, to the simple syntax. Using Smalltalk will
+    make you look at familiar constructs with new eyes.\n\nWe'll show you how to get
+    started on Smalltalk, and walk through some sample code. Live coding may be involved.\n\nYou'll
+    never look at objects the same way again."
+  biography: Noel Rappin is a Senior Developer and Table XI's Agile Coach. Noel has
+    authored multiple technical books, including "Rails Test Prescriptions" and "Master
+    Space and Time With JavaScript." Noel is also the author or co-author of "Professional
+    Ruby on Rails," "wxPython in Action," and "Jython Essentials."
+- name: T.J. Schuck
+  twitter: tjschuck
+  github: tjschuck
+  gravatar: f3a34c1bd3b8a36b4dd07869bd6b5506
+  title: '80,000 Plaintext Passwords: An Open Source Love Story'
+  description: |-
+    Considering getting a new dog? Here are some name suggestions: fluffmuffin, peppercorn, monkeybreath
+
+    Just kidding, those aren't dog name suggestions -- those are a few of our users' plaintext passwords.
+
+    Don't like any of those names for your dog? Don't worry -- I have 80,000 more suggestions, and it only took me 87 seconds to gather them from our customer database in a white-hat attack.
+
+    In this talk, we'll survey the history of secure password storage and talk about the best ways to mitigate the threat to your users' passwords. As a bonus, we'll also cover the best way to maintain libraries with complicated external dependencies (like bcrypt-ruby, of which I'm now a maintainer).
+  biography: I'm a developer at Harvest, makers of the world's best time tracking
+    software, where I write a combination of Ruby and angry rants. I'm also a maintainer
+    of bcrypt-ruby, the best way to keep your users' passwords secure, and the author
+    of rake-compiler-dev-box, the best way to successfully cross-compile your native
+    gems without pulling your hair out.
+- name: Barrett Clark
+  twitter: barrettclark
+  github: barrettclark
+  gravatar: 24abb01019a921b0124d3d603adc8ad1
+  title: How to Prototype an Airport
+  description: |-
+    I transformed my office building into an airport using a combination of Ruby, Objective-C, and a number of hardware hacks. The goal was to prototype a better in-airport experience using a mixture of GPS and iBeacon technology to establish precise indoor geolocation.
+
+    This talk will run down the various stages of the project, an overview of outdoor vs indoor location technologies, and how the iPhone (and Android) devices currently handle location. I'll also discuss how I built a robust Ruby backend, and how I hacked some hardware together to create iBeacons.
+  biography: Barrett Clark works at Sabre Labs as a Rubyist turned polyglot. He likes
+    Rails, but there is a bigger world beyond HTML. That's where he really likes to
+    play.
+- name: Nathan Long
+  twitter: sleeplessgeek
+  github: nathanl
+  gravatar: b9c927e051202fc198e70659d9827d2f
+  title: Big O in a Homemade Hash
+  description: |-
+    Rubyists use hashes all the time. But could you build Ruby's Hash class from scratch?
+
+    In this talk, I'll walk you through it. We'll learn what it takes to get the interface we want and maintain O(1) performance as it grows.
+  biography: Nathan is a Rubyist and the author of the Authority and Searchlight gems.
+    He loves clean code and clear explanations. He blogs at nathanmlong.com/blog.
+- name: John Athayde
+  twitter: boboroshi
+  github: boboroshi
+  gravatar: c804b6d0315e6332e231295349f90485
+  title: The Timeless Way of Building
+  description: "\"Design patterns\" is a common phrase that is often spoken in the
+    course of design and development of web applications. But it's genesis is not
+    from programming, but Architecture. They come from a trio of books in the 1970s
+    by Christopher Alexander, the most famous of which is the middle book: \"A Pattern
+    Language\". The issue arises that Pattern Languages, much like spoken languages,
+    are most effective when the speaker is fluent. \n\nWe'll look at the origin of
+    pattern languages and why they can be dangerous and even detrimental tools in
+    the hands of the inexperienced designer and developer through examples of bad
+    grammar and poor idiomatic choices(aka antipatterns), and perhaps some architecture
+    as well."
+  biography: John Athayde is a designer and developer who spends a lot of time fighting
+    bad coding practices in the Rails view layer. He is currently the VP of Design
+    for CargoSense, a logistics product company. Prior to this he was the Lead for
+    UI/UX and Front-end Development–Internal Apps at LivingSocial. In the past he
+    also was the lead designer at InfoEther and ran Hyphenated People with Amy Hoy.
+    He is currently setting up his small farm outside of Charlottesville where he
+    can garden and play in the dirt in between design and code sessions. In his free
+    time, he plays guitar and keyboards for DC's own Juniper Lane. He co-authored
+    “The Rails View” with Bruce Williams. He holds his Masters in Architecture from
+    Catholic University of America.
+- name: André Arko
+  twitter: '@indirect'
+  github: indirect
+  gravatar: 4c3ed917e59156a36212d48155831482
+  title: Lies, Damn Lies, and Metrics
+  description: 'In recent years, it''s been hard to hear yourself think over the chants
+    of "you can''t improve what you can''t measure" and "instrument everything". There
+    are tons of companies selling metrics platforms so successfully that they sponsor
+    conferences like this one (or even organize their own conferences!). But there''s
+    a problem: metrics lie to you. Metrics just report the numbers that were measured.
+    Analyzing those numbers is up to us, and that analysis can go wrong in so, so
+    many ways. Learn how to arm yourself against human intuition, interpreter pauses,
+    routing, instrumentation lag, and other issues. Don''t get so caught up in instrumenting
+    that you lose sight of why metrics exist! Make sure your metrics are telling you
+    actionable information, instead of just accurate numbers.'
+  biography: André thinks Ruby is pretty cool. He designs and builds web applications
+    at Cloud City Development by day, and works on Bundler and Rubygems by night…
+    and also some days.
+- name: Eileen Uchitelle
+  twitter: eileencodes
+  github: eileencodes
+  gravatar: c44e1f7e22c3f23cff7bc130871047ef
+  title: CRUD! The Consequences of Not Understanding How ActiveRecord Translates into
+    MySQL
+  description: The magic of ActiveRecord database interactions is easy to rely on
+    and allows us assume it knows best. Without a solid understanding of how ActiveRecord
+    translates into MySQL, however, significant issues can arise. This is particularly
+    true with large data sets and complex model relationships. My talk explores an
+    example for each CRUD function and shows how these queries can result in MySQL
+    timeouts, memory issues or stack level too deep errors. The examples will examine
+    the consequences of chaining large datasets, uses for Arel, and how to avoid encountering
+    major problems and most importantly, how these queries can be rewritten to run
+    more efficiently.
+  biography: Eileen M. Uchitelle is a Senior Developer for PhishMe, a leading provider
+    of SaaS solutions that combat phishing attacks through targeted immersive training.
+    Eileen has over 5 years experience in development having previously worked for
+    a boutique web development agency. Eileen enjoys confronting the most challenging
+    software bugs and building elegant solutions that seamlessly delight the user.
+    In her spare time she enjoys making ravioli from scratch, craft beer, and contributing
+    to open source projects.
+- name: Johnny T
+  twitter: '@johnny_t'
+  github: johnnyt
+  gravatar: 2afea6489a39326cf90b230a709047d4
+  title: MagLev - From Download To Deploy
+  description: |-
+    MagLev is a Ruby implementation built on top of a mature VM which offers native object persistence. Working with these live objects is awesome - but this image-based development is very different than traditional file-based development. MagLev uses both which has broad reaching effects - from design to deployment.
+
+    In traditional applications, data and code are separate. Deployments involve pulling new code, updating or migrating the data-store, and restarting or reloading the application which creates a new runtime with this new code.
+
+    MagLev's transient objects behave in this same manner, but committed objects are always there. Migrating these live, persistent objects is quite different. Your ‘data’ migrations involve things like instance variables, method definitions and class hierarchies, rather than creating tables or updating column definitions.
+
+    In this talk we will walk through how to:
+
+    * Set up a workstation for MagLev development
+    * Develop a basic application using MagLev
+    * Provision a Vagrant server with MagLev
+    * Deploy the application to the Vagrant server
+    * Modify the application - which requires a data migration
+    * Deploy the new code
+    * Migrate existing objects
+  biography: JohnnyT (a.k.a. John Thornton) has been developing web applications for
+    16 years, the last 8 of which have been in Ruby. He was converted to Smalltalk
+    in 2010 after looking into MagLev and discovering the magical world of GemStone/S
+    powering it all. He works on Amber Smalltalk and SubWars (an open-source GPS browser
+    based submarine game) to scratch his Smalltalk itch and earns his living working
+    for Rakuten MediaForge in Salt Lake City, Utah.
+- name: Andy Pliszka
+  twitter: '@AntiTyping'
+  github: AntiTyping
+  gravatar: 5fcb8d7cd6cbc8f9ae091e48c1340630
+  title: Introduction to CRuby source code
+  description: Understanding of CRuby source code has profound effects on every Ruby
+    developer. In my talk, I will show you how to build Ruby from source. I will explain
+    how to install and configure your new Ruby build on Mac and Linux. I will walk
+    you through CRuby source code and introduce you to a few of the most important
+    CRuby files. I will show you how to hack CRuby and modify some of the fundament
+    Ruby classes in C. I will demonstrate how to write complete Ruby classes in C.
+    Finally, I will show you that CRuby code can run 100 times faster than Ruby code.
+    I hope that this talk will inspire you to learn more about CRuby and hack it on
+    your own.
+  biography: Andy Pliszka (@AntiTyping) is a developer at Pivotal Labs and the organizer
+    of AlgorithmsNYC Meetup. He worked on multiple projects such as financial exchange
+    written in Erlang, web applications using Ruby on Rails, and computer vision using
+    Python. He enjoys implementing computer algorithms in variety of computer language.
+- name: Matthew Kirk
+  twitter: mjkirk
+  github: hexgnu
+  gravatar: b56e284bf775de58fd97d4fc815529b4
+  title: Test Driven Neural Networks with Ruby
+  description: Neural networks are an excellent way of mapping past observations to
+    a functional model. Many researchers have been able to build tools to recognize
+    handwriting, or even jaundice detection. While Neural Networks are powerful they
+    still are somewhat of a mystery to many. This talk aims to explain neural networks
+    in a test driven way. We'll write tests first and go through how to build a neural
+    network to determine what language a sentence is. By the end of this talk you'll
+    know how to build neural networks with tests!
+  biography: |-
+    Matthew Kirk is a partner at Modulus 7, specializing in software development and strategy. The basis of his career has been around utilizing science to improve businesses. He started his career at Parametric working as a quant to help develop an Enhanced Income strategy consisting of closed end funds. After leaving Parametric he became entrenched in the startup industry applying his love of bringing technology and science together with profit and customer happiness. He has worked with many businesses since including Wetpaint, SocialVolt, Civilization, City of Bellevue, The Clymb and Ritani.
+    Matthew holds a B.S. in Applied Mathematics and a B.S. in Economics from the University of Washington, and has spoken at technology conferences around the world. In his spare time, he enjoys traveling and adding to his 2000+ vinyl record collection.
+- name: Christopher Sexton
+  twitter: crsexton
+  github: csexton
+  gravatar: df2ddf01dd917ebce6099f323f49e35f
+  title: 'The Other Junk Drawer: My Tests are a Mess'
+  description: |-
+    Is your test suite comprehensible to someone new to the project? Can you find where you tested that last feature? Do you have to wade through dozens of files to deal with updated code?
+
+    Organizing tests are hard. It is easy to make things overly elaborate and complicated. Learn an approach to grouping the tests together in a way that makes sense. We can test drive without creating overly brittle tests. Lets build better designed projects by keeping our test suite clear and understandable.
+  biography: |-
+    I am Christopher Sexton. I cofounded the Arlington Ruby group and organize the Ruby Retrocession unconference (our fourth one this feb!). I built Captured app (http://www.capturedapp.com/) and blog at (http://www.codeography.com/)
+
+    To pay the bills, I build Proximity Kit at a little startup called Radius Networks.
+
+    I believe the best part of ruby is MINASWAN. Hands down.
+- name: Mario Gonzalez
+  twitter: maramono
+  github: omgm
+  gravatar: 4a84f0325dff56fc3806ebf431f59075
+  title: 'They were sent from the future: how to make your tests detect future bugs.'
+  description: |-
+    Regression testing is invaluable to knowing if changes to code have broken the software. However, it always seems to be the case that no matter how many tests you have in your regression buckets, bugs continue to happily creep in undetected. As a result, you are not sure if you can trust your tests anymore or your methodology, and you are ready to change that. I will present a powerful technique called mutation testing that will help make your tests capable of detecting future bugs. I will also give you a metric to assess the effectiveness of your tests in terms of regression, so that future changes in your software can be done with impunity.
+
+
+    Audience will learn:
+    * What mutation testing is and why it works.
+    * When and how to apply mutation testing.
+    * How to improve their tests so they detect bugs that are introduced during the normal evolution of software.
+  biography: |-
+    I started working on the unified theory of testing since college. At IBM, I got a chance to expand it and apply it, especially when working with customers for root-cause analysis in our enterprise storage products, as well as in development. Reachability graphs was one result of my work.
+
+    After IBM, I formed my own company called Ortask, where I now focus my attention developing tools that make testers more efficient, as well as researching/evangelizing testing techniques that have shown to yield high-quality results. Not surprisingly, I use both the theory and the tools quite often in my own testing.
+
+    I'm also currently writing a book that explains the unified theory of testing and all its useful details. the book will hopefully be available some time in 2014.
+---
+
+<div class="c">
+  <div class="g g_full">
+    <header class="header header_underline-dashed">
+      <h5 class="header__heading h_small text-align_center opacity_5 float-none">20 awesome speakers that will blow your mind!</h5>
+    </header>
+  </div>
+
+  <div class="g g_d6 g_pl12 g_separate pan">
+    {% for speaker in page.speakers %}
+      {% capture pattern %}{% cycle 'odd', 'even' %}{% endcapture %}
+      {% if pattern == 'odd' %}
+        {% include speaker_2014.html %}
+      {% endif%}
+    {% endfor %}
+  </div>
+
+  <div class="g g_d6 g_pl12 pan">
+    {% for speaker in page.speakers %}
+      {% capture pattern %}{% cycle 'odd', 'even' %}{% endcapture %}
+      {% if pattern == 'even' %}
+        {% include speaker_2014.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>

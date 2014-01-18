@@ -1,35 +1,75 @@
 ---
-title:  Call for Proposals
-layout: '2014'
+title:   'Registration Now Open!'
+layout:  '2014'
+heading: 'MWRC 2014 Registration Now Open!'
 ---
 
+<div class="page__body__sub-header">
+  <p><a class="button button_size_large" href="/2014/register">Register Now!</a></p>
+</div>
+
+<div class="g g_full pan">
+  <header class="header header_underline-dashed">
+    <h5 class="header__heading h_small text-align_center opacity_5 float-none">Announcements</h5>
+  </header>
+</div>
+
+<div class="c c_nested">
+  <section class="box_posts">
+    {% for post in site.categories.2014 %}
+      <div class="g g g_d4 g_tl6 g_pl12 pan">
+        <article class="box box_post" id="{{ post.id | bookmark }}">
+          <header class="box__header">
+            {{ post.title }}
+          </header>
+          <section class="box__subheadline">
+            Posted {{ post.date | date_to_string }}
+          </section>
+          <section class="box__body">
+            {{ post.content }}
+          </section>
+        </article>
+      </div>
+    {% endfor %}
+  </section>
+</div>
+
+<div class="c c_colored">
+  <article class="box box_map">
+    <div class="box__header">
+      <div class="box_iframe">
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?client=safari&amp;q=salt+lake+city+public+library&amp;oe=UTF-8&amp;ie=UTF8&amp;hl=en&amp;hq=salt+lake+city+public+library&amp;t=m&amp;cid=66428271525700298&amp;ll=40.761366,-111.884251&amp;spn=0.022754,0.036478&amp;z=14&amp;output=embed"></iframe>
+      </div>
+    </div>
+    <div class="box__body">
+      <article class="box box_location">
+      <header class="box__header">March 20-21, 2014</header>
+      <section class="box__body">
+        <ul>
+          <li>Salt Lake City Public Library</li>
+          <li>210 E 400 S</li>
+          <li>Salt Lake City, UT 84111</li>
+          <li><a class="button" href="/2014/register">Register Now!</a></li>
+        </ul>
+      </section>
+    </div>
+  </article>
+</div>
+
 <header class="page__body__header header_bar">
-  <h2 class=" header__heading">Call for Proposals Now Open!</h2>
+  <h2 class=" header__heading">Code of Conduct</h2>
 </header>
+
 <div class="page__body__body">
   <div class="c">
     <div class="g g_full ptl pbl text-block">
 
-      <div id="wufoo-zk4ebb700yqsuo">
-      Fill out my <a href="https://mwrc.wufoo.com/forms/zk4ebb700yqsuo">online form</a>.
-      </div>
-      <script type="text/javascript">var zk4ebb700yqsuo;(function(d, t) {
-      var s = d.createElement(t), options = {
-      'userName':'mwrc', 
-      'formHash':'zk4ebb700yqsuo', 
-      'autoResize':true,
-      'height':'1256',
-      'async':true,
-      'host':'wufoo.com',
-      'header':'show', 
-      'ssl':true};
-      s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-      s.onload = s.onreadystatechange = function() {
-      var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-      try { zk4ebb700yqsuo = new WufooForm();zk4ebb700yqsuo.initialize(options);zk4ebb700yqsuo.display(); } catch (e) {}};
-      var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-      })(document, 'script');</script>
+      <p class="mbm mtm">
+        MountainWest RubyConf is open to everyone. We are committed to providing a friendly, safe, and welcoming environment for all. If you are being harassed, or are aware of someone being harassed, please contact one of the conference organizers or volunteers.</p>
 
+      <p class="mbm text-align_center">Mike Moore<br />
+      <a href="tel:8015418810">(801) 541-8810</a><br />
+      <a href="mailto:mike@mtnwestrubyconf.org">mike@mtnwestrubyconf.org</a></p>
     </div>
   </div>
 </div>
