@@ -1,8 +1,3 @@
----
-title:   Speakers and Sessions
-layout:  '2014'
-heading: Speakers and Sessions
-speakers:
 - name: Kerri Miller
   twitter: kerrizor
   github: kerrizor
@@ -224,24 +219,6 @@ speakers:
     time, he plays guitar and keyboards for DC's own Juniper Lane. He co-authored
     “The Rails View” with Bruce Williams. He holds his Masters in Architecture from
     Catholic University of America.
-- name: André Arko
-  twitter: '@indirect'
-  github: indirect
-  gravatar: 4c3ed917e59156a36212d48155831482
-  title: Lies, Damn Lies, and Metrics
-  description: 'In recent years, it''s been hard to hear yourself think over the chants
-    of "you can''t improve what you can''t measure" and "instrument everything". There
-    are tons of companies selling metrics platforms so successfully that they sponsor
-    conferences like this one (or even organize their own conferences!). But there''s
-    a problem: metrics lie to you. Metrics just report the numbers that were measured.
-    Analyzing those numbers is up to us, and that analysis can go wrong in so, so
-    many ways. Learn how to arm yourself against human intuition, interpreter pauses,
-    routing, instrumentation lag, and other issues. Don''t get so caught up in instrumenting
-    that you lose sight of why metrics exist! Make sure your metrics are telling you
-    actionable information, instead of just accurate numbers.'
-  biography: André thinks Ruby is pretty cool. He designs and builds web applications
-    at Cloud City Development by day, and works on Bundler and Rubygems by night…
-    and also some days.
 - name: Eileen Uchitelle
   twitter: eileencodes
   github: eileencodes
@@ -365,31 +342,10 @@ speakers:
   title: To Be Announced
   description: Coming soon.
   biography: TBA
----
-{{  }}
-<div class="c">
-  <div class="g g_full">
-    <header class="header header_underline-dashed">
-      <h5 class="header__heading h_small text-align_center opacity_5 float-none">20 awesome speakers that will blow your mind!</h5>
-    </header>
-  </div>
-
-  <div class="g g_d6 g_pl12 g_separate pan">
-    {% for speaker in site.data.speakers_2014 %}
-      {% capture pattern %}{% cycle 'odd', 'even' %}{% endcapture %}
-      {% if pattern == 'odd' %}
-        {% include speaker_2014.html %}
-      {% endif%}
-    {% endfor %}
-  </div>
-
-  <div class="g g_d6 g_pl12 pan">
-    {% for speaker in site.data.speakers_2014 %}
-      {% capture pattern %}{% cycle 'odd', 'even' %}{% endcapture %}
-      {% if pattern == 'even' %}
-        {% include speaker_2014.html %}
-      {% endif %}
-    {% endfor %}
-  </div>
-
-</div>
+- name: TBA
+  twitter: tba
+  github: tba
+  gravatar: xxxxxxxx
+  title: To Be Announced
+  description: Coming soon.
+  biography: TBA
