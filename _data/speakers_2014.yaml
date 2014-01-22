@@ -174,7 +174,7 @@
 - name: Barrett Clark
   twitter: barrettclark
   github: barrettclark
-  gravatar: 24abb01019a921b0124d3d603adc8ad1
+  gravatar: 3a1f18e5445bd821f290ed68c1f2d925
   title: How to Prototype an Airport
   description: |-
     I transformed my office building into an airport using a combination of Ruby, Objective-C, and a number of hardware hacks. The goal was to prototype a better in-airport experience using a mixture of GPS and iBeacon technology to establish precise indoor geolocation.
