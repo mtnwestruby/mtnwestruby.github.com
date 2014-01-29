@@ -1,3 +1,15 @@
+- name: Ryan Davis
+  twitter: the_zenspider
+  github: zenspider
+  gravatar: 1389520a4eaa3d3e4523a76139e8f2e6
+  title: Nerd Party, v 3.1
+  description: Founded in 2002, Seattle.rb is the first and oldest ruby group in the world. We’ve evolved a lot over the years and have found a balance that I think works very well for many, if not most, groups. Seattle.rb has also had a study group off-and-on for a few years. We’ve tackled doozies like SICP but also programmed games in Racket (scheme). I will share the recipe for our user group and study group as well as the trade-offs we’ve made over the years and what they meant to us.
+  biography: |-
+    Ryan Davis has been using Ruby since 2000 and is a founding member of the Seattle Ruby Brigade, the first and foremost ruby brigade in the world.
+
+    In ruby land, he has focused on developer productivity and test automation tools. Some of his projects match:
+
+    /ruby2(ruby|smalltalk|c)|zen(test|web|profiler)|fl(og|ay)|yoda|rails-enterprise|image_science|h(o|eckl)e|minitest(-(bacon|(cheeseburg|debugg)er|macruby|excludes|focus))?|makerakeworkwell/i
 - name: Kerri Miller
   twitter: kerrizor
   github: kerrizor
@@ -60,7 +72,7 @@
     to bring technology to the world of commercial real estate, he can be found riding his bicycle,
     flying planes, and eating spaghetti.
 - name: Randy Coulman
-  twitter: '@randycoulman'
+  twitter: randycoulman
   github: randycoulman
   gravatar: 27204e228cc521c6cafed3c92b95184c
   title: Affordances in Programming Languages
@@ -80,7 +92,7 @@
     He's been developing software for more than 20 years, mainly in Smalltalk, Ruby,
     C++, and Javascript. He writes about Courageous Software at http://randycoulman.com/blog/.
 - name: Aja Hammerly
-  twitter: '@thagomizer_rb'
+  twitter: thagomizer_rb
   github: thagomizer
   gravatar: ff9072f60e25730674ad0d18a140ff65
   title: A World Without Assignment
@@ -120,7 +132,7 @@
     grow to the point where our applications are so powerful that performance and
     garbage-collection are among our primary concerns.
 - name: Benjamin Curtis
-  twitter: '@stympy'
+  twitter: stympy
   github: stympy
   gravatar: f96f2c4ade79c90649af1dffb26dc0bf
   title: Five machine learning techniques that you can use in your Ruby apps today
@@ -242,7 +254,7 @@
     In her spare time she enjoys making ravioli from scratch, craft beer, and contributing
     to open source projects.
 - name: Johnny T
-  twitter: '@johnny_t'
+  twitter: johnny_t
   github: johnnyt
   gravatar: 2afea6489a39326cf90b230a709047d4
   title: MagLev - From Download To Deploy
@@ -269,7 +281,7 @@
     based submarine game) to scratch his Smalltalk itch and earns his living working
     for Rakuten MediaForge in Salt Lake City, Utah.
 - name: Andy Pliszka
-  twitter: '@AntiTyping'
+  twitter: AntiTyping
   github: AntiTyping
   gravatar: 5fcb8d7cd6cbc8f9ae091e48c1340630
   title: Introduction to CRuby source code
@@ -335,13 +347,6 @@
     After IBM, I formed my own company called Ortask, where I now focus my attention developing tools that make testers more efficient, as well as researching/evangelizing testing techniques that have shown to yield high-quality results. Not surprisingly, I use both the theory and the tools quite often in my own testing.
 
     I'm also currently writing a book that explains the unified theory of testing and all its useful details. the book will hopefully be available some time in 2014.
-- name: TBA
-  twitter: tba
-  github: tba
-  gravatar: xxxxxxxx
-  title: To Be Announced
-  description: Coming soon.
-  biography: TBA
 - name: TBA
   twitter: tba
   github: tba
