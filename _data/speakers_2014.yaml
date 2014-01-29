@@ -1,3 +1,10 @@
+- name: Aaron Patterson
+  twitter: tenderlove
+  github: tenderlove
+  gravatar: f29327647a9cff5c69618bae420792ea
+  title: A Magical Gathering
+  description: Let's roll up our sleeves, and learn about Ruby and OpenCV. Let there be coding. Let there be learning. But most of all, let this be the most magical of all gatherings. I've put on my robe and my wizard hat, now lets make magic happen!
+  biography: Aaron was born and raised on the mean streets of Salt Lake City.  His only hope for survival was to join the local gang of undercover street ballet performers known as the Tender Tights.  As a Tender Tights member, Aaron learned to perfect the technique of self-defense pirouettes so that nobody, not even the Parkour Posse could catch him.  Between vicious street dance-offs, Aaron taught himself to program.  He learned to combine the art of street ballet with the craft of software engineering.  Using these unique skills, he was able to leave his life on the streets and become a professional software engineer.  He is currently Pirouetting through Processes, and Couruing through code for AT&T. Sometimes he thinks back fondly on his life in the Tender Tights, but then he remembers that it is better to have Tender Loved and Lost than to never have Tender Taught at all.
 - name: Ryan Davis
   twitter: the_zenspider
   github: zenspider
@@ -347,10 +354,3 @@
     After IBM, I formed my own company called Ortask, where I now focus my attention developing tools that make testers more efficient, as well as researching/evangelizing testing techniques that have shown to yield high-quality results. Not surprisingly, I use both the theory and the tools quite often in my own testing.
 
     I'm also currently writing a book that explains the unified theory of testing and all its useful details. the book will hopefully be available some time in 2014.
-- name: TBA
-  twitter: tba
-  github: tba
-  gravatar: xxxxxxxx
-  title: To Be Announced
-  description: Coming soon.
-  biography: TBA
