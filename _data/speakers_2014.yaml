@@ -342,7 +342,7 @@
   twitter: maramono
   github: omgm
   gravatar: 4a84f0325dff56fc3806ebf431f59075
-  title: 'They were sent from the future: how to make your tests detect future bugs.'
+  title: Re-thinking regression testing
   description: |-
     Regression testing is invaluable to knowing if changes to code have broken the software. However, it always seems to be the case that no matter how many tests you have in your regression buckets, bugs continue to happily creep in undetected. As a result, you are not sure if you can trust your tests anymore or your methodology, and you are ready to change that. I will present a powerful technique called mutation testing that will help make your tests capable of detecting future bugs. I will also give you a metric to assess the effectiveness of your tests in terms of regression, so that future changes in your software can be done with impunity.
 
