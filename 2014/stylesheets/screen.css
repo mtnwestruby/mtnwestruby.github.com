@@ -1031,8 +1031,6 @@ Styleguide 17.0
   .box_sponsor .box__hero {
     text-align: center;
     margin-bottom: 24px; }
-    .box_sponsor .box__hero .figure, .box_sponsor .box__hero .figure_avatar, .box_sponsor .box__hero .figure_profile, .box_sponsor .box__hero .figure_frame, .box_sponsor .box__hero .figure_frame_stack, .box_sponsor .box__hero .figure_frame_thin {
-      max-width: 200px; }
   .box_sponsor .box__header {
     font-weight: bold;
     padding: 0;
