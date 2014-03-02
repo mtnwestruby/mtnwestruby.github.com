@@ -2104,7 +2104,7 @@ Styleguide 2.2
     background: #fff;
     background: rgba(255, 255, 255, 0.8);
     border: 2px solid rgba(161, 169, 181, 0.5);
-    max-width: 50%;
+    max-width: 80%;
     min-width: 272px;
     padding: 24px;
     border-radius: 4px; }
@@ -2363,7 +2363,7 @@ Styleguide 19.0
   left: 0; }
 
 /*
-Nav. (.nav) A collection of links to navigate within a site or a content section. 
+Nav. (.nav) A collection of links to navigate within a site or a content section.
 Can be in vertical or horizontal (defaults to horizontal), tabs, pills, links or any other form
 
 .nav_vert           - (vertical)
