@@ -275,15 +275,7 @@
 
     MagLev's transient objects behave in this same manner, but committed objects are always there. Migrating these live, persistent objects is quite different. Your ‘data’ migrations involve things like instance variables, method definitions and class hierarchies, rather than creating tables or updating column definitions.
 
-    In this talk we will walk through how to:
-
-    * Set up a workstation for MagLev development
-    * Develop a basic application using MagLev
-    * Provision a Vagrant server with MagLev
-    * Deploy the application to the Vagrant server
-    * Modify the application - which requires a data migration
-    * Deploy the new code
-    * Migrate existing objects
+    In this talk we will walk through a number of examples including a simple job and worker which use persisted blocks, and how to deploy an application and migrate persisted objects.
   biography: JohnnyT (a.k.a. John Thornton) has been developing web applications for
     16 years, the last 8 of which have been in Ruby. He was converted to Smalltalk
     in 2010 after looking into MagLev and discovering the magical world of GemStone/S
