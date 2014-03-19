@@ -17,25 +17,16 @@
     In ruby land, he has focused on developer productivity and test automation tools. Some of his projects match:
 
     /ruby2(ruby|smalltalk|c)|zen(test|web|profiler)|fl(og|ay)|yoda|rails-enterprise|image_science|h(o|eckl)e|minitest(-(bacon|(cheeseburg|debugg)er|macruby|excludes|focus))?|makerakeworkwell/i
-- name: Kerri Miller
-  twitter: kerrizor
-  github: kerrizor
-  gravatar: f4d5752d6f4f839083cf810ad2c3a911
-  title: Concurrency for !Dummies (Who Don't Get It (...Yet))
-  description: You can't go to a Ruby conference lately without someone banging on
-    about concurrency and thread safety. You're a smart Rubyist, but... you don't
-    get it. You understand the basic idea, you nod along, but once they get into the
-    jargon, what does it all mean? How does it apply to you, and what is it, exactly?
-    This talk will answer those questions, by engaging in a basic primer on concurrency
-    in Ruby, a discussion of actual examples of how it works, and provide you with
-    answers that will leave you nodding in agreement, rather than nodding off.
-  biography: Kerri Miller is a Sr Software Developer and Team Lead based in the Pacific
-    Northwest. She has worked at enterprise companies, international ad agencies,
-    boutique consultancies, start-ups, and every place in between. She mentors and
-    teaches students as an instructor at Ada Developers Academy, and consults with
-    a wide range of companies internationally through NIRD. Having an insatiable curiosity,
-    she has worked as a lighting designer, marionette puppeteer, sous chef, and professional
-    poker player, and enjoys hiking, collecting Vespas, and working with glass.
+- name: Sarah Mei
+  twitter: sarahmei
+  github: sarahmei
+  gravatar: 92497f51734ed56687928d5fd68d870a
+  title: Unpacking Technical Decisions
+  description: |-
+    As engineers working on a team, we all make technical decisions. What’s the best way to implement this? Where should this function live? Is this library worth using? Some decisions, though, are larger, riskier and more important than that. But generally, they're also far less frequent. 
+
+    Right now, your team might be struggling to organize the client-side parts of your application. Ember? Angular? Backbone? Flip a coin? Uh...which one has the most...retweets? These choices don't need to be arbitrary or based on vague personal preference. Come learn a more useful and realistic approach that makes large-scale technical decisions less risky.
+  biography: I am a Ruby developer in San Francisco, California. I run a software consulting company called The Ministry of Velocity, which is super fun. We write web and mobile apps using pair programming & behavior-driven development. I’ve written here about my experiences pair programming while I was at Pivotal Labs, and also my approach to testing.
 - name: Ernie Miller
   twitter: erniemiller
   github: ernie
