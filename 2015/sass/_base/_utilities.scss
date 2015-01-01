@@ -1,0 +1,169 @@
+// image replacement (borrowed from HTML5 boilerplate)
+.ir{text-indent:-999em; display:block; overflow:hidden; text-align:left; direction:ltr}
+
+// floats
+
+.fl{float:left !important; _margin-right:-3px;}
+.fr{float:right !important; _margin-left:-3px}
+.ffluid{display:table-cell; *display:block; width:auto}
+.cr{clear:right}
+.cl{clear:left}
+.cb{clear:both}
+
+// clear fix
+.clearfix:before,.clearfix:after {content:"";display:table;}
+.clearfix:after {clear:both;}
+.clearfix {zoom:1;}
+
+.styleguide-element {
+  @extend .clearfix;
+}
+
+
+// display
+
+.hidden, .for-tests {display:none !important}
+.invisible{visibility:hidden !important}
+
+
+// centering
+.window_full-width {
+  min-width: 1008px;
+}
+
+// positioning
+.fixed {position:fixed;}
+.absolute {position:absolute;}
+.sticky {position:fixed; top:0;}
+.relative {position: relative;}
+
+// vertical centering technique [http://www.jakpsatweb.cz/css/css-vertical-center-solution.html]
+.vcenter{overflow:hidden; *position:relative; display:table; *display:block} // height of .vcenter element is required  
+.vcenter .outer{display:table-cell; vertical-align:middle; width:100%; *position:absolute; *top:50%}
+.vcenter .inner{*position:relative; *top:-50%}
+.hcenter{ margin-left:auto !important; margin-right:auto !important} // width is required
+
+
+// text helpers
+.tcenter{text-align:center}
+.tleft{text-align:left}
+.tright{text-align:right}
+.tupper{text-transform:uppercase}
+.tlower{text-transform:lowercase}
+.tnormal{text-transform:none}
+.ttop{text-align:top}
+.tmiddle{text-align:middle}
+.tbottom{text-align:bottom}
+
+.ellipsis {
+  white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.text_small {
+  font-size: .85714em;
+}
+
+.text_large {
+  font-size: 1.125em;
+}
+
+.text_bold {
+	font-weight:bold;
+}
+
+.text_normal {
+  font-weight:normal;
+}
+
+
+// interaction helpers
+.clickable, .btn, .hoverable {cursor:pointer}
+.clickable.disabled, .btn.disabled{cursor:default !important}
+
+
+// font-styles
+.b{font-weight:bold}
+.em{font-style:italic}
+.big{font-size:1.166em}
+.small{font-size:.85714em}
+.del{text-decoration:line-through}
+
+
+// spacing helpers
+// p,m = padding,margin
+// a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+// s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
+
+.ptn,.pvn,.pan{padding-top:0px !important}
+.pts,.pvs,.pas{padding-top:.375em !important}
+.ptm,.pvm,.pam{padding-top:.85714em !important}
+.ptl,.pvl,.pal{padding-top:1.5em !important}
+.prn,.phn,.pan{padding-right:0px !important}
+.prs,.phs,.pas{padding-right:.375em !important}
+.prm,.phm,.pam{padding-right:.85714em !important}
+.prl,.phl,.pal{padding-right:1.5em !important}
+.pbn,.pvn,.pan{padding-bottom:0px !important}
+.pbs,.pvs,.pas{padding-bottom:.375em !important}
+.pbm,.pvm,.pam{padding-bottom:.85714em !important}
+.pbl,.pvl,.pal{padding-bottom:1.5em !important}
+.pln,.phn,.pan{padding-left:0px !important}
+.pls,.phs,.pas{padding-left:.375em !important}
+.plm,.phm,.pam{padding-left:.85714em !important}
+.pll,.phl,.pal{padding-left:1.5em !important}
+.mtn,.mvn,.man{margin-top:0 !important}
+.mts,.mvs,.mas{margin-top:.375em !important}
+.mtm,.mvm,.mam{margin-top:.85714em !important}
+.mtl,.mvl,.mal{margin-top:1.5em !important}
+.mrn,.mhn,.man{margin-right:0px !important}
+.mrs,.mhs,.mas{margin-right:.375em !important}
+.mrm,.mhm,.mam{margin-right:.85714em !important}
+.mrl,.mhl,.mal{margin-right:1.5em !important}
+.mbn,.mvn,.man{margin-bottom:0px !important}
+.mbs,.mvs,.mas{margin-bottom:.375em !important}
+.mbm,.mvm,.mam{margin-bottom:.85714em !important}
+.mbl,.mvl,.mal{margin-bottom:1.5em !important}
+.mln,.mhn,.man{margin-left:0px !important}
+.mls,.mhs,.mas{margin-left:.375em !important}
+.mlm,.mhm,.mam{margin-left:.85714em !important}
+.mll,.mhl,.mal{margin-left:1.5em !important}
+
+
+// states
+.state_hidden{display:none;}  
+.state_shown{display:block !important;}
+
+.state_visible{visibility:visible !important;}
+.state_invisible{visibility:hidden  !important;}
+
+.state_selected{}
+.state_disabled{}
+.state_active{}
+.state_inactive{}
+.state_loading{}
+.state_default{}
+.state_pressed{}
+.state_hover{}
+.state_focus{}
+.state_dragged{}
+.state_dropped{}
+
+
+// presentational helpers
+.round {
+  border-radius: 2px;
+}
+
+// transparencies 
+.opacity_0 { @include opacity(0); }
+.opacity_1 { @include opacity(.1); }
+.opacity_2 { @include opacity(.2); }
+.opacity_3 { @include opacity(.3); }
+.opacity_4 { @include opacity(.4); }
+.opacity_5 { @include opacity(.5); }
+.opacity_6 { @include opacity(.6); }
+.opacity_7 { @include opacity(.7); }
+.opacity_8 { @include opacity(.8); }
+.opacity_9 { @include opacity(.9); }
+.opacity_full { @include opacity(1); }

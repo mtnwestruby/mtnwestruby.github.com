@@ -1,6 +1,6 @@
 # auto: true
 permalink: /:year/blog/:title.html
-pygments: true
+highlighter: true
 exclude:
 - README
 - CNAME

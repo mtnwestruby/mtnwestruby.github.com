@@ -1,0 +1,84 @@
+---
+title:   'Registration Now Open!'
+layout:  '2015'
+heading: 'MWRC 2015 - March 9-10, 2015'
+---
+
+<div class="c c_colored">
+  <div class="page__body__sub-header">
+    <header class="header">
+      <h2 class="header__heading h3 mbs text-align_center float-none">Call for Proposals now open!</h2>
+    </header>
+
+    <p>MountainWest JavaScript is now accepting proposals for the conference on March 3-4, 2015 in Salt Lake City, UT.<br>
+    The CFP is open until Saturday, January 17, 2015. Better hurry!</p>
+
+    <p><a class="button button_size_large" href="https://mwrc.wufoo.com/forms/q1bwhlfr0cmzkpi/" onclick="window.open(this.href,  null, 'height=800, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">Submit a Proposal Now!</a></p>
+  </div>
+</div>
+
+<div class="g g_full pan">
+  <header class="header header_underline-dashed">
+    <h5 class="header__heading h_small text-align_center opacity_5 float-none">Announcements</h5>
+  </header>
+</div>
+
+<div class="c c_nested">
+  <section class="box_posts">
+    {% for post in site.categories.2015 %}
+      <div class="g g g_d4 g_tl6 g_pl12 pan">
+        <article class="box box_post" id="{{ post.id | bookmark }}">
+          <header class="box__header">
+            {{ post.title }}
+          </header>
+          <section class="box__subheadline">
+            Posted {{ post.date | date_to_string }}
+          </section>
+          <section class="box__body">
+            {{ post.content }}
+          </section>
+        </article>
+      </div>
+    {% endfor %}
+  </section>
+</div>
+
+<div class="c c_colored">
+  <article class="box box_map">
+    <div class="box__header">
+      <div class="box_iframe">
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Rose+Wagner+Performing+Arts+Center&amp;ll=40.763089,-111.895488,17z&amp;z=14&amp;output=embed"></iframe>
+      </div>
+    </div>
+    <div class="box__body">
+      <article class="box box_location">
+        <header class="box__header">March 9-10, 2015</header>
+        <section class="box__body">
+          <ul>
+            <li>Rose Wagner Performing Arts Center</li>
+            <li>138 West 300 South</li>
+            <li>Salt Lake City, UT 84101</li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </article>
+</div>
+
+<header class="page__body__header header_bar">
+  <h2 class=" header__heading">Inclusivity is Paramount</h2>
+</header>
+
+<div class="page__body__body">
+  <div class="c">
+    <div class="g g_full ptl pbl text-block">
+
+      <p class="mbm mtm">
+        MountainWest RubyConf is open to everyone. We are committed to providing a friendly, safe, and welcoming environment for all. If you are being harassed, or are aware of someone being harassed, please contact one of the conference organizers or volunteers. <a href="/2015/policies" class="button">More information</a></p>
+
+      <p class="mbm text-align_center">Mike Moore<br />
+      <a href="tel:8015418810">(801) 541-8810</a><br />
+      <a href="mailto:mike@mtnwestrubyconf.org">mike@mtnwestrubyconf.org</a></p>
+    </div>
+  </div>
+</div>

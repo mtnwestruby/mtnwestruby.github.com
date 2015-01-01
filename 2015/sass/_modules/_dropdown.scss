@@ -1,0 +1,94 @@
+.dropdown{
+  position:relative;
+}
+
+.dropdown .nav__link:after {
+    content:"\25BC";
+    top: -1px;
+    position:relative;
+    display: inline-block;
+    margin-left: 2px;
+    opacity:.5;
+    color:#000;
+    font-size: 10px;
+    @include transition(all .15s ease);
+  }
+
+.dropdown.active .nav__link:after{
+  top: -2px;
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  transform:rotate(180deg);
+  outline: none;
+}
+
+  .dropdown__menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: .73333em;
+    z-index: 800000;
+    padding: 4px 0;
+    border: 1px solid #000;
+    line-height: 1.2em;
+    background: #2d3237;
+    white-space: nowrap;
+    border-radius: 0 0 4px 4px;
+    &:before{
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 5px;
+      display: block;
+      width: 9px;
+      height: 6px;
+      z-index: 200001;
+      background: image-url("images/no-repeat.png") no-repeat -4px -1078px;
+        -webkit-backface-visibility: hidden;
+    }
+  }
+    .dropdown__menu_middle {
+      left: 50%;
+      right: auto;
+      width: 186px;
+      margin-left: -94px;
+      &:before{left:50%; margin-left: -2px;}
+    }
+    
+    .dropdown__menu_right {
+      left: auto;
+      right: .85714em;
+      &:before{left:auto; right: 18px;}
+    }
+    .dropdown__menu-heading{
+      padding: 4px 8px;
+      line-height: 18px;
+      color: #FFFFFF;
+      font-size: 0.85714em;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .dropdown__menu-arrow{}
+    .dropdown__menu-item{}
+    .dropdown__menu-link{
+      @include transition(none);
+      color: #fff;
+      display: block;
+      padding: 4px 8px;
+      text-decoration: none;
+      &:hover, &.hover-active {
+        color: #fff;
+        background-color: #5682d3;
+      } 
+      &:active{
+        background-image: none;
+      };
+    }
+    .dropdown__menu-divider{
+      background-color:none;
+      margin: 8px;
+      border:none;
+      border-top: 1px solid #111111;
+      height: 0;
+    }

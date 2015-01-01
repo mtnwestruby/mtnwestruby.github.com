@@ -1,0 +1,322 @@
+/*
+A button. Good for link tags or button elements.
+
+.button_primary - used to publish posts
+.button_secondary - used to publish posts
+.button_follow - for following users
+
+Styleguide 1.0
+*/
+
+.button {
+  height: 30px;
+  padding: 0 9px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align:center;
+  font-weight: bold;
+  line-height: 30px;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: .75em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  @extend .bg_1;
+  @extend .futura;
+}
+
+// Button sizes
+.button_size_mini {
+  height: 16px;
+  padding: 0 5px; // 1px 5px 0
+  text-transform: uppercase;
+  font-size: .666em; //10px
+  font-weight: bold;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+
+.button_size_medium {
+  height: 44px;
+  padding:0 10px;
+  line-height: 44px;
+}
+
+.button_size_large {
+  height: 60px;
+  font-size: 1.375em; 
+  padding: 0 20px;
+  line-height: 60px;
+}
+
+.button_gigantic {
+  display: block;
+  height: 162px;
+  text-align: center;
+  color: #222;
+  @extend .bg_7;
+}
+
+.button_square {
+  display: block;
+  height: 26px;
+  width: 26px;
+  line-height: 26px;
+  text-align: center;
+  @include opacity(1);
+  padding: 0;
+}
+
+.button_square-small {
+  display: block;
+  height: 26px;
+  width: 26px;
+  line-height: 26px;
+}
+
+.button_square-medium {
+  display: block;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+}
+
+.button.button_square-large {
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  @include opacity(1);
+  padding: 0;
+  .icon {
+    display: block;
+    margin: 8px 8px 0 7px;
+  }
+}
+
+.button_full {
+  width: 100% !important;
+  display: block !important;
+  float: none !important;
+  padding: 0 !important;
+}
+
+
+
+// Button colors for the main reocurring buttons
+.button_secondary {
+  @extend .bg_2;
+}
+.button_tertiary {
+  @extend .bg_3;
+}
+
+.button_active{
+  background-color: transparent !important;
+  color: rgba(248,108,40,.9) !important;
+  @include box-shadow(inset 0 0 0 2px rgba(248,108,40,.9));
+}
+
+.button_round-toggle {
+  @extend .button_square;
+  @extend .button_circle;
+}
+.button_round-toggle.state_active {
+  @extend .button_active;
+}
+
+
+
+
+// Button for marketing message
+.button_detailed {
+  height: 78px;
+  padding: 0 20px;
+  line-height: 1em;
+}
+
+.button_detailed__title {
+  display: block;
+  font-size: 1.85714em;
+  line-height: 1em;
+  margin: 18px 0 4px;
+}
+
+.button_detailed__description {
+  display: block;
+  line-height: 1em;
+}
+
+.button_detailed__banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+
+// circle close buttons
+.button_circle {
+  border-radius:10000px;
+}
+
+.button_close {
+  @extend .bg_3;
+}
+
+.button_edit-contact {
+  @extend .bg_3;
+}
+
+
+
+// Buttons with icons
+.button_icon {
+  padding-left: 0;
+  white-space:nowrap;
+  .button__label {float: left;}
+}
+
+.button_icon__wrapper {
+  display: block;
+  float: left;
+  width: 38px;
+  height: 100%;
+  margin-right: 16px;
+  background: transparent;
+  background: rgba(0,0,0,.15);
+  border-radius: 3px 0 0 3px;
+  .icon { margin: 0; }
+}
+
+.button_size_large .button_icon__wrapper {width: 58px; margin-right: 20px;}
+.button_size_medium .button_icon__wrapper {width: 30px; margin-right: 10px;}
+.button_size_small .button_icon__wrapper {width: 24px; margin-right: 10px;}
+.button_size_mini .button_icon__wrapper {width: 16px; margin-right: 5px;}
+
+
+
+// Example dashed button
+.button_example {
+  @include box-shadow(none);
+  background-image: none;
+  background-color: transparent;
+  color: #a1a0a0;
+  border: 1px dashed #ccc;
+  display: block;
+  &:hover { background-color: transparent; color: #a1a0a0; cursor: default; };
+  &:active { @include box-shadow(none); }
+}
+
+
+
+// Buttons that have labels underneath them on hover.
+.button_label-hover {
+  position: relative;
+  overflow: hidden;
+  .button__title {
+    display: block;
+    height: 26px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 80px;
+    margin: 4px 3px 0 -40px;
+    background: #000;
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    text-shadow: none;
+    font: bold 11px/26px "lucida grande", verdana, sans-serif;
+    border-radius: 2px;
+  }
+  .button__title_left {
+    left: 0;
+    margin-left: 0;
+  }
+  .button__title_right {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+  }
+  &:hover {
+    overflow: visible;
+  }
+}
+
+
+
+
+/*A bar of buttons for sorting, and what not.*/
+.button-bar {
+  @extend .clearfix;
+  border-radius: 2px;
+  .button {
+    @include box-shadow(inset 1px 0 0 rgba(0, 0, 0, 0.1));
+    float: left;
+    padding: 0;
+    width: 50%;
+    border-radius: 0;
+    border-left-width: 0;
+  }
+  .button:first-child { @include box-shadow(none); border-top-left-radius: 2px; border-bottom-left-radius: 2px; border-left-width: 1px; }
+  .button:last-child { border-top-right-radius: 2px; border-bottom-right-radius: 2px; }
+  .button:active {
+    position: relative;
+    z-index: 1;
+  }
+  .button.active, .button.current {
+    position: relative;
+    z-index: 1;
+    background-color: #5682d3;
+    border-color: #375da5;
+    border-top-color: #1a2f57;
+    color: #fff;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    background-image: none;
+    &:hover { cursor: default; }
+  }
+}
+
+.button-bar_3 .button {padding: 0; width: 33.333%;}
+.button-bar_4 .button {padding: 0; width: 25%;}
+.button-bar_5 .button {padding: 0; width: 20%}
+.button-bar_6 .button {padding: 0; width: 16.66%}
+
+.button-bar_top {
+  width: 60px;
+}
+
+
+
+// For rows of buttons that are not connected
+.button-row {
+  @extend .clearfix;
+  .button-wrapper {float: left; width: 50%; padding: 0 .42857em; }
+  .button-wrapper:first-child {padding-left: 0;}
+  .button-wrapper:last-child {padding-right: 0;}
+  .button {display: block; padding: 0;}
+}
+
+.button-row_3 {.button-wrapper{ width: 33.333%;}}
+.button-row_4 {.button-wrapper{ width: 25%;}}
+.button-row_5 {.button-wrapper{ width: 20%;}}
+.button-row_6 {.button-wrapper{ width: 16.666666%;}}
+
+
+
+
+// Buttons with icons
+.button_icon {
+  padding-left: 0;
+  .icon {
+    margin: -4px 0 0 -1px;
+  }
+}

@@ -1,0 +1,293 @@
+/*
+Nav. (.nav) A collection of links to navigate within a site or a content section. 
+Can be in vertical or horizontal (defaults to horizontal), tabs, pills, links or any other form
+
+.nav_vert           - (vertical)
+.nav_tabs            - (tab section)
+.nav_tabs.nav_vert   - (tab section vertical)
+.nav_pills           - (rounded pills)
+.nav_pills.nav_vert  - (rounded pills vertical)
+.nav_toolbar  		 - (toolbar for wysiwyg)
+
+
+Styleguide 12.0
+*/
+
+.nav{
+	@extend .clearfix;
+	.nav__item {float:left;list-style:none;}
+	.nav_user .nav__item:first-child .nav__link, .nav_user .nav__item:first-child .button-bar, .nav_user .nav__item:first-child .nav__input {padding-left:0;}
+	.nav_user .nav__item:last-child .nav__link, .nav_user .nav__item:last-child .button-bar, .nav_user .nav__item:last-child .nav__input{padding-right:0;}
+	.nav_user .nav__item:first-child .nav__button {margin-left:0;}
+	.nav_user .nav__item:last-child .nav__button{margin-right:0;}
+	.nav__button { float: left; margin: 6px; }
+	.nav__link {display:block;padding-left:.85714em;padding-right:.85714em;}
+  .nav__input {display: block; padding: 5px;}
+}
+
+
+
+
+// nav_horz
+.nav_horz {
+	height:35px;
+ 	line-height:35px;
+	color: #333;
+	border:1px solid #ccc;
+	background-color: #e7e7e7;
+	border-radius: 2px;
+	.nav__link {
+		padding:0 10px;
+		&:hover{background:rgba(0,0,0,.02);};
+	}
+
+}
+.nav_horz.sticky {
+	width:100%;
+	left:0;
+	border-radius:0 0 4px 4px;
+	border-top:none;
+}
+	
+
+
+
+// nav_user 
+.nav_user{
+	border-left: none;
+	border-right: none;
+	border-left: none;
+	border-right: none;
+	.nav__item {line-height:50px;height: 50px;}
+	.nav_user__avatar {margin-top: -2px;margin-right:.375em;}
+		.nav__button {margin-top:4px;}
+		.nav__link {color:#ffffff;line-height:50px;}
+		.nav__link:hover {color:#ffffff;}
+	.nav__item:first-child .nav__link, .nav_user .nav__item:first-child .nav__input {padding-left:0;}
+	.nav__item:last-child .nav__link, .nav_user .nav__item:last-child .nav__input{padding-right:0;}
+	.nav__item:first-child .nav__button {margin-left:0;}
+	.nav__item:last-child .nav__button{margin-right:0;}
+	.nav__item {line-height:50px;height: 50px;}
+	.nav__button {margin-top:4px;}
+	.nav__link {color:#ffffff;line-height:50px;}
+	.nav__link:hover {color:#ffffff;}
+}
+
+
+
+
+// nav_vert
+.nav_vert{
+	.nav__item  {float:none;padding:2px 0;}
+	.nav-link,.nav__item:first-child .nav__link, .nav__item:last-child .nav__link { padding: 0;}
+		.nav__button {}
+		.nav__link {}
+		.nav__link:hover {}
+		.nav__divider{}
+		.nav__item_dropdown{}
+}
+
+
+
+
+// nav_pills
+.nav_pills{
+	.nav__item{padding:0 5px;}
+	.nav__link,.nav__item:first-child .nav__link, .nav__item:last-child .nav__link {
+		padding:0 .85714em;
+		height:28px;
+		line-height:28px;
+		display: block;
+		border: 1px solid transparent;
+		margin-bottom: 6px;
+  	border-radius: 20px;
+  	font-weight: bold;
+		&:hover {background:#efefef;}
+	}
+	.nav__link { &.selected {@extend .bg_3;}}
+}
+
+
+// nav_tabs
+.nav_tabs {
+	position: relative;
+	@extend .clearfix;
+  @extend .h_small;
+  color: #777;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+  border-bottom: 2px solid #ddd;
+  height: 45px;
+  line-height: 43px;
+	.nav__item{
+		margin-bottom: -1px;
+		padding:0;
+		text-align: center;
+		width:50%;
+	}
+	.nav__item:first-child .nav__link {padding: 0 .85714em;border-right:none;}
+	.nav__item:first-child .nav__button {margin-left:.375em;}
+	.nav__item:last-child .nav__button{margin-right:.375em;}
+	.nav__link{
+		border-radius: 0;
+		border-bottom: 2px solid transparent;
+	}
+	.ui-state-active {
+		.nav__link {
+			color: #333;
+			border-color: #333;
+			outline-color: transparent;
+		}
+	}
+}
+
+.nav_tabs_two {
+	.nav__item{width:50%;}
+}
+
+
+
+.nav_tabs_three {
+	.nav__item{width:33.33333333%;}
+}
+
+.nav_tabs_full {
+	.nav__item {
+		@extend .g;
+		width: 50%;
+		margin: 0;
+		padding: 0 .85714em;
+	}
+	.nav__link {
+		display: block;
+		padding: 0 4px;
+	}
+}
+
+.nav_tabs_full_3 {
+	.nav__item {width: 33.3333%;}
+}
+.nav_tabs_full_4 {
+	.nav__item {width: 25%;}
+}
+.nav_tabs_full_5 {
+	.nav__item {width: 20%%;}
+}
+
+
+
+// nav_tabs-line
+.nav_tabs-line {
+	border-bottom: 1px solid #ccc;
+	.nav__link.selected { border-bottom-color: #ccc;}
+}
+
+
+// nav_tabs.nav_vert
+.nav_tabs.nav_vert {
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	.nav__item{
+		margin-bottom: 0;
+		padding:0;
+		margin-right:0;
+		&:first-child .nav__link {border-radius: 3px 3px 0 0;}
+		&:last-child .nav__link {border-radius: 0 0 3px 3px;}
+	}
+	.nav__item:first-child .nav__link,.nav__item:last-child .nav__link {padding:0 0.85714em;}
+	.nav__link{
+		height:38px;
+		line-height:38px;
+		padding: 0 12px;
+		margin:0;
+		border: none;
+		border-radius: 0;
+		&.selected {
+			position: relative;
+			z-index: 1;
+			@extend .bg_3;
+			border-width: 1px;
+			border-style: solid;
+			margin-left: -1px;
+			margin-right: -1px;
+		}
+	 	&:hover {
+	 		background-color:#eeeeee;
+	 	}
+	}
+}
+
+
+
+// nav_toolbar
+.nav_toolbar {
+	.nav__item {margin-left:4px;margin-right:4px;}
+	.nav__item:last-child {margin-right:0;}
+	.nav__item:first-child {margin-left:0;}
+	.nav__button {margin:0; padding: 0;}
+	.nav__button-bar {margin:0; padding: 0;}
+}
+
+// For the replace thumbnail tab on course editor
+.nav__item_preview {}
+.nav__item_preview__image { width: 30px; vertical-align: middle; margin-right: 4px; }
+
+
+
+
+.nav__page-info {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	margin-top: -22px;
+	letter-spacing: 6px;
+	font-size: .7em;
+	font-weight: bold;
+	text-shadow: 0 0 20px rgba(0,0,0,1);
+	@extend .serif;
+	.nav__item {
+		border-top: 3px double #fff;
+		border-bottom: 3px solid #fff;
+		height: 44px;
+		line-height: 38px;
+		width: 30%;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+
+@media screen and (max-width: 960px) {
+	.nav__page-info {
+		top: auto;
+		bottom: 22px;
+		.nav__item {
+			width: 45%;
+			margin: 0 2.5%;
+		}
+	}
+}
+
+
+@media screen and (max-width: 760px) {
+	.nav__page-info {
+		top: 180px;
+		bottom: auto;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.nav__page-info {
+		top: 140px;
+		bottom: auto;
+		.nav__item {
+			float: none !important;
+			width: auto;
+			margin: 0 2.5%;
+			border-bottom: 1px dashed #fff;
+			&:last-child {border-top: none; border-bottom: 3px double #fff;}
+		}
+	}
+}

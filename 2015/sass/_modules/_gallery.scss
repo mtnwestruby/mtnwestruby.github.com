@@ -1,0 +1,8 @@
+.gallery{
+  @extend .clearfix;
+  background: #332e2e;
+  padding: .225em;
+  .gallery__item{float:left; width:50%; padding: .225em; border-radius: 2px;}
+  .gallery__group {float:left; width:50%;}
+  .figure {display: block;}
+}

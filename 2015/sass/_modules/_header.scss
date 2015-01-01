@@ -1,0 +1,91 @@
+// header 
+.header {
+  @extend .clearfix;
+  position: relative;
+	vertical-align: bottom;
+}
+
+
+// header heading
+.header__heading {
+	float:left;
+  font-weight: bold;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+// header with button
+.header__heading_with_button {line-height: 26px;}
+
+.header__heading_full {
+  float: none;
+  display: block;
+  width: auto;
+}
+.header__actions{
+  text-align: right;
+	float:right;
+	width: 22%;
+	.button {display: block;}
+}
+.header__actions_bottom {
+  position: absolute;
+  right: 0;
+  bottom: .6em;
+}
+.header__actions_pagination {
+  margin: -.5em;
+  width: auto;
+  .button {
+     background: none transparent;
+     margin: -1px;
+     border-radius: 0;
+     @include box-shadow (inset 1px 0 0 rgba(255,255,255,.1));
+     &:hover {background: none transparent;}
+     &:active {@include box-shadow (inset 1px 5px 0 rgba(0,0,0,.15));}
+   }
+}
+
+
+
+// extentions
+.header_overline {
+  @extend .header;
+	border-top: 1px solid #DDDDDD;
+	padding-top: .85714em;
+  padding-bottom: .375em;
+}
+
+.header_underline {
+  @extend .header;
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: .375em;
+}
+
+.header_underline-dashed {
+  @extend .header;
+  @extend .header_underline;
+  border-style: dashed;
+  padding: 1em 0;
+}
+
+.header_actions-half {
+  .header__heading {width: 50%;}
+  .header__actions {width: 46%;}
+}
+
+// header bar - an extention of header
+.header_bar {	
+  @extend .header;
+	padding: 0.5em .5em 0.5em .85714em;
+  line-height: 26px;
+  vertical-align: middle;
+  @extend .bg_1;
+  .button { display: block; @extend .bg_1__item; }
+  // nodes
+  .header_bar .header__heading { line-height: inherit; }
+}
+.header_bar_actions-left {
+  padding: 0.5em .85714em 0.5em .5em;
+  .header__actions {float: left; margin-right: 2%;}
+}
+

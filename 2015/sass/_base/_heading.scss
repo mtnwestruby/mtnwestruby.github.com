@@ -1,0 +1,33 @@
+.heading {line-height: 1.2em; }
+
+// 36px
+.h1 {@extend .heading; font-size: #{36 / $font-size}em;text-rendering: optimizeLegibility;}
+
+// 30px
+.h2 {@extend .heading; font-size: #{30 / $font-size}em;text-rendering: optimizeLegibility;}
+
+// 24px
+.h3 {@extend .heading; font-size: #{24 / $font-size}em;text-rendering: optimizeLegibility;}
+
+// 21px
+.h4  {@extend .heading; font-size: #{21 / $font-size}em;text-rendering: optimizeLegibility;}
+
+// 18px
+.h5 {@extend .heading; font-size: #{18 / $font-size}em;}
+
+// 15px
+.h6 {@extend .heading; font-size: #{14 / $font-size}em;}
+
+
+// larger headings
+
+// 48px
+.h_large {@extend .heading; font-size: #{48 / $font-size}em;text-rendering: optimizeLegibility;}
+
+// 55px
+.h_xlarge {@extend .heading; font-size: #{55 / $font-size}em;text-rendering: optimizeLegibility;}
+
+.h_small {
+  letter-spacing: 4px;
+  font-size: .8em;
+}
