@@ -142,7 +142,7 @@
 
     Let's take a tour through the amazing stack of tools that helps us construct high availability applications. We'll review some of the incredible technology underlying the internet: things like TCP, BGP, and DNS. Then we'll talk about how these primitives combine into useful patterns at the application level. I hope you'll leave with not only a renewed appreciation for the core innovations of the internet, but also some practical working knowledge of how to go about building and running a zero-downtime application.
   biography: |
-    Once a humble Rubyist, Paul Hinze has consitently found himself drawn to Production: its affinity for chaos, its unforgiving nature, and ultimately its deep longing for attention. Paul first felt the Call of Production at Braintree, where he eventually found himself in charge of ops.
+    Once a humble Rubyist, Paul Hinze has consistently been drawn to Production: its affinity for chaos, its unforgiving nature, and ultimately its deep longing for attention. Paul first felt the Call of Production at Braintree, where he eventually found himself in charge of ops.
 
     Paul, in his hubris, believed that when he started working at Instructure he could forget about Production. But it was not long before he started hanging out with the ops team again and working on automation and deployment tools.
 
