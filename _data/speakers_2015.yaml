@@ -5,7 +5,7 @@
   twitter: the_zenspider
   github: zenspider
   description: |-
-    Ruby is a fantastic language, but it could be better. While is has done a terrific job of taking ideas from languages like smalltalk, lisp, and (to an extent) perl, it hasn't done nearly enough of it.
+    Ruby is a fantastic language, but it could be better. While it has done a terrific job of taking ideas from languages like smalltalk, lisp, and (to an extent) perl, it hasn't done nearly enough of it.
 
     Big thinkers like Alan Kay & Dan Ingalls (smalltalk), David Ungar (self), Guy Steele & Gerald Sussman (scheme), and Matthias Felleisen (racket) have paved the way for so many programming language ideas that we should plunder the treasures that they've thought up. You might not know their names, but you've certainly used their technology.
 
