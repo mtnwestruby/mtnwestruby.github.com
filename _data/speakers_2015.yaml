@@ -1,4 +1,28 @@
 ---
+- name: Akira Matsuda
+  avatar: https://avatars.githubusercontent.com/amatsuda
+  github: amatsuda
+  twitter: a_matsuda
+  title: Something Amazing
+  description: We don't know what he's talking on yet, but it will be amazing.
+  biography: Akira is coming all the way from Japan to speak.
+- name: Ernie Miller
+  avatar: https://avatars.githubusercontent.com/ernie
+  github: ernie
+  twitter: erniemiller
+  title: Humane Development
+  description: |-
+    Agile. Scrum. Kanban. Waterfall. TDD. BDD. OOP. FP. AOP. WTH?
+
+    As a software developer, I can adopt methodologies so that I feel there's a sense of order in the world.
+
+    There's a problem with this story: We are humans, developing software with humans, to benefit humans. And humans are *messy*.
+
+    We wrap ourselves in process, trying to trade people for personas, points, planning poker, and the promise of predictability. Only people aren't objects to be abstracted away. Let's take some time to think through the tradeoffs we're making together.
+  biography: |-
+    I've been programming since I was 6, and professionally for the past 16 years or so. I'm passionate about creating things, and see software development as an especially powerful medium for creation. Sometimes I still can't believe that people actually *pay us* to have this much fun.
+
+    I'm currently the Director of Engineering at nVisium.
 - name: Ryan Davis
   avatar: https://avatars.githubusercontent.com/zenspider
   title: Standing on the Shoulders of Giants
