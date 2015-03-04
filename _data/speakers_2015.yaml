@@ -3,8 +3,15 @@
   avatar: https://avatars.githubusercontent.com/amatsuda
   github: amatsuda
   twitter: a_matsuda
-  title: Something Amazing
-  description: We don't know what he's talking on yet, but it will be amazing.
+  title: A Quest for the Ultimate Template Engine
+  description: |-
+    I'm sure you have to choose a template engine when you're working on a web app.
+    So almost everyone here must have your favourite template engine, I guess.
+
+    Today I would like to tell a story about me and the Ruby template engines.
+
+    If you think you're totally satisfied with your Ruby template engine, maybe you will learn that your template engine is not perfect.
+    Or, for those who are already feeling unhappy with something in your template engine, I'll tell you what you should do next.
   biography: Akira is coming all the way from Japan to speak.
 - name: Ernie Miller
   avatar: https://avatars.githubusercontent.com/ernie
