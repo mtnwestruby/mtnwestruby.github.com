@@ -1,0 +1,93 @@
+/*
+Modal (.modal) this is for modal windows and lightboxes.
+
+.modal_lightbox          - (vertical)
+
+Styleguide 19.0
+*/
+
+
+.modal {
+  z-index: 100000;
+	position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.8);
+}
+
+
+.modal__window {
+  position: relative;
+	background: #f9f9f9;
+	color: #444;
+	text-shadow: none;
+	border-radius: 2px;
+  .button_close {
+    position: absolute;
+    z-index: 2;
+    margin: .85714em;
+  }
+  .button_edit-contact {
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    margin: .85714em;
+  }
+}
+
+.modal__window__header {position: relative; padding: .85714em .85714em 0 .85714em;}
+.modal__window__body { padding: .85714em;}
+
+.modal__window__footer { border-top: 1px solid rgba(0,0,0,.1); padding: .85714em; }
+
+.modal__window__header__background {
+  position: absolute;
+  overflow: hidden;
+  height: 120px;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+}
+
+.modal__window__background {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  height: 126px;
+  overflow: hidden;
+}
+
+.modal__window__background__image {
+  display: block;
+  width: 100%;
+  @include blur(10px);
+}
+
+.modal_profile {
+  .modal__window {position: fixed; top: 0; left: 0; right: 0; bottom: 0; overflow-y: scroll;}
+  .modal__window__header{
+    margin-top: 120px;
+    .figure_avatar {
+      margin-top: -72px;
+    }
+    .modal__window__heading{
+      margin-top:4px;
+      font-weight: bold;
+      @extend .h5;
+    }
+  }
+  .modal__window__wrapper {position: relative; z-index: 2; background: #fff; padding-bottom: 55px;}
+  .modal__window__footer {
+    background: rgba(255,255,255,.8);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}

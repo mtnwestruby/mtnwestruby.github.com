@@ -1,0 +1,225 @@
+// display
+.display-none {display: none;}
+.display-block {display: block;}
+.display-inline {display: inline;}
+.display-inline-block {display: inline-block;}
+.hidden, .invisible{visibility:hidden !important;}
+
+
+// position
+.position-relative, {position: relative;}
+.position-absolute {position: absolute;}
+.position-fixed {position: fixed;}
+.position-static {position: static;}
+.sticky {position:fixed; top:0;}
+
+
+// float
+.float-left {float: left !important;}
+.float-right {float: right !important;}
+.float-none {float: none !important;}
+
+
+// clearing
+.clear {clear: both;}
+.clearfix:before,.clearfix:after {content:""; display:table;}
+.clearfix:after {clear:both;}
+.clearfix {zoom:1;}
+
+
+// width
+.full-width {width: 100%}
+
+
+// lists
+.no-bullets {list-style-type: none;}
+
+
+// box sizing
+.border-box {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.content-box {
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -o-box-sizing: content-box;
+}
+
+
+// images
+.ir{text-indent:-999em; display:block; overflow:hidden; text-align:left; direction:ltr}
+
+
+// vertical centering technique [http://www.jakpsatweb.cz/css/css-vertical-center-solution.html]
+.vcenter{overflow:hidden; *position:relative; display:table; *display:block} // height of .vcenter element is required  
+.vcenter .outer{display:table-cell; vertical-align:middle; width:100%; *position:absolute; *top:50%}
+.vcenter .inner{*position:relative; *top:-50%}
+.hcenter{ margin-left:auto !important; margin-right:auto !important} // width is required
+
+
+// text helpers
+.text-align_center{text-align:center}
+.text-align_left{text-align:left}
+.text-align_right{text-align:right}
+
+.text-align_top{vertical-align:top}
+.text-align_middle{vertical-align:middle}
+.text-align_bottom{vertical-align:bottom}
+.text-align_baseline{vertical-align:baseline;}
+
+.text-transform_upper{text-transform:uppercase}
+.text-transform_lower{text-transform:lowercase}
+.text-transform_normal{text-transform:none}
+
+.no-wrap {white-space: nowrap;}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+// interaction helpers
+.clickable, .hoverable {cursor:pointer}
+.clickable.disabled, {cursor:default !important}
+
+
+// font-styles
+.font-small {font-size: .857em;}
+.font-large {font-size: 1.125em;}
+
+.text-block {font-size: 1.125em; line-height: 1.75em;}
+
+.font-weight_bold {font-weight:bold !important;}
+.font-style_italic {font-style:italic !important;}
+.font-weight_normal {font-weight:normal !important;}
+
+
+// spacing helpers
+// p,m = padding,margin
+// a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+// s,m,l,n = small(.42857142857143em),medium(.85714285714286em),large(1.71428571428571em),none(0px)
+.ptn,.pvn,.pan{padding-top:0px !important}
+.pts,.pvs,.pas{padding-top:.42857142857143em !important}
+.ptm,.pvm,.pam{padding-top:.85714285714286em !important}
+.ptl,.pvl,.pal{padding-top:1.71428571428571em !important}
+.prn,.phn,.pan{padding-right:0px !important}
+.prs,.phs,.pas{padding-right:.42857142857143em !important}
+.prm,.phm,.pam{padding-right:.85714285714286em !important}
+.prl,.phl,.pal{padding-right:1.71428571428571em !important}
+.pbn,.pvn,.pan{padding-bottom:0px !important}
+.pbs,.pvs,.pas{padding-bottom:.42857142857143em !important}
+.pbm,.pvm,.pam{padding-bottom:.85714285714286em !important}
+.pbl,.pvl,.pal{padding-bottom:1.71428571428571em !important}
+.pln,.phn,.pan{padding-left:0px !important}
+.pls,.phs,.pas{padding-left:.42857142857143em !important}
+.plm,.phm,.pam{padding-left:.85714285714286em !important}
+.pll,.phl,.pal{padding-left:1.71428571428571em !important}
+.mtn,.mvn,.man{margin-top:0 !important}
+.mts,.mvs,.mas{margin-top:.42857142857143em !important}
+.mtm,.mvm,.mam{margin-top:.85714285714286em !important}
+.mtl,.mvl,.mal{margin-top:1.71428571428571em !important}
+.mrn,.mhn,.man{margin-right:0px !important}
+.mrs,.mhs,.mas{margin-right:.42857142857143em !important}
+.mrm,.mhm,.mam{margin-right:.85714285714286em !important}
+.mrl,.mhl,.mal{margin-right:1.71428571428571em !important}
+.mbn,.mvn,.man{margin-bottom:0px !important}
+.mbs,.mvs,.mas{margin-bottom:.42857142857143em !important}
+.mbm,.mvm,.mam{margin-bottom:.85714285714286em !important}
+.mbl,.mvl,.mal{margin-bottom:1.71428571428571em !important}
+.mln,.mhn,.man{margin-left:0px !important}
+.mls,.mhs,.mas{margin-left:.42857142857143em !important}
+.mlm,.mhm,.mam{margin-left:.85714285714286em !important}
+.mll,.mhl,.mal{margin-left:1.71428571428571em !important}
+
+
+// states
+.is_hidden{display:none;}  
+.is_shown{display:block !important;}
+
+.is_visible{visibility:visible !important;}
+.is_invisible{visibility:hidden  !important;}
+
+.is_selected{}
+.is_disabled{}
+.is_active{}
+.is_inactive{}
+.is_loading{}
+.is_default{}
+.is_pressed{}
+.is_hover{}
+.is_focus{}
+.is_dragged{}
+.is_dropped{}
+
+
+// opacity 
+.opacity_0 { opacity:0; filter: alpha(opacity=0);}
+.opacity_1 { opacity:.1;filter: alpha(opacity=10); }
+.opacity_2 { opacity:.2;filter: alpha(opacity=20); }
+.opacity_3 { opacity:.3;filter: alpha(opacity=30); }
+.opacity_4 { opacity:.4;filter: alpha(opacity=40); }
+.opacity_5 { opacity:.5;filter: alpha(opacity=50); }
+.opacity_6 { opacity:.6;filter: alpha(opacity=60); }
+.opacity_7 { opacity:.7;filter: alpha(opacity=70); }
+.opacity_8 { opacity:.8;filter: alpha(opacity=80); }
+.opacity_9 { opacity:.9;filter: alpha(opacity=90); }
+.opacity_full { opacity:1;filter: alpha(opacity=100); }
+
+
+// misc
+.centered {margin: 0 auto}
+.rounded {border-radius: 2px;}
+.circle {border-radius: 10000px;}
+
+
+.circle_large {
+  overflow: hidden;
+  background: #42474b;
+  width: 156px;
+  height: 156px;
+  display: inline-block;
+  margin: 12px;
+  position: relative;
+  vertical-align: top;
+  color: #fff;
+  &:hover {
+    background: #6fd1a9;
+    color: #fff;
+  }
+}
+
+.circle_social {
+  overflow: hidden;
+  background: transparent;
+  width: 78px;
+  height: 78px;
+  line-height: 78px;
+  display: inline-block;
+  margin: 12px;
+  position: relative;
+  vertical-align: top;
+  text-align: center;
+  border: 4px solid #fff;
+  &:hover {
+    background: #999;
+    background: rgba(255,255,255,.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .circle_social {
+    margin: 6px;
+  }
+}
+
+.greyscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+}

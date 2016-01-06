@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!--[if lt IE 9]>
+    <script src="/2016/javascripts/html5shiv.js"></script>
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+    <title>
+      MountainWest RubyConf 2016{% if page.title %}: {{ page.title }}{% endif %}
+   </title>
+  <script type="text/javascript" src="//use.typekit.net/kzb3rbd.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="/2016/stylesheets/screen.css" >
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+  </head>
+  <body class="page">
+
+    <span class="page__icon_large"><a href="/" class="page__icon__link"></a></span>
+    <span class="page__icon_small"><a href="/" class="page__icon__link"></a></span>
+    <header class="page__header">
+      <nav class="nav-bar">
+        <div class="page__wrapper">
+          <ul class="nav float-left">
+            <li class="nav__item">
+              <a href="/2016" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="/2016/register" class="nav__link">Register Now!</a>
+            </li>
+          </ul>
+          <ul class="nav float-right">
+            <li class="nav__item">
+              <a href="/2016/sponsors" class="nav__link">Sponsors</a>
+            </li>
+            <li class="nav__item">
+              <a href="/2016/policies" class="nav__link">Policies</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="page__hero">
+      <div class="page__wrapper">
+        <div class="g g_full">
+          <section class="page__logotype">
+          </section>
+
+          <nav class="nav nav__page-info">
+            <ul>
+              <li class="nav__item">
+               <i>&diams;</i>  <span>March 21-22, 2016</span> <i>&diams;</i>
+              </li>
+              <li class="nav__item float-right">
+                <i>&diams;</i>  <span>Salt Lake City, Utah</span> <i>&diams;  </i>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <div class="page__wrapper">
+      <div class="page__body">
+
+        {% if page.heading %}
+        <header class="page__body__header header_bar">
+          <h2 class="header__heading">{{ page.heading }}</h2>
+        </header>
+        {% endif %}
+
+        {{content}}
+
+        <footer class="page__body__footer">
+          <a href="https://twitter.com/mwrc" class="circle circle_social">
+            <i class="icon icon_large icon_twitter_large">
+            </i>
+          </a>
+          <a href="http://www.facebook.com/groups/34943415835/" class="circle circle_social">
+            <i class="icon icon_large icon_facebook_large">
+            </i>
+          </a>
+          <a href="http://www.linkedin.com/groups/MountainWest-RubyConf-2907752?gid=2907752" class="circle circle_social">
+            <i class="icon icon_large icon_linkedin_large">
+            </i>
+          </a>
+        </footer>
+      </div>
+    </div>
+
+    <footer class="page__footer">
+      &copy; 2016 MountainWest Ruby, LLC
+    </footer>
+    <script type="text/javascript">
+      var $document = $(document),
+          $element = $('.nav-bar'),
+          className = 'is-scrolled';
+
+      $document.scroll(function() {
+        $element.toggleClass(className, $document.scrollTop() >= 50);
+      });
+    </script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2009884-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>

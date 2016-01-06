@@ -1,0 +1,30 @@
+// label
+.label {
+  border: 1px solid #777;
+  display: inline-block;
+  height: 14px;
+  letter-spacing: 1px;
+  padding: 0 5px; // 1px 5px 0
+  text-transform: uppercase;
+  font-size: .666em; //10px
+  font-weight: bold;
+  line-height: 15px;
+  font-size: 10px;
+  color: #ffffff;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: #999999;  
+  border-radius: 2px;
+}
+.label_block{display:block;}
+.label_info {}
+.label_success {}
+.label_warning {}
+.label_highlight {}
+.label_important {
+  color: #444;
+  box-shadow: 0 0 5px rgba(255, 199, 48, 0.78);
+  background-color: #ffc730;
+  border-color: #e6851e;
+  text-shadow: 0 -1px 0 rgba(255,255,255, 0.25);
+}

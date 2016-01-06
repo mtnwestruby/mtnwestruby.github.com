@@ -1,0 +1,31 @@
+---
+title:   Speakers and Sessions
+layout:  '2016'
+heading: Speakers and Sessions
+---
+
+<div class="c">
+  <div class="g g_full">
+    <header class="header header_underline-dashed">
+      <h5 class="header__heading h_small text-align_center opacity_5 float-none">16 awesome sessions that will blow your mind!</h5>
+    </header>
+  </div>
+
+  <div class="g g_d6 g_pl12 g_separate pan">
+    {% for speaker in site.data.speakers_2016 %}
+      {% capture pattern %}{% cycle 'odd', 'even' %}{% endcapture %}
+      {% if pattern == 'odd' %}
+        {% include speaker_2016.html %}
+      {% endif%}
+    {% endfor %}
+  </div>
+
+  <div class="g g_d6 g_pl12 pan">
+    {% for speaker in site.data.speakers_2016 %}
+      {% capture pattern %}{% cycle 'odd', 'even' %}{% endcapture %}
+      {% if pattern == 'even' %}
+        {% include speaker_2016.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

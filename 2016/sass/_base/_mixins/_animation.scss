@@ -1,0 +1,43 @@
+// http://www.w3.org/TR/css3-animations/#animation-name-property
+// Each of these mixins support comma separated lists of values, which allows different transitions for individual properties to be described in a single style rule. Each value in the list corresponds to the value at that same position in the other properties.
+
+// shorthand property.
+@mixin animation ($animations...) {
+  @include prefixer(animation, $animations);
+}
+
+
+// individual animation properties
+@mixin animation-name ($name...) {
+  @include prefixer(animation-name, $name);
+}
+
+@mixin animation-duration ($times...) {
+  @include prefixer(animation-duration, $times);
+}
+
+@mixin animation-timing-function ($motions...) {
+  @include prefixer(animation-timing-function, $motions);
+}
+
+@mixin animation-iteration-count ($values...) {
+  @include prefixer(animation-iteration-count, $values);
+}
+
+@mixin animation-direction ($directions...) {
+  @include prefixer(animation-direction, $directions);
+}
+
+@mixin animation-delay ($times...) {
+  @include prefixer(animation-delay, $times);
+}
+
+
+// not in shorthand property
+@mixin animation-play-state ($states...) {
+  @include prefixer(animation-play-state, $states);
+}
+
+@mixin animation-fill-mode ($modes...) {
+  @include prefixer(animation-fill-mode, $modes);
+}

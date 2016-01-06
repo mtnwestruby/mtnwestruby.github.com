@@ -1,0 +1,188 @@
+/*
+Tag (.tag) Used to display tags.
+
+Styleguide 10.0
+*/
+
+.tag, .tag_entry {
+  position: relative;
+  display: block;
+  float: left;
+  height: 24px;
+  padding: 0 .5em;
+  margin-right: 14px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border: 1px solid #ccc;
+  line-height: 25px;
+  font-size: .8666em;
+  color: #555;
+  background: #eee;
+  border-bottom-color: #aaa;
+  text-shadow: 0 1px 0px rgba(255,255,255,.6);
+  font-weight: bold;
+  border-radius: 2px;
+  @include linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%);
+  @include box-shadow(inset 0 1px 0 rgba(255,255,255,.9), inset 0 -1px 1px rgba(255,255,255,.7  ), 0 1px 3px rgba(0,0,0,.15));
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -8px;
+    width: 19px;
+    height: 19px;
+    margin: 0; 
+    background: #eee;
+    border-left: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    border-radius: 2px;
+    @include linear-gradient(-45deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%);
+    @include box-shadow(inset 2px 0 1px -1px rgba(255, 255, 255, 0.6), inset 0 -1px 0 rgba(255,255,255,.3  ));
+    @include transform(rotate(45deg));  
+  }
+  &:after {
+    z-index: 3;
+    position: absolute;
+    content: "";
+    float: left;
+    display: inline-block;
+    top: 8px;
+    left: -5px;
+    width: 6px;
+    height: 6px;
+    background: #f3f3f3;
+    border: 1px solid #bbb;
+    @include box-shadow(0 1px 0 rgba(255,255,255,.9), inset 0 1px 3px rgba(0,0,0,.15));
+    border-radius: 2px;
+  }
+}
+
+.tag:active {
+  color: #555;
+  background-image: none;
+  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.2));
+  &:before {
+    background-image: none;
+    @include box-shadow(inset 2px 0 1px -1px rgba(0,0,0, 0.2));
+  }
+  &:after {
+    @include box-shadow(inset 0 1px 0 rgba(255,255,255,.9), 0 1px 1px rgba(0,0,0,.2));
+  }
+
+}
+
+.tag__body, .tag span {
+  float: left;
+  z-index: 3;
+  position: relative;
+  display: block;
+  font-style: normal;
+  margin: 0 2px;
+}
+
+
+
+/*
+Tag Entry (.tag_entry) Used for tag inputs
+
+Styleguide 10.2
+*/
+
+
+.tag_entry, .tag_button:active {
+  font-weight: bold;
+  border-color: #acd474;
+  border-top-color: #7fa84e;
+  background-color: #d6f987;
+  @include linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.2), 0 1px rgba(255,255,255,.9));
+  border-radius: 2px;
+  &:before {
+    background-color: #d6f987;
+    border-bottom-color: #acd474;
+    border-left-color: #7fa84e;
+    @include linear-gradient(-45deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+    @include box-shadow(inset 3px 0 1px -2px rgba(0,0,0, 0.2));
+  }
+  &:after {
+    border: 1px solid #acd474;
+    @include box-shadow(0 1px 0 rgba(0,0,0,.1), inset 0 1px 0 rgba(255,255,255,1));
+  }
+} 
+
+
+.tag__input {
+  position: relative;
+  z-index: 7;
+  
+  height: 20px;
+  width: 54px;
+  padding:0;
+  margin: 0;
+  line-height: 20px;
+  background: transparent;
+  color: #3e5422;
+	font-weight: bold;
+	text-shadow: 0 1px 0 rgba(255,255,255,.7);
+	border: none;
+  outline: 0;
+  &:focus {max-width: 140px; color: #2a3917;}
+}
+
+.tag__checkbox {
+  position: relative;
+  z-index: 5;
+  float: left;
+  margin: 6px 6px 6px 0;
+}
+
+.tag__remove {
+  margin: -4px 0 0 2px; 
+}
+
+
+/*
+Tag Active (.tag.active) Used to color selected tags.
+
+Styleguide 10.3
+*/
+.tag.active, .tag.checked, .tag_button {
+  color: #345112;
+  border-color: #acd474;
+  border-bottom-color: #7fa84e;
+  background-color: #d6f987;
+  @include linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+  @include box-shadow(inset 0 1px 0 rgba(255,255,255,.3), inset 0 -1px 1px rgba(255,255,255,.2), 0 1px 3px rgba(0,0,0,.15));
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+  &:before {
+    background-color: #d6f987;
+    border-color: #acd474;
+    border-bottom-color: #7fa84e;
+    @include linear-gradient(-45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+    @include box-shadow(inset 3px 0 0 -2px rgba(255,255,255, 0.3));
+  }
+  &:after {
+    border: 1px solid #acd474;
+  }
+}
+
+.tag_button:hover{color: #345112;}
+
+
+// Hacks
+// The x needs to have these icon classes instead of us hacking it on like this. The JS breaks in IE8 when I try to get it to work.
+.tag_added a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 17px;
+  height: 22px;
+  position:relative;
+  margin: 0 4px 0 0;
+  background-image: image-url("images/no-repeat.png");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  @extend .icon_no-text;
+  @extend .icon_x_transparent;
+}

@@ -1,0 +1,97 @@
+// document
+html {background-color: #1c1e1f; height: 100%}
+body {height: 100%;}
+
+// text 
+.small{font-size:.833em}
+.em,  .i {font-style:italic}
+.strong, .b {font-weight:bold}
+.code, .pre {font-family:monospace}
+.p {@extend .element;}
+.blockquote {padding:0.2em 1em 0.2em 2em; border-left:3px solid #eee;@extend .element;}
+.big {font-size:1.166em}
+.small {font-size:.85714em}
+.del {text-decoration:line-through}
+.ul, .ol, .li {@extend .element;}
+
+
+// inputs 
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder,
+input::-moz-placeholder, 
+textarea::-moz-placeholder, input::-input-placeholder, 
+textarea::input-placeholder {
+  text-transform: uppercase;
+  color: rgba(0,0,0,.3);
+  // font-weight: bold;
+}
+
+// links
+a {
+  text-decoration: none;
+  color: #42474b;
+  cursor: pointer;
+  @include transition(color .25s ease-out, border-color .25s ease-out, opacity .25s linear, background .25s ease-out);
+  -webkit-backface-visibility: hidden;
+  &:hover {
+    color: #6fd1a9;
+    @include transition(none);
+    outline:none
+  }
+  &:active {
+      outline:none;
+  }
+}
+
+.link_white {
+  color: #fff;
+  &:hover {color: #fff; opacity: .7;}
+}
+
+
+// divider
+.divider {
+	display:block;
+  border-right: 1px solid #ccc;
+  border-right: 1px solid rgba(0,0,0,.3);
+}
+
+
+// rules
+.rule {
+  float: left;
+  border-style: solid;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #000;
+  @include opacity(.2);
+  margin: 0;
+  clear:both;
+}
+.rule_double {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  right: 0;
+  width: 80%;
+  height: 2px;
+  margin-top: -2px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  @include opacity(.2);
+}
+
+
+.text-unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+// Enable text selection on iphone.
+.text-selectable {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}

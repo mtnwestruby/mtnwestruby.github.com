@@ -1,0 +1,222 @@
+/*
+Field
+
+Styleguide 13.0
+*/
+.field {
+  @extend .clearfix;
+  position: relative;
+}
+
+.field_30 {
+  height: 30px; 
+  line-height: 30px;
+  .field__label {margin: 0;}
+}
+
+.field_40_textarea {
+  line-height: 40px;
+}
+
+.field_textarea {
+  height: auto;
+  line-height: normal;
+}
+
+.field_stacked {
+  @extend .clearfix;
+  height: auto;
+  line-height: 1.1em;
+}
+
+.field_small {
+  @extend .input_text_small;
+  line-height: 26px;
+}
+
+.field_medium {
+  @extend .input_text_medium;
+  line-height: 32px;
+}
+
+.input_text_large {
+  height: 60px;
+  font-size: 1.28em;
+}
+
+.field_large {
+  @extend .input_text_large;
+  line-height: 60px;
+}
+
+
+.field_textarea{
+  height: auto;
+  line-height: normal;
+}
+
+
+.field_stacked {
+  @extend .clearfix;
+  height: auto;
+  line-height: 1.1em;
+}
+
+.field__icon {
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  margin-top: -8px !important;
+  opacity: .5;
+}
+
+.field_search {
+  .input_text {
+    padding-left: 30px;
+    border-radius: 10000px;
+  }
+}
+
+.ui-input-search {
+  @extend .field;
+  @extend .field_search;
+  &:after {
+    content: " ";
+    @extend .icon;
+    @extend .icon_search;
+    @extend .field__icon;
+  } 
+}
+
+
+
+
+.field_single .input_text {
+  padding-right: 5.5em;
+}
+
+.field_single .button {
+  width: 5.2em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+.field_icon .input_text {
+  padding-left: 32px;
+}
+
+
+
+.field_bar {
+  height: auto;
+  line-height: inherit;
+  padding: .3em;
+  background-color: #cbced6;
+  border: 1px solid #a1a5ae;
+  border-bottom-color: #7d8391;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  @include box-shadow(inset 0 1px 0 rgba(255,255,255,.3), inset 0 -1px 1px rgba(255,255,255,.2), 0 1px 3px rgba(0,0,0,.15));
+  @include linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  vertical-align: middle;
+}
+
+
+.field__label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.field__label_inside {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  line-height: 40px;
+  font-size: 1em;
+  padding-left: 7px;
+  @include opacity(.7);
+}
+
+.field__label_inside-textarea {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  line-height: normal;
+  padding: 7px 12px;
+  font-size: 1em;
+  @include opacity(.7);
+}
+
+.infield {
+  color: #666; 
+  text-shadow: 0 1px 0 rgba(255,255,255,.8); 
+}
+
+
+
+
+.field_stacked {
+  .field__label {
+    @extend .clearfix;
+  }
+}
+
+.field__label-title {
+  float: left;
+  display: block;
+}
+
+
+
+
+.field__label_required {
+  .field__label-title {
+    font-weight: bold;
+  }
+}
+
+.field__label-action {
+  float: right;
+  display: block;
+}
+
+.field__label-action-item {
+  float: left;
+  display: block;
+  border-bottom: 1px solid #666;
+  color: #000;
+  @include opacity(.5);
+  font-size: .85em;
+  &:hover{color: #000; opacity:.4;}
+}
+
+
+
+
+.field-box {
+  .field {
+    padding: 8px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-bottom-width: 0;
+    &:first-child {border-radius: 2px 2px 0 0;}
+    &:last-child {border-bottom-width: 1px; border-radius: 0 0 2px 2px;}
+  }
+  .field__label {
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    @extend .futura;
+  }
+  .field__input {
+    padding-left: 100px;
+    border: none; background-color: transparent;
+  }
+}
