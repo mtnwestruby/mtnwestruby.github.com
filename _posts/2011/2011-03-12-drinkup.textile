@@ -1,6 +1,0 @@
----
-title:  'Drinkup'
-layout: '2011'
-category: '2011'
----
-"Pivotal Labs":sponsors#pivotallabs is hosting a "post-conference drinkup":http://mtnwestrubyconf.org/2011/drinkup Friday night. It will be held at "Squatters Pub Brewery":http://www.squatters.com/ from 6:30 PM to 9:00 PM. "Check it out":http://mtnwestrubyconf.org/2011/drinkup.
