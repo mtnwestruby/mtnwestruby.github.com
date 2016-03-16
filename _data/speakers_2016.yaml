@@ -1,71 +1,195 @@
 ---
 - name: Ernie Miller
   avatar: https://avatars.githubusercontent.com/ernie
-  github: ernie
   twitter: erniemiller
+  github: ernie
   title: ...
   description: ...
   biography: ...
 - name: Aja Hammerly
   avatar: https://avatars.githubusercontent.com/thagomizer
-  github: thagomizer
   twitter: thagomizer_rb
-  title: ...
-  description: ...
-  biography: ...
+  github: thagomizer
+  title: "Sharpening The Axe: Self-Teaching For Developers"
+  description: "Many of us get a few years into our career and get stuck in a rut.
+    Maybe we stop reading about the latest and greatest in tech. Maybe we start managing
+    and do less coding than we'd like. Maybe life gets in the way and coding becomes
+    drudgery.\n\nOne way to combat this feeling is to focus on learning. I'll
+    share what I've learned about juggling self improvement with being a professional
+    nerd. I'll talk about the courses, tools, books, and other resources I've found
+    most useful. You’ll leave this talk with several ideas for breaking out of your
+    own developer rut."
+  biography: "Aja lives in Seattle where she is a Developer Advocate at Google and
+    a member of the Seattle Ruby Brigade. Her favorite languages are Ruby and
+    Prolog. She also loves working with large piles of data. In her free time she
+    enjoys skiing, cooking, knitting, and long coding sessions on the beach."
 - name: Ryan Davis
   avatar: https://avatars.githubusercontent.com/zenspider
   twitter: the_zenspider
   github: zenspider
-  title: ...
-  description: ...
-  biography: ...
+  title: Writing a Test Framework from Scratch
+  description: "Assertions (or expectations) are the most important part of any test
+    framework. How are they written? What happens when one fails? How does a test
+    communicate its results? Past talks have shown how test frameworks work from the
+    very top: how they find, load, select, and run tests. Instead of reading code
+    from the top, we’ll write code from scratch starting with assertions and building
+    up a full test framework. By the end, you'll know how every square inch of your
+    testing framework works."
+  biography: Ryan Davis has been using Ruby since 2000 and is a founding member of
+    the Seattle Ruby Brigade, the first and foremost ruby brigade in the world. His
+    background includes QA, automation, language and tool development, object databases,
+    and smalltalk. In ruby/rails, he has focused on developer productivity, code/process/people
+    optimization, and test automation tools such as heckle, hoe, ruby_parser, ruby2c,
+    ruby2ruby, RubyInline, ZenTest, minitest, and more.
 - name: Eileen Uchitelle
   avatar: https://avatars.githubusercontent.com/eileencodes
   twitter: eileencodes
   github: eileencodes
-  title: ...
-  description: ...
-  biography: ...
+  title: "Security is Broken: Understanding Common Vulnerabilities"
+  description: The Internet is built on technology that was never meant to work together.
+    Basic features in seemingly simple and innocuous technologies, such as XML, resulted
+    in these technologies being insecure. In this session we’ll talk about how attackers
+    exploit well known vulnerabilities like XSS, XXE, and CSRF and how to make more
+    secure software by avoiding similar decisions that resulted in these exploits.
+  biography: Eileen M. Uchitelle is a programmer on Basecamp’s Security, Infrastructure,
+    and Performance team. Eileen is an ardent contributor to open source, focusing
+    most of her energy on improving performance and security in Rails. When taking
+    a break from the excitement of refactoring source code, Eileen enjoys craft beer
+    and hiking in the Hudson Valley with her husband and their dog.
 - name: Aaron Patterson
   avatar: https://avatars.githubusercontent.com/tenderlove
   twitter: tenderlove
   github: tenderlove
-  title: ...
-  description: ...
-  biography: ...
+  title: How are method calls formed?
+  description: "In this presentation we're going to study how method calls are executed.  We'll
+    go from bytecode created by Ruby's Virtual Machine down to the C code where the
+    methods actually get executed.  After we've learned about how Ruby executes methods
+    today, we'll dive in to optimizations we can make on method dispatch including
+    various types of inline method caching.  Audience members should leave with a
+    better understanding of Ruby's VM internals as well as ways to analyze and optimize
+    their own code."
+  biography: Aaron Patterson is on the Ruby Core team, and the Rails Core team. He
+    likes puns, cats, programming, and trying to find the intersection of all these
+    interests. Aaron is currently working at Red Hat on a team dedicated to turning
+    clouds in to smiles.
 - name: Kerri Miller
   avatar: https://avatars.githubusercontent.com/kerrizor
   twitter: kerrizor
   github: kerrizor
-  title: ...
-  description: ...
+  title: The Minimum Viable Conference
+  description: "Ok, so, if nothing else, we've got one thing in common. We like conferences.
+    The two of us like 'em so much that we recently spent a large chunk of time and
+    money organizing and hosting one, and are planning at least one more for next
+    year, too. Ask us about it!\n\nWe're here to spill the beans on what it takes
+    to make these things happen. We'll do our damndest to tell you everything you
+    need to know to get your own conference off the ground. We'll cover topics like:\n\n-
+    How many people do you need? To attend? To organize?\n- Where's the money come
+    from?\n- How do you get sponsors?\n- How do you run a CFP?\n- What are the
+    easy wins and hard losses?\n- For what services do you pay versus those you
+    seek for free?\n- How do you protect yourself and your fellow organizers?\n-
+    Who buys the beer?\n\nWhether you're planning a multi-day conference, a monthly
+    meetup, or just a one-time get-together for your office, we'll give you a handy
+    list of DOs and DONTs, based on our own experiences and those of others in the
+    community event game. Like Kerri's Gramma once said, \"If you want to go to a
+    party, sometimes you have to throw it yourself.\""
+  biography: Kerri Miller is a Software Developer and Team Lead based in the Pacific
+    Northwest. She has worked at enterprise companies, international ad agencies,
+    boutique consultancies, start-ups, mentors and teaches students, and finds time
+    to work on Open Source projects. Having an insatiable curiosity, she has worked
+    as a lighting designer, marionette puppeteer, sous chef, and professional poker
+    player, and enjoys hiking, collecting Vespas, and working with glass.
+- name: Jeremy Flores
+  avatar: https://avatars.githubusercontent.com/jnf
+  twitter: _jnf
+  github: jnf
+  title: The Minimum Viable Conference
+  description: "Ok, so, if nothing else, we've got one thing in common. We like conferences.
+    The two of us like 'em so much that we recently spent a large chunk of time and
+    money organizing and hosting one, and are planning at least one more for next
+    year, too. Ask us about it!\n\nWe're here to spill the beans on what it takes
+    to make these things happen. We'll do our damndest to tell you everything you
+    need to know to get your own conference off the ground. We'll cover topics like:\n\n-
+    How many people do you need? To attend? To organize?\n- Where's the money come
+    from?\n- How do you get sponsors?\n- How do you run a CFP?\n- What are the
+    easy wins and hard losses?\n- For what services do you pay versus those you
+    seek for free?\n- How do you protect yourself and your fellow organizers?\n-
+    Who buys the beer?\n\nWhether you're planning a multi-day conference, a monthly
+    meetup, or just a one-time get-together for your office, we'll give you a handy
+    list of DOs and DONTs, based on our own experiences and those of others in the
+    community event game. Like Kerri's Gramma once said, \"If you want to go to a
+    party, sometimes you have to throw it yourself.\""
   biography: ...
 - name: Brandon Hays
   avatar: https://avatars.githubusercontent.com/tehviking
   twitter: tehviking
   github: tehviking
-  title: ...
-  description: ...
-  biography: ...
+  title: Surviving the Framework Hype Cycle
+  description: Baskin Robbins wishes it had as many flavors as there are JS frameworks,
+    build tools, and cool new "low-level" languages. You just want to solve a problem,
+    not have a 500-framework bake-off! And how will you know whether you picked the
+    right one? Don't flip that table, because we'll use the "hype cycle" and the history
+    of Ruby and Rails as a guide to help you understand which front-end and back-end
+    technologies are a fit for your needs, wants, and career now and in the future.
+  biography: Brandon Hays left the world of marketing to find that creating software
+    made him happy. Brandon lives in Austin, TX, where he helps run The Frontside,
+    a consultancy specializing in Ember.js. Brandon's lifelong mission to to hug every
+    developer.
 - name: Davy Stevenson
   avatar: https://avatars.githubusercontent.com/davy
   twitter: davystevenson
   github: davy
-  title: ...
-  description: ...
-  biography: ...
+  title: Orders of Magnitude
+  description: "Up until the 17th century, the world was mostly limited to what we
+    could see with the naked eye. Our understanding of things much smaller and much
+    larger than us was limited. In the past 400 years our worldview has increased
+    enormously, which has led to the advent of technology, space exploration, computers
+    and the internet. However, our brains are ill equipped to handle dealing with
+    numbers at these scales, and attempt to trick us at every turn.\n\nSoftware
+    engineers deal with computers every day, and thus we are subject to both incredibly
+    tiny and massively large numbers all the time. Learn about how your brain is fooling
+    you when you are dealing with issues of latency, scalability, and algorithm optimization,
+    so that you can become a better programmer."
+  biography: Davy is an Engineering Manager at GitHub, working on the team focused
+    on the scalability and availability of the GitHub application. She lives in Portland,
+    Oregon, where she enjoys skiing, gardening, knitting, twittering, drinking all
+    the fantastic beer that Portland has to provide, and ignoring her cats as much
+    as they ignore her.
 - name: Abraham Sangha
   avatar: https://avatars.githubusercontent.com/abrahamsangha
-  github: abrahamsangha
   twitter: abrahamsangha
-  title: ...
-  description: ...
-  biography: ...
+  github: abrahamsangha
+  title: "TDD For Your Soul: Virtue through Software Development"
+  description: Web development pushes us to our limits, not only of cognition, but,
+    perhaps surprisingly, of character. Using the cardinal virtues as a framework,
+    we can see that developers need courage to learn, temperance to prioritize goals,
+    a sense of justice by which to discern obligations, and wisdom to choose our path.
+    By being honest about where we lack virtue, and implementing steps to develop
+    character, we can perform test-driven development on ourselves. This process can
+    help us grow not only as developers, but as human beings.
+  biography: Abraham’s first taste of programming was writing violent choose-your-own-adventure
+    games in TI-BASIC on his graphing calculator instead of paying attention during
+    algebra class. Now he develops software at Avant. He studied the virtuous life
+    in graduate school but has still failed to obtain it.
 - name: Jamis Buck
   avatar: https://avatars.githubusercontent.com/jamis
-  github: jamis
   twitter: jamis
-  title: ...
-  description: ...
-  biography: ...
+  github: jamis
+  title: Software Developer
+  description: Burnout is the professional's palsy. It leaves you paralyzed, unable
+    to do what you need to do, and it strikes without warning. Or does it? Through
+    story, metaphor, and perhaps even code sample, let's take a look at how to recognize,
+    prepare for, and weather burnout, and hopefully come through the other side stronger
+    than ever!
+  biography: I write software, I've been (severely) burned by burnout, and yet I've
+    managed to come through the other side.
+- name: Michael Ries
+  avatar: https://avatars.githubusercontent.com/mmmries
+  twitter: mmmries
+  github: mmmries
+  title: Ruby Is For Fun and Robots
+  description: Most of us use ruby for work, but do we still use it for fun? Is maximizing
+    your webscale for optimal synergy getting you down? Let's talk about something
+    fun you can do with ruby and robots instead.
+  biography: Michael helps to organize the UV.rb chapter of Utah Ruby Users Groups.
+    He has three young sons and a "bajillion" legos that he builds with them. He currently
+    works at MX.
