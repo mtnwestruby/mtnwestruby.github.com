@@ -3,9 +3,16 @@
   avatar: https://avatars.githubusercontent.com/ernie
   twitter: erniemiller
   github: ernie
-  title: ...
-  description: ...
-  biography: ...
+  title: How to Build a Skyscraper
+  description: "Since 1884, humans have been building skyscrapers. This means that
+    we had 6 decades of skyscraper-building experience before we started building
+    software (depending on your definition of \"software\"). Maybe there are some
+    lessons we can learn from past experience?\n\nThis talk won't make you an expert
+    skyscraper-builder, but you might just come away with a different perspective
+    on how you build software."
+  biography: Ernie Miller has never built a skyscraper. He has been building software
+    since he was six years old, though, and he's reportedly built some pretty awesome
+    pillow forts in his day.
 - name: Aja Hammerly
   avatar: https://avatars.githubusercontent.com/thagomizer
   twitter: thagomizer_rb
