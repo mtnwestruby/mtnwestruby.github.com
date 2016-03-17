@@ -125,7 +125,13 @@
     list of DOs and DONTs, based on our own experiences and those of others in the
     community event game. Like Kerri's Gramma once said, \"If you want to go to a
     party, sometimes you have to throw it yourself.\""
-  biography: ...
+  biography: "Jeremy is a programmer and teacher at Ada Developers Academy in
+    Seattle, WA. He's shipped code in a dozen stacks for everything from a
+    multi-million dollar ecommerce portal, to a motocross lap timing and scoring
+    solution, to a point-of-sale system for hair salons. He's also been a
+    conference organizer, zoo keeper, technical director at a digital agency,
+    congressional campaign staffer, and county parks employee. He collects records
+    and is hoping someone will go crate digging with him while he's in town."
 - name: Brandon Hays
   avatar: https://avatars.githubusercontent.com/tehviking
   twitter: tehviking
