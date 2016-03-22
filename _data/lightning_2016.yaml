@@ -1,0 +1,63 @@
+---
+- name: Bradley Schaefer
+  title: RSpec SECRETS
+  description: "The RSpec team has secrets. Dark secrets. Magic that only we know in
+    order to write tests better than anyone else. I will share with you some of those
+    secrets so that you too can write amazing tests with RSpec."
+- name: Tad Thorley
+  title: Re-evaluating Value
+  description: How we consider value isn't always accurate. I'm going to provide another
+    perspective.
+- name: Jeremy Flores
+  title: How to Play D&D
+  description: "I wanna bring my love of table top games to a new generation. Forget
+    video games and MMORPG's. Let's get old school with dice and our imagination."
+- name: Ben Eggett
+  title: How to be a great developer
+  description: "Focusing on:\r\n- Practice Empathy\r\n- Practice Humility\r\n- Always
+    be learning\r\n- Avoid Tribalism\r\n- Better your community"
+- name: Adrian Madrid
+  title: Crystal Language - friendly, static, modern, compiled
+  description: A quick introduction to the Crystal Language - http://crystal-lang.org/
+- name: Allen Maxwell
+  title: Practical Use of Minitest-Bisect
+  description: Real Life usage of the minitest-bisect gem to solve a sporadic test
+    failure
+- name: Joey Ferguson
+  title: From bootcamp to career
+  description: "I get a lot of questions about breaking in to a career after a bootcamp.
+    I'll talk about what it really takes to become a solid programmer after a bootcamp
+    and describing an ideal candidate in hiring a bootcamper."
+- name: Nick Howard
+  title: IR Everywhere
+  description: Bytecode doesn't bite.
+- name: Isaac Sloan
+  title: Gate Keeping should be easy
+  description: "If you like the straight forward and effective nature of Strong Parameters
+    and suspect that cancan might be overkill for your project then you'll love Petergate's
+    easy to use and read action and content based authorizations."
+- name: Andrew Butterfield
+  title: In Search of the Unattainable
+  description: "This talk highlights a few of the reasons that I think get in the way
+    of us achieving what we perceive to be unattainable."
+- name: Thomas Witt
+  title: Managing Gem Releases
+  description: "We're a 25 person team working on regular releases of our SDK, which
+    is a delivered as a Ruby Gem. This lightning talks describes how we organize our
+    work, which tools we use and some practical recommendations."
+- name: Bracken Mosbacker
+  title: Hiring junior developers makes you faster and stronger
+  description: '"We''re only hiring seniors right now." Everyone wants someone else
+    to turn all the juniors into seniors.  When you let that happen, you’re missing
+    out on the great benefits you gain by continually hiring new developers.'
+- name: Dennis Stevense
+  title: Turning up the logging level
+  description: "Since mindfulness meditation has come up several times this morning,
+    I thought it might be good to give a brief talk about it and guide a 3 minute
+    meditation. I'm a registered yoga instructor and will be referring to the book
+    Search Inside Yourself by Meng Tan."
+- name: Matthew Nielsen
+  title: On punchlines and silly hacks
+  description: "Why can you only use integers as array indexes in Ruby? What if you
+    didn't have to?\r\n\r\nWhat can you learn when you just go ahead and try something
+    silly?"

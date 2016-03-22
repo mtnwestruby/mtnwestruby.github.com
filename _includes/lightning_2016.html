@@ -1,0 +1,14 @@
+<section class="box__body h5">
+  <header class="header">
+    <h2 class="header__heading h3 mbm">
+      {{ speaker.title }}
+    </h2>
+  </header>
+  <header class="header">
+    <h3 class="header__heading h4 mbm">
+      {{ speaker.name }}
+    </h3>
+  </header>
+  {{ speaker.description | markdownify | replace:'<p>','<p class="mbm">' }}
+  <hr class="rule mbl">
+</section>
